@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a48d10f9ba60f844897408c51eb82a7, type: 3}
+  m_Name: Museu
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingDefinition
+  id: Museu
+  displayName: Museu
+  requiredPieces: 5
+  prerequisite: {fileID: 0}
+  opensObservatory: 0
+  trials:
+  - model: {fileID: 11400000, guid: e996d9ef764ff1a43a931992af3bf8ef, type: 2}
+    rotation: 90
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: b82ac1efa3417f341bccc19ab423756b, type: 2}
+    rotation: 90
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 2865ea57e399fbe4abc6b08db46136af, type: 2}
+    rotation: 135
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: ba28d0700d269e045bc580b272b2765e, type: 2}
+    rotation: 135
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: c626d50d2cb9d41479f030f6438bde51, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 7683c35da38075a4fb59d181c8b98456, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 589647bca50a6d145ac7f62f13d4ba9c, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 5cc878ec3123e2c4aa4b2493a17fd478, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 4f1fcc1f7630f8f41a4ecdc79481d4f5, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 661a626eae7490049b6a408ce28461b4, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 1

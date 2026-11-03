@@ -1,0 +1,564 @@
+{
+  "summary": {
+    "originalPngFiles": 132,
+    "originalPngMismatches": [],
+    "configuration": [
+      {
+        "file": "Packages/manifest.json",
+        "unchanged": true
+      },
+      {
+        "file": "Packages/packages-lock.json",
+        "unchanged": true
+      },
+      {
+        "file": "ProjectSettings/ProjectVersion.txt",
+        "unchanged": true
+      }
+    ],
+    "prefabs": 156,
+    "villagePrefabs": {
+      "Animal": 3,
+      "Building": 6,
+      "Decoration": 16,
+      "Fence": 108,
+      "Tree": 8,
+      "Villager": 4
+    },
+    "actors": {
+      "villagers": 14,
+      "animals": 60
+    },
+    "scriptFiles": 30
+  },
+  "originalArt": [
+    {
+      "file": "Assets/Art/Original/Animals/badger_NE.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/badger_NW.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/badger_SE.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/badger_SW.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/boar_0.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/boar_1.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/boar_2.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/boar_3.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/boar_4.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/boar_5.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/boar_6.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/stag_NE.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/stag_NW.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/stag_SE.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Animals/stag_SW.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Buildings/Structures.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Buildings/Structures2.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_000.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_001.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_002.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_003.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_004.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_005.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_006.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_007.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_008.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_009.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_010.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_011.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_012.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_013.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_014.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_015.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_016.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_017.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_018.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_019.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_020.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_021.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_022.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_023.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_024.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_025.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_026.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_027.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_028.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_029.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_030.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_031.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_032.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_033.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_034.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_035.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_036.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_037.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_038.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_039.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_040.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_041.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_042.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_043.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_044.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_045.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_046.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_047.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_048.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_049.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_050.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_051.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_052.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_053.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_054.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_055.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_056.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_057.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_058.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_059.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_060.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_061.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_062.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_063.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_064.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_065.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_066.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_067.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_068.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_069.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_070.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_071.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_072.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_073.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_074.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_075.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_076.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_077.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_078.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_079.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_080.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_081.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_082.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_083.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_084.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_085.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_086.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_087.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_088.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_089.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_090.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_091.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_092.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_093.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_094.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_095.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_096.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_097.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_098.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_099.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_100.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_101.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_102.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_103.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_104.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_105.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_106.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_107.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_108.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_109.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_110.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_111.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_112.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_113.png",
+      "pixelsFileUnchanged": true
+    },
+    {
+      "file": "Assets/Art/Original/Terrain/tile_114.png",
+      "pixelsFileUnchanged": true
+    }
+  ]
+}

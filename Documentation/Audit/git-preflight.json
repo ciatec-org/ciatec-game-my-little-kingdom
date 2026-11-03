@@ -1,0 +1,11 @@
+{
+  "trackedFiles": 2359,
+  "forbiddenPaths": 0,
+  "filesAtLeast50MB": 0,
+  "knownSecretPatternHits": 0,
+  "attributesBlob": "5eb96286670e75fea831ee29bb21a48473f7fc6e",
+  "sourceAndNewDocumentationWhitespaceCheck": "PASS (CRLF recognized; generated Unity YAML retains original empty-value formatting)",
+  "lfsConfigured": true,
+  "publicUploadAttempted": false,
+  "publicationGate": "Asset provenance and authorization scope pending"
+}

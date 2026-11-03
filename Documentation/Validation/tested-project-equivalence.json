@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "assetFiles": 2246,
+  "assetFileSetsEqual": true,
+  "byteDifferences": [],
+  "configurationDifferences": [],
+  "testHarnessNote": "During automated Play Mode, background execution is temporarily enabled and restored on exit; virtual Input System mouse events are confined to the test process."
+}

@@ -1,0 +1,345 @@
+{
+  "base": "18a0b6077d126ebd9a1e963e914320b01387b9ce",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "status": "remote-only",
+      "bytes": 5077
+    },
+    {
+      "path": ".gitignore",
+      "status": "remote-only",
+      "bytes": 2707
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "status": "remote-only",
+      "bytes": 80
+    },
+    {
+      "path": ".vscode/launch.json",
+      "status": "remote-only",
+      "bytes": 187
+    },
+    {
+      "path": ".vscode/settings.json",
+      "status": "remote-only",
+      "bytes": 1909
+    },
+    {
+      "path": "Assets/InputSystem_Actions.inputactions",
+      "status": "remote-only",
+      "bytes": 41005
+    },
+    {
+      "path": "Assets/InputSystem_Actions.inputactions.meta",
+      "status": "remote-only",
+      "bytes": 376
+    },
+    {
+      "path": "Assets/Readme.asset",
+      "status": "remote-only",
+      "bytes": 1144
+    },
+    {
+      "path": "Assets/Readme.asset.meta",
+      "status": "remote-only",
+      "bytes": 182
+    },
+    {
+      "path": "Assets/Scenes/SampleScene.unity",
+      "status": "different",
+      "bytes": 11413
+    },
+    {
+      "path": "Assets/Scenes/SampleScene.unity.meta",
+      "status": "different",
+      "bytes": 155
+    },
+    {
+      "path": "Assets/Scenes.meta",
+      "status": "different",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/Settings/DefaultVolumeProfile.asset",
+      "status": "different",
+      "bytes": 23987
+    },
+    {
+      "path": "Assets/Settings/DefaultVolumeProfile.asset.meta",
+      "status": "different",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/Settings/Mobile_Renderer.asset",
+      "status": "remote-only",
+      "bytes": 1713
+    },
+    {
+      "path": "Assets/Settings/Mobile_Renderer.asset.meta",
+      "status": "remote-only",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/Settings/Mobile_RPAsset.asset",
+      "status": "remote-only",
+      "bytes": 4672
+    },
+    {
+      "path": "Assets/Settings/Mobile_RPAsset.asset.meta",
+      "status": "remote-only",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/Settings/PC_Renderer.asset",
+      "status": "remote-only",
+      "bytes": 3439
+    },
+    {
+      "path": "Assets/Settings/PC_Renderer.asset.meta",
+      "status": "remote-only",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/Settings/PC_RPAsset.asset",
+      "status": "remote-only",
+      "bytes": 4691
+    },
+    {
+      "path": "Assets/Settings/PC_RPAsset.asset.meta",
+      "status": "remote-only",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/Settings/SampleSceneProfile.asset",
+      "status": "remote-only",
+      "bytes": 3703
+    },
+    {
+      "path": "Assets/Settings/SampleSceneProfile.asset.meta",
+      "status": "remote-only",
+      "bytes": 182
+    },
+    {
+      "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "status": "different",
+      "bytes": 26897
+    },
+    {
+      "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "status": "different",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/Settings.meta",
+      "status": "different",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/TutorialInfo/Icons/URP.png",
+      "status": "remote-only",
+      "bytes": 24069
+    },
+    {
+      "path": "Assets/TutorialInfo/Icons/URP.png.meta",
+      "status": "remote-only",
+      "bytes": 3156
+    },
+    {
+      "path": "Assets/TutorialInfo/Icons.meta",
+      "status": "remote-only",
+      "bytes": 193
+    },
+    {
+      "path": "Assets/TutorialInfo/Layout.wlt",
+      "status": "remote-only",
+      "bytes": 16133
+    },
+    {
+      "path": "Assets/TutorialInfo/Layout.wlt.meta",
+      "status": "remote-only",
+      "bytes": 176
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+      "status": "remote-only",
+      "bytes": 6919
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
+      "status": "remote-only",
+      "bytes": 264
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Editor.meta",
+      "status": "remote-only",
+      "bytes": 193
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Readme.cs",
+      "status": "remote-only",
+      "bytes": 318
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Readme.cs.meta",
+      "status": "remote-only",
+      "bytes": 317
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts.meta",
+      "status": "remote-only",
+      "bytes": 193
+    },
+    {
+      "path": "Assets/TutorialInfo.meta",
+      "status": "remote-only",
+      "bytes": 172
+    },
+    {
+      "path": "my-little-kingdom.slnx",
+      "status": "remote-only",
+      "bytes": 125
+    },
+    {
+      "path": "Packages/manifest.json",
+      "status": "different",
+      "bytes": 2081
+    },
+    {
+      "path": "Packages/packages-lock.json",
+      "status": "different",
+      "bytes": 13003
+    },
+    {
+      "path": "ProjectSettings/AudioManager.asset",
+      "status": "equal",
+      "bytes": 413
+    },
+    {
+      "path": "ProjectSettings/ClusterInputManager.asset",
+      "status": "equal",
+      "bytes": 114
+    },
+    {
+      "path": "ProjectSettings/DynamicsManager.asset",
+      "status": "equal",
+      "bytes": 1254
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "status": "different",
+      "bytes": 371
+    },
+    {
+      "path": "ProjectSettings/EditorSettings.asset",
+      "status": "different",
+      "bytes": 1687
+    },
+    {
+      "path": "ProjectSettings/GraphicsSettings.asset",
+      "status": "different",
+      "bytes": 2957
+    },
+    {
+      "path": "ProjectSettings/InputManager.asset",
+      "status": "equal",
+      "bytes": 9731
+    },
+    {
+      "path": "ProjectSettings/MemorySettings.asset",
+      "status": "equal",
+      "bytes": 1192
+    },
+    {
+      "path": "ProjectSettings/MultiplayerManager.asset",
+      "status": "equal",
+      "bytes": 157
+    },
+    {
+      "path": "ProjectSettings/NavMeshAreas.asset",
+      "status": "equal",
+      "bytes": 1308
+    },
+    {
+      "path": "ProjectSettings/PackageManagerSettings.asset",
+      "status": "different",
+      "bytes": 1157
+    },
+    {
+      "path": "ProjectSettings/Physics2DSettings.asset",
+      "status": "different",
+      "bytes": 2028
+    },
+    {
+      "path": "ProjectSettings/PhysicsCoreProjectSettings2D.asset",
+      "status": "remote-only",
+      "bytes": 151
+    },
+    {
+      "path": "ProjectSettings/PresetManager.asset",
+      "status": "equal",
+      "bytes": 146
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "status": "remote-only",
+      "bytes": 1036
+    },
+    {
+      "path": "ProjectSettings/ProjectSettings.asset",
+      "status": "different",
+      "bytes": 25455
+    },
+    {
+      "path": "ProjectSettings/ProjectVersion.txt",
+      "status": "different",
+      "bytes": 85
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "status": "different",
+      "bytes": 3662
+    },
+    {
+      "path": "ProjectSettings/ShaderGraphSettings.asset",
+      "status": "different",
+      "bytes": 556
+    },
+    {
+      "path": "ProjectSettings/TagManager.asset",
+      "status": "different",
+      "bytes": 657
+    },
+    {
+      "path": "ProjectSettings/TimeManager.asset",
+      "status": "equal",
+      "bytes": 202
+    },
+    {
+      "path": "ProjectSettings/UnityConnectSettings.asset",
+      "status": "equal",
+      "bytes": 1063
+    },
+    {
+      "path": "ProjectSettings/URPProjectSettings.asset",
+      "status": "equal",
+      "bytes": 461
+    },
+    {
+      "path": "ProjectSettings/VersionControlSettings.asset",
+      "status": "different",
+      "bytes": 188
+    },
+    {
+      "path": "ProjectSettings/VFXManager.asset",
+      "status": "equal",
+      "bytes": 308
+    },
+    {
+      "path": "ProjectSettings/XRSettings.asset",
+      "status": "equal",
+      "bytes": 158
+    }
+  ]
+}

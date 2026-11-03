@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "comparedFiles": 2274,
+  "assetFiles": 2246,
+  "differences": [],
+  "extraFiles": [],
+  "excludedFromActiveAssets": [
+    "Assets/Scenes/SampleScene.unity",
+    "Assets/Scenes/SampleScene.unity.meta"
+  ],
+  "note": "The excluded local scene is preserved outside active Assets in Documentation/Integration/LocalSceneReview. No runtime or content changes were made."
+}

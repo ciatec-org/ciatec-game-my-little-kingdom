@@ -1,0 +1,791 @@
+PASS — 790 semantic checks; 59906 serialized reference/script assertions
+Five building definitions exist
+Building identity and target preserved: Observatorio
+Ten trials: Observatorio
+Condition, rotation and model preserved: 0
+Cell coordinates preserved: 0
+Persistent reference/mirrored meshes: 0
+Mesh external face count: Model 0
+Mesh geometry matches coordinates: Model 0
+Mesh external face count: Mirrored 0
+Mesh geometry matches coordinates: Mirrored 0
+Condition, rotation and model preserved: 1
+Cell coordinates preserved: 1
+Persistent reference/mirrored meshes: 1
+Mesh external face count: Model 1
+Mesh geometry matches coordinates: Model 1
+Mesh external face count: Mirrored 1
+Mesh geometry matches coordinates: Mirrored 1
+Condition, rotation and model preserved: 2
+Cell coordinates preserved: 2
+Persistent reference/mirrored meshes: 2
+Mesh external face count: Model 2
+Mesh geometry matches coordinates: Model 2
+Mesh external face count: Mirrored 2
+Mesh geometry matches coordinates: Mirrored 2
+Condition, rotation and model preserved: 3
+Cell coordinates preserved: 3
+Persistent reference/mirrored meshes: 3
+Mesh external face count: Model 3
+Mesh geometry matches coordinates: Model 3
+Mesh external face count: Mirrored 3
+Mesh geometry matches coordinates: Mirrored 3
+Condition, rotation and model preserved: 4
+Cell coordinates preserved: 4
+Persistent reference/mirrored meshes: 4
+Mesh external face count: Model 4
+Mesh geometry matches coordinates: Model 4
+Mesh external face count: Mirrored 4
+Mesh geometry matches coordinates: Mirrored 4
+Condition, rotation and model preserved: 5
+Cell coordinates preserved: 5
+Persistent reference/mirrored meshes: 5
+Mesh external face count: Model 5
+Mesh geometry matches coordinates: Model 5
+Mesh external face count: Mirrored 5
+Mesh geometry matches coordinates: Mirrored 5
+Condition, rotation and model preserved: 6
+Cell coordinates preserved: 6
+Persistent reference/mirrored meshes: 6
+Mesh external face count: Model 6
+Mesh geometry matches coordinates: Model 6
+Mesh external face count: Mirrored 6
+Mesh geometry matches coordinates: Mirrored 6
+Condition, rotation and model preserved: 7
+Cell coordinates preserved: 7
+Persistent reference/mirrored meshes: 7
+Mesh external face count: Model 7
+Mesh geometry matches coordinates: Model 7
+Mesh external face count: Mirrored 7
+Mesh geometry matches coordinates: Mirrored 7
+Condition, rotation and model preserved: 8
+Cell coordinates preserved: 8
+Persistent reference/mirrored meshes: 8
+Mesh external face count: Model 8
+Mesh geometry matches coordinates: Model 8
+Mesh external face count: Mirrored 8
+Mesh geometry matches coordinates: Mirrored 8
+Condition, rotation and model preserved: 9
+Cell coordinates preserved: 9
+Persistent reference/mirrored meshes: 9
+Mesh external face count: Model 9
+Mesh geometry matches coordinates: Model 9
+Mesh external face count: Mirrored 9
+Mesh geometry matches coordinates: Mirrored 9
+Building identity and target preserved: Museu
+Ten trials: Museu
+Condition, rotation and model preserved: 10
+Cell coordinates preserved: 10
+Persistent reference/mirrored meshes: 10
+Mesh external face count: Model 10
+Mesh geometry matches coordinates: Model 10
+Mesh external face count: Mirrored 10
+Mesh geometry matches coordinates: Mirrored 10
+Condition, rotation and model preserved: 11
+Cell coordinates preserved: 11
+Persistent reference/mirrored meshes: 11
+Mesh external face count: Model 11
+Mesh geometry matches coordinates: Model 11
+Mesh external face count: Mirrored 11
+Mesh geometry matches coordinates: Mirrored 11
+Condition, rotation and model preserved: 12
+Cell coordinates preserved: 12
+Persistent reference/mirrored meshes: 12
+Mesh external face count: Model 12
+Mesh geometry matches coordinates: Model 12
+Mesh external face count: Mirrored 12
+Mesh geometry matches coordinates: Mirrored 12
+Condition, rotation and model preserved: 13
+Cell coordinates preserved: 13
+Persistent reference/mirrored meshes: 13
+Mesh external face count: Model 13
+Mesh geometry matches coordinates: Model 13
+Mesh external face count: Mirrored 13
+Mesh geometry matches coordinates: Mirrored 13
+Condition, rotation and model preserved: 14
+Cell coordinates preserved: 14
+Persistent reference/mirrored meshes: 14
+Mesh external face count: Model 14
+Mesh geometry matches coordinates: Model 14
+Mesh external face count: Mirrored 14
+Mesh geometry matches coordinates: Mirrored 14
+Condition, rotation and model preserved: 15
+Cell coordinates preserved: 15
+Persistent reference/mirrored meshes: 15
+Mesh external face count: Model 15
+Mesh geometry matches coordinates: Model 15
+Mesh external face count: Mirrored 15
+Mesh geometry matches coordinates: Mirrored 15
+Condition, rotation and model preserved: 16
+Cell coordinates preserved: 16
+Persistent reference/mirrored meshes: 16
+Mesh external face count: Model 16
+Mesh geometry matches coordinates: Model 16
+Mesh external face count: Mirrored 16
+Mesh geometry matches coordinates: Mirrored 16
+Condition, rotation and model preserved: 17
+Cell coordinates preserved: 17
+Persistent reference/mirrored meshes: 17
+Mesh external face count: Model 17
+Mesh geometry matches coordinates: Model 17
+Mesh external face count: Mirrored 17
+Mesh geometry matches coordinates: Mirrored 17
+Condition, rotation and model preserved: 18
+Cell coordinates preserved: 18
+Persistent reference/mirrored meshes: 18
+Mesh external face count: Model 18
+Mesh geometry matches coordinates: Model 18
+Mesh external face count: Mirrored 18
+Mesh geometry matches coordinates: Mirrored 18
+Condition, rotation and model preserved: 19
+Cell coordinates preserved: 19
+Persistent reference/mirrored meshes: 19
+Mesh external face count: Model 19
+Mesh geometry matches coordinates: Model 19
+Mesh external face count: Mirrored 19
+Mesh geometry matches coordinates: Mirrored 19
+Building identity and target preserved: Ferraria
+Ten trials: Ferraria
+Condition, rotation and model preserved: 20
+Cell coordinates preserved: 20
+Persistent reference/mirrored meshes: 20
+Mesh external face count: Model 20
+Mesh geometry matches coordinates: Model 20
+Mesh external face count: Mirrored 20
+Mesh geometry matches coordinates: Mirrored 20
+Condition, rotation and model preserved: 21
+Cell coordinates preserved: 21
+Persistent reference/mirrored meshes: 21
+Mesh external face count: Model 21
+Mesh geometry matches coordinates: Model 21
+Mesh external face count: Mirrored 21
+Mesh geometry matches coordinates: Mirrored 21
+Condition, rotation and model preserved: 22
+Cell coordinates preserved: 22
+Persistent reference/mirrored meshes: 22
+Mesh external face count: Model 22
+Mesh geometry matches coordinates: Model 22
+Mesh external face count: Mirrored 22
+Mesh geometry matches coordinates: Mirrored 22
+Condition, rotation and model preserved: 23
+Cell coordinates preserved: 23
+Persistent reference/mirrored meshes: 23
+Mesh external face count: Model 23
+Mesh geometry matches coordinates: Model 23
+Mesh external face count: Mirrored 23
+Mesh geometry matches coordinates: Mirrored 23
+Condition, rotation and model preserved: 24
+Cell coordinates preserved: 24
+Persistent reference/mirrored meshes: 24
+Mesh external face count: Model 24
+Mesh geometry matches coordinates: Model 24
+Mesh external face count: Mirrored 24
+Mesh geometry matches coordinates: Mirrored 24
+Condition, rotation and model preserved: 25
+Cell coordinates preserved: 25
+Persistent reference/mirrored meshes: 25
+Mesh external face count: Model 25
+Mesh geometry matches coordinates: Model 25
+Mesh external face count: Mirrored 25
+Mesh geometry matches coordinates: Mirrored 25
+Condition, rotation and model preserved: 26
+Cell coordinates preserved: 26
+Persistent reference/mirrored meshes: 26
+Mesh external face count: Model 26
+Mesh geometry matches coordinates: Model 26
+Mesh external face count: Mirrored 26
+Mesh geometry matches coordinates: Mirrored 26
+Condition, rotation and model preserved: 27
+Cell coordinates preserved: 27
+Persistent reference/mirrored meshes: 27
+Mesh external face count: Model 27
+Mesh geometry matches coordinates: Model 27
+Mesh external face count: Mirrored 27
+Mesh geometry matches coordinates: Mirrored 27
+Condition, rotation and model preserved: 28
+Cell coordinates preserved: 28
+Persistent reference/mirrored meshes: 28
+Mesh external face count: Model 28
+Mesh geometry matches coordinates: Model 28
+Mesh external face count: Mirrored 28
+Mesh geometry matches coordinates: Mirrored 28
+Condition, rotation and model preserved: 29
+Cell coordinates preserved: 29
+Persistent reference/mirrored meshes: 29
+Mesh external face count: Model 29
+Mesh geometry matches coordinates: Model 29
+Mesh external face count: Mirrored 29
+Mesh geometry matches coordinates: Mirrored 29
+Building identity and target preserved: Ponte
+Ten trials: Ponte
+Condition, rotation and model preserved: 30
+Cell coordinates preserved: 30
+Persistent reference/mirrored meshes: 30
+Mesh external face count: Model 30
+Mesh geometry matches coordinates: Model 30
+Mesh external face count: Mirrored 30
+Mesh geometry matches coordinates: Mirrored 30
+Condition, rotation and model preserved: 31
+Cell coordinates preserved: 31
+Persistent reference/mirrored meshes: 31
+Mesh external face count: Model 31
+Mesh geometry matches coordinates: Model 31
+Mesh external face count: Mirrored 31
+Mesh geometry matches coordinates: Mirrored 31
+Condition, rotation and model preserved: 32
+Cell coordinates preserved: 32
+Persistent reference/mirrored meshes: 32
+Mesh external face count: Model 32
+Mesh geometry matches coordinates: Model 32
+Mesh external face count: Mirrored 32
+Mesh geometry matches coordinates: Mirrored 32
+Condition, rotation and model preserved: 33
+Cell coordinates preserved: 33
+Persistent reference/mirrored meshes: 33
+Mesh external face count: Model 33
+Mesh geometry matches coordinates: Model 33
+Mesh external face count: Mirrored 33
+Mesh geometry matches coordinates: Mirrored 33
+Condition, rotation and model preserved: 34
+Cell coordinates preserved: 34
+Persistent reference/mirrored meshes: 34
+Mesh external face count: Model 34
+Mesh geometry matches coordinates: Model 34
+Mesh external face count: Mirrored 34
+Mesh geometry matches coordinates: Mirrored 34
+Condition, rotation and model preserved: 35
+Cell coordinates preserved: 35
+Persistent reference/mirrored meshes: 35
+Mesh external face count: Model 35
+Mesh geometry matches coordinates: Model 35
+Mesh external face count: Mirrored 35
+Mesh geometry matches coordinates: Mirrored 35
+Condition, rotation and model preserved: 36
+Cell coordinates preserved: 36
+Persistent reference/mirrored meshes: 36
+Mesh external face count: Model 36
+Mesh geometry matches coordinates: Model 36
+Mesh external face count: Mirrored 36
+Mesh geometry matches coordinates: Mirrored 36
+Condition, rotation and model preserved: 37
+Cell coordinates preserved: 37
+Persistent reference/mirrored meshes: 37
+Mesh external face count: Model 37
+Mesh geometry matches coordinates: Model 37
+Mesh external face count: Mirrored 37
+Mesh geometry matches coordinates: Mirrored 37
+Condition, rotation and model preserved: 38
+Cell coordinates preserved: 38
+Persistent reference/mirrored meshes: 38
+Mesh external face count: Model 38
+Mesh geometry matches coordinates: Model 38
+Mesh external face count: Mirrored 38
+Mesh geometry matches coordinates: Mirrored 38
+Condition, rotation and model preserved: 39
+Cell coordinates preserved: 39
+Persistent reference/mirrored meshes: 39
+Mesh external face count: Model 39
+Mesh geometry matches coordinates: Model 39
+Mesh external face count: Mirrored 39
+Mesh geometry matches coordinates: Mirrored 39
+Building identity and target preserved: Moinho
+Ten trials: Moinho
+Condition, rotation and model preserved: 40
+Cell coordinates preserved: 40
+Persistent reference/mirrored meshes: 40
+Mesh external face count: Model 40
+Mesh geometry matches coordinates: Model 40
+Mesh external face count: Mirrored 40
+Mesh geometry matches coordinates: Mirrored 40
+Condition, rotation and model preserved: 41
+Cell coordinates preserved: 41
+Persistent reference/mirrored meshes: 41
+Mesh external face count: Model 41
+Mesh geometry matches coordinates: Model 41
+Mesh external face count: Mirrored 41
+Mesh geometry matches coordinates: Mirrored 41
+Condition, rotation and model preserved: 42
+Cell coordinates preserved: 42
+Persistent reference/mirrored meshes: 42
+Mesh external face count: Model 42
+Mesh geometry matches coordinates: Model 42
+Mesh external face count: Mirrored 42
+Mesh geometry matches coordinates: Mirrored 42
+Condition, rotation and model preserved: 43
+Cell coordinates preserved: 43
+Persistent reference/mirrored meshes: 43
+Mesh external face count: Model 43
+Mesh geometry matches coordinates: Model 43
+Mesh external face count: Mirrored 43
+Mesh geometry matches coordinates: Mirrored 43
+Condition, rotation and model preserved: 44
+Cell coordinates preserved: 44
+Persistent reference/mirrored meshes: 44
+Mesh external face count: Model 44
+Mesh geometry matches coordinates: Model 44
+Mesh external face count: Mirrored 44
+Mesh geometry matches coordinates: Mirrored 44
+Condition, rotation and model preserved: 45
+Cell coordinates preserved: 45
+Persistent reference/mirrored meshes: 45
+Mesh external face count: Model 45
+Mesh geometry matches coordinates: Model 45
+Mesh external face count: Mirrored 45
+Mesh geometry matches coordinates: Mirrored 45
+Condition, rotation and model preserved: 46
+Cell coordinates preserved: 46
+Persistent reference/mirrored meshes: 46
+Mesh external face count: Model 46
+Mesh geometry matches coordinates: Model 46
+Mesh external face count: Mirrored 46
+Mesh geometry matches coordinates: Mirrored 46
+Condition, rotation and model preserved: 47
+Cell coordinates preserved: 47
+Persistent reference/mirrored meshes: 47
+Mesh external face count: Model 47
+Mesh geometry matches coordinates: Model 47
+Mesh external face count: Mirrored 47
+Mesh geometry matches coordinates: Mirrored 47
+Condition, rotation and model preserved: 48
+Cell coordinates preserved: 48
+Persistent reference/mirrored meshes: 48
+Mesh external face count: Model 48
+Mesh geometry matches coordinates: Model 48
+Mesh external face count: Mirrored 48
+Mesh geometry matches coordinates: Mirrored 48
+Condition, rotation and model preserved: 49
+Cell coordinates preserved: 49
+Persistent reference/mirrored meshes: 49
+Mesh external face count: Model 49
+Mesh geometry matches coordinates: Model 49
+Mesh external face count: Mirrored 49
+Mesh geometry matches coordinates: Mirrored 49
+Bridge prerequisite preserved
+Mill locked initially
+Building starts: 0
+Trial order preserved: 0/0
+Wrong answer remains incorrect: 0/0
+Pause/resume preserves progress: 0/0
+Pieces preserved: 0/0
+Completion at final stimulus: 0/0
+Trial order preserved: 0/1
+Wrong answer remains incorrect: 0/1
+Pause/resume preserves progress: 0/1
+Pieces preserved: 0/1
+Completion at final stimulus: 0/1
+Trial order preserved: 0/2
+Wrong answer remains incorrect: 0/2
+Pause/resume preserves progress: 0/2
+Pieces preserved: 0/2
+Completion at final stimulus: 0/2
+Trial order preserved: 0/3
+Wrong answer remains incorrect: 0/3
+Pause/resume preserves progress: 0/3
+Pieces preserved: 0/3
+Completion at final stimulus: 0/3
+Trial order preserved: 0/4
+Wrong answer remains incorrect: 0/4
+Pause/resume preserves progress: 0/4
+Pieces preserved: 0/4
+Completion at final stimulus: 0/4
+Trial order preserved: 0/5
+Wrong answer remains incorrect: 0/5
+Pause/resume preserves progress: 0/5
+Pieces preserved: 0/5
+Completion at final stimulus: 0/5
+Trial order preserved: 0/6
+Wrong answer remains incorrect: 0/6
+Pause/resume preserves progress: 0/6
+Pieces preserved: 0/6
+Completion at final stimulus: 0/6
+Trial order preserved: 0/7
+Wrong answer remains incorrect: 0/7
+Pause/resume preserves progress: 0/7
+Pieces preserved: 0/7
+Completion at final stimulus: 0/7
+Trial order preserved: 0/8
+Wrong answer remains incorrect: 0/8
+Pause/resume preserves progress: 0/8
+Pieces preserved: 0/8
+Completion at final stimulus: 0/8
+Trial order preserved: 0/9
+Wrong answer remains incorrect: 0/9
+Pause/resume preserves progress: 0/9
+Pieces preserved: 0/9
+Completion at final stimulus: 0/9
+Building starts: 1
+Trial order preserved: 1/0
+Wrong answer remains incorrect: 1/0
+Pause/resume preserves progress: 1/0
+Pieces preserved: 1/0
+Completion at final stimulus: 1/0
+Trial order preserved: 1/1
+Wrong answer remains incorrect: 1/1
+Pause/resume preserves progress: 1/1
+Pieces preserved: 1/1
+Completion at final stimulus: 1/1
+Trial order preserved: 1/2
+Wrong answer remains incorrect: 1/2
+Pause/resume preserves progress: 1/2
+Pieces preserved: 1/2
+Completion at final stimulus: 1/2
+Trial order preserved: 1/3
+Wrong answer remains incorrect: 1/3
+Pause/resume preserves progress: 1/3
+Pieces preserved: 1/3
+Completion at final stimulus: 1/3
+Trial order preserved: 1/4
+Wrong answer remains incorrect: 1/4
+Pause/resume preserves progress: 1/4
+Pieces preserved: 1/4
+Completion at final stimulus: 1/4
+Trial order preserved: 1/5
+Wrong answer remains incorrect: 1/5
+Pause/resume preserves progress: 1/5
+Pieces preserved: 1/5
+Completion at final stimulus: 1/5
+Trial order preserved: 1/6
+Wrong answer remains incorrect: 1/6
+Pause/resume preserves progress: 1/6
+Pieces preserved: 1/6
+Completion at final stimulus: 1/6
+Trial order preserved: 1/7
+Wrong answer remains incorrect: 1/7
+Pause/resume preserves progress: 1/7
+Pieces preserved: 1/7
+Completion at final stimulus: 1/7
+Trial order preserved: 1/8
+Wrong answer remains incorrect: 1/8
+Pause/resume preserves progress: 1/8
+Pieces preserved: 1/8
+Completion at final stimulus: 1/8
+Trial order preserved: 1/9
+Wrong answer remains incorrect: 1/9
+Pause/resume preserves progress: 1/9
+Pieces preserved: 1/9
+Completion at final stimulus: 1/9
+Building starts: 2
+Trial order preserved: 2/0
+Wrong answer remains incorrect: 2/0
+Pause/resume preserves progress: 2/0
+Pieces preserved: 2/0
+Completion at final stimulus: 2/0
+Trial order preserved: 2/1
+Wrong answer remains incorrect: 2/1
+Pause/resume preserves progress: 2/1
+Pieces preserved: 2/1
+Completion at final stimulus: 2/1
+Trial order preserved: 2/2
+Wrong answer remains incorrect: 2/2
+Pause/resume preserves progress: 2/2
+Pieces preserved: 2/2
+Completion at final stimulus: 2/2
+Trial order preserved: 2/3
+Wrong answer remains incorrect: 2/3
+Pause/resume preserves progress: 2/3
+Pieces preserved: 2/3
+Completion at final stimulus: 2/3
+Trial order preserved: 2/4
+Wrong answer remains incorrect: 2/4
+Pause/resume preserves progress: 2/4
+Pieces preserved: 2/4
+Completion at final stimulus: 2/4
+Trial order preserved: 2/5
+Wrong answer remains incorrect: 2/5
+Pause/resume preserves progress: 2/5
+Pieces preserved: 2/5
+Completion at final stimulus: 2/5
+Trial order preserved: 2/6
+Wrong answer remains incorrect: 2/6
+Pause/resume preserves progress: 2/6
+Pieces preserved: 2/6
+Completion at final stimulus: 2/6
+Trial order preserved: 2/7
+Wrong answer remains incorrect: 2/7
+Pause/resume preserves progress: 2/7
+Pieces preserved: 2/7
+Completion at final stimulus: 2/7
+Trial order preserved: 2/8
+Wrong answer remains incorrect: 2/8
+Pause/resume preserves progress: 2/8
+Pieces preserved: 2/8
+Completion at final stimulus: 2/8
+Trial order preserved: 2/9
+Wrong answer remains incorrect: 2/9
+Pause/resume preserves progress: 2/9
+Pieces preserved: 2/9
+Completion at final stimulus: 2/9
+Building starts: 3
+Trial order preserved: 3/0
+Wrong answer remains incorrect: 3/0
+Pause/resume preserves progress: 3/0
+Pieces preserved: 3/0
+Completion at final stimulus: 3/0
+Trial order preserved: 3/1
+Wrong answer remains incorrect: 3/1
+Pause/resume preserves progress: 3/1
+Pieces preserved: 3/1
+Completion at final stimulus: 3/1
+Trial order preserved: 3/2
+Wrong answer remains incorrect: 3/2
+Pause/resume preserves progress: 3/2
+Pieces preserved: 3/2
+Completion at final stimulus: 3/2
+Trial order preserved: 3/3
+Wrong answer remains incorrect: 3/3
+Pause/resume preserves progress: 3/3
+Pieces preserved: 3/3
+Completion at final stimulus: 3/3
+Trial order preserved: 3/4
+Wrong answer remains incorrect: 3/4
+Pause/resume preserves progress: 3/4
+Pieces preserved: 3/4
+Completion at final stimulus: 3/4
+Trial order preserved: 3/5
+Wrong answer remains incorrect: 3/5
+Pause/resume preserves progress: 3/5
+Pieces preserved: 3/5
+Completion at final stimulus: 3/5
+Trial order preserved: 3/6
+Wrong answer remains incorrect: 3/6
+Pause/resume preserves progress: 3/6
+Pieces preserved: 3/6
+Completion at final stimulus: 3/6
+Trial order preserved: 3/7
+Wrong answer remains incorrect: 3/7
+Pause/resume preserves progress: 3/7
+Pieces preserved: 3/7
+Completion at final stimulus: 3/7
+Trial order preserved: 3/8
+Wrong answer remains incorrect: 3/8
+Pause/resume preserves progress: 3/8
+Pieces preserved: 3/8
+Completion at final stimulus: 3/8
+Trial order preserved: 3/9
+Wrong answer remains incorrect: 3/9
+Pause/resume preserves progress: 3/9
+Pieces preserved: 3/9
+Completion at final stimulus: 3/9
+Building starts: 4
+Trial order preserved: 4/0
+Wrong answer remains incorrect: 4/0
+Pause/resume preserves progress: 4/0
+Pieces preserved: 4/0
+Completion at final stimulus: 4/0
+Trial order preserved: 4/1
+Wrong answer remains incorrect: 4/1
+Pause/resume preserves progress: 4/1
+Pieces preserved: 4/1
+Completion at final stimulus: 4/1
+Trial order preserved: 4/2
+Wrong answer remains incorrect: 4/2
+Pause/resume preserves progress: 4/2
+Pieces preserved: 4/2
+Completion at final stimulus: 4/2
+Trial order preserved: 4/3
+Wrong answer remains incorrect: 4/3
+Pause/resume preserves progress: 4/3
+Pieces preserved: 4/3
+Completion at final stimulus: 4/3
+Trial order preserved: 4/4
+Wrong answer remains incorrect: 4/4
+Pause/resume preserves progress: 4/4
+Pieces preserved: 4/4
+Completion at final stimulus: 4/4
+Trial order preserved: 4/5
+Wrong answer remains incorrect: 4/5
+Pause/resume preserves progress: 4/5
+Pieces preserved: 4/5
+Completion at final stimulus: 4/5
+Trial order preserved: 4/6
+Wrong answer remains incorrect: 4/6
+Pause/resume preserves progress: 4/6
+Pieces preserved: 4/6
+Completion at final stimulus: 4/6
+Trial order preserved: 4/7
+Wrong answer remains incorrect: 4/7
+Pause/resume preserves progress: 4/7
+Pieces preserved: 4/7
+Completion at final stimulus: 4/7
+Trial order preserved: 4/8
+Wrong answer remains incorrect: 4/8
+Pause/resume preserves progress: 4/8
+Pieces preserved: 4/8
+Completion at final stimulus: 4/8
+Trial order preserved: 4/9
+Wrong answer remains incorrect: 4/9
+Pause/resume preserves progress: 4/9
+Pieces preserved: 4/9
+Completion at final stimulus: 4/9
+Kingdom completion preserved
+Fresh session has no stale progress
+Valid serialized hierarchy: Assets/Prefabs/UI/Button.prefab/Button
+Valid serialized hierarchy: Assets/Prefabs/UI/CharacterPortrait.prefab/CharacterPortrait
+Valid serialized hierarchy: Assets/Prefabs/UI/Feedback.prefab/Feedback
+Valid serialized hierarchy: Assets/Prefabs/UI/GameUI.prefab/GameUI
+Valid serialized hierarchy: Assets/Prefabs/UI/Menu.prefab/Menu
+Valid serialized hierarchy: Assets/Prefabs/UI/ModelPresentation.prefab/ModelPresentation
+Valid serialized hierarchy: Assets/Prefabs/UI/Observatory.prefab/Observatory
+Valid serialized hierarchy: Assets/Prefabs/UI/Panel.prefab/Panel
+Valid serialized hierarchy: Assets/Prefabs/UI/Trial.prefab/Trial
+Valid serialized hierarchy: Assets/Prefabs/UI/TutorialReflection.prefab/TutorialReflection
+Valid serialized hierarchy: Assets/Prefabs/UI/TutorialRotation.prefab/TutorialRotation
+Valid serialized hierarchy: Assets/Prefabs/Village/Animal_badger.prefab/Animal_badger
+Valid serialized hierarchy: Assets/Prefabs/Village/Animal_boar.prefab/Animal_boar
+Valid serialized hierarchy: Assets/Prefabs/Village/Animal_stag.prefab/Animal_stag
+Valid serialized hierarchy: Assets/Prefabs/Village/Castle.prefab/Castle
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_48.prefab/Decoration_48
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_50.prefab/Decoration_50
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_51.prefab/Decoration_51
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_52.prefab/Decoration_52
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_53.prefab/Decoration_53
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_54.prefab/Decoration_54
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_55.prefab/Decoration_55
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_56.prefab/Decoration_56
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_57.prefab/Decoration_57
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_58.prefab/Decoration_58
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_59.prefab/Decoration_59
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_60.prefab/Decoration_60
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_71.prefab/Decoration_71
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_72.prefab/Decoration_72
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_75.prefab/Decoration_75
+Valid serialized hierarchy: Assets/Prefabs/Village/Decoration_81.prefab/Decoration_81
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_000.prefab/Fence_000
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_001.prefab/Fence_001
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_002.prefab/Fence_002
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_003.prefab/Fence_003
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_004.prefab/Fence_004
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_005.prefab/Fence_005
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_006.prefab/Fence_006
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_007.prefab/Fence_007
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_008.prefab/Fence_008
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_009.prefab/Fence_009
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_010.prefab/Fence_010
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_011.prefab/Fence_011
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_012.prefab/Fence_012
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_013.prefab/Fence_013
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_014.prefab/Fence_014
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_015.prefab/Fence_015
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_016.prefab/Fence_016
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_017.prefab/Fence_017
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_018.prefab/Fence_018
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_019.prefab/Fence_019
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_020.prefab/Fence_020
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_021.prefab/Fence_021
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_022.prefab/Fence_022
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_023.prefab/Fence_023
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_028.prefab/Fence_028
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_029.prefab/Fence_029
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_030.prefab/Fence_030
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_031.prefab/Fence_031
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_032.prefab/Fence_032
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_033.prefab/Fence_033
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_034.prefab/Fence_034
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_035.prefab/Fence_035
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_036.prefab/Fence_036
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_037.prefab/Fence_037
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_038.prefab/Fence_038
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_039.prefab/Fence_039
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_040.prefab/Fence_040
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_041.prefab/Fence_041
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_042.prefab/Fence_042
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_043.prefab/Fence_043
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_044.prefab/Fence_044
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_045.prefab/Fence_045
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_046.prefab/Fence_046
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_047.prefab/Fence_047
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_048.prefab/Fence_048
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_049.prefab/Fence_049
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_050.prefab/Fence_050
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_051.prefab/Fence_051
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_052.prefab/Fence_052
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_053.prefab/Fence_053
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_054.prefab/Fence_054
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_055.prefab/Fence_055
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_056.prefab/Fence_056
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_057.prefab/Fence_057
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_058.prefab/Fence_058
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_059.prefab/Fence_059
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_060.prefab/Fence_060
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_061.prefab/Fence_061
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_062.prefab/Fence_062
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_063.prefab/Fence_063
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_064.prefab/Fence_064
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_065.prefab/Fence_065
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_066.prefab/Fence_066
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_067.prefab/Fence_067
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_068.prefab/Fence_068
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_069.prefab/Fence_069
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_070.prefab/Fence_070
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_071.prefab/Fence_071
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_072.prefab/Fence_072
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_073.prefab/Fence_073
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_074.prefab/Fence_074
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_075.prefab/Fence_075
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_076.prefab/Fence_076
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_077.prefab/Fence_077
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_078.prefab/Fence_078
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_079.prefab/Fence_079
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_080.prefab/Fence_080
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_081.prefab/Fence_081
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_082.prefab/Fence_082
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_083.prefab/Fence_083
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_084.prefab/Fence_084
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_085.prefab/Fence_085
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_086.prefab/Fence_086
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_087.prefab/Fence_087
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_088.prefab/Fence_088
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_089.prefab/Fence_089
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_090.prefab/Fence_090
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_091.prefab/Fence_091
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_092.prefab/Fence_092
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_093.prefab/Fence_093
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_094.prefab/Fence_094
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_095.prefab/Fence_095
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_096.prefab/Fence_096
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_097.prefab/Fence_097
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_098.prefab/Fence_098
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_099.prefab/Fence_099
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_100.prefab/Fence_100
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_101.prefab/Fence_101
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_102.prefab/Fence_102
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_103.prefab/Fence_103
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_104.prefab/Fence_104
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_105.prefab/Fence_105
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_106.prefab/Fence_106
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_107.prefab/Fence_107
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_108.prefab/Fence_108
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_109.prefab/Fence_109
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_110.prefab/Fence_110
+Valid serialized hierarchy: Assets/Prefabs/Village/Fence_111.prefab/Fence_111
+Valid serialized hierarchy: Assets/Prefabs/Village/Ferraria.prefab/Ferraria
+Valid serialized hierarchy: Assets/Prefabs/Village/Moinho.prefab/Moinho
+Valid serialized hierarchy: Assets/Prefabs/Village/Museu.prefab/Museu
+Valid serialized hierarchy: Assets/Prefabs/Village/Observatorio.prefab/Observatorio
+Valid serialized hierarchy: Assets/Prefabs/Village/Ponte.prefab/Ponte
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_0.prefab/Tree_0
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_1.prefab/Tree_1
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_2.prefab/Tree_2
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_3.prefab/Tree_3
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_4.prefab/Tree_4
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_5.prefab/Tree_5
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_6.prefab/Tree_6
+Valid serialized hierarchy: Assets/Prefabs/Village/Tree_7.prefab/Tree_7
+Valid serialized hierarchy: Assets/Prefabs/Village/Villager_0.prefab/Villager_0
+Valid serialized hierarchy: Assets/Prefabs/Village/Villager_1.prefab/Villager_1
+Valid serialized hierarchy: Assets/Prefabs/Village/Villager_2.prefab/Villager_2
+Valid serialized hierarchy: Assets/Prefabs/Village/Villager_3.prefab/Villager_3
+Valid serialized hierarchy: Assets/Scenes/Kingdom.unity/Background Camera
+Valid serialized hierarchy: Assets/Scenes/Kingdom.unity/EventSystem
+Valid serialized hierarchy: Assets/Scenes/Kingdom.unity/GameUI
+Valid serialized hierarchy: Assets/Scenes/Kingdom.unity/Game Application
+Valid serialized hierarchy: Assets/Scenes/Village.unity/Village World
+Native isometric Grid
+Serialized paths and water Tilemaps
+Six positioned building prefab instances
+Isometric coordinates preserved: (0, 0)
+Isometric coordinates preserved: (-12, -6)
+Isometric coordinates preserved: (8, -6)
+Isometric coordinates preserved: (-4, 14)
+No route to mill before bridge
+Route to mill after bridge

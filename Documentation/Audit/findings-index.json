@@ -1,0 +1,101 @@
+{
+  "findings": [
+    {
+      "id": "P01",
+      "title": "Apresentação dos policubos precisa de avaliação artística e perceptual"
+    },
+    {
+      "id": "P02",
+      "title": "Repetição ilimitada e registro insuficiente de tentativas"
+    },
+    {
+      "id": "P03",
+      "title": "Paleta plana e categorias pouco explícitas"
+    },
+    {
+      "id": "P04",
+      "title": "Retratos e aldeões usam apresentações de movimento diferentes"
+    },
+    {
+      "id": "P05",
+      "title": "Não existe uma fila visual de visitantes"
+    },
+    {
+      "id": "P06",
+      "title": "A observação de rasterização procedural não corresponde ao runtime atual"
+    },
+    {
+      "id": "P07",
+      "title": "Ciclo jogável completo, experiência final ainda não especificada"
+    },
+    {
+      "id": "P08",
+      "title": "Sequências fixas e reproduzíveis, sem embaralhamento"
+    },
+    {
+      "id": "P09",
+      "title": "Não há adaptação ao desempenho"
+    },
+    {
+      "id": "P10",
+      "title": "Cena local adicional contém scripts aposentados"
+    },
+    {
+      "id": "P11",
+      "title": "Autorização de redistribuição da arte precisa estar rastreável"
+    },
+    {
+      "id": "P12",
+      "title": "Divergência de versões exige manter uma base técnica explícita"
+    },
+    {
+      "id": "P13",
+      "title": "Logs de Console não são um registro de pesquisa estruturado"
+    },
+    {
+      "id": "P14",
+      "title": "Foco da aplicação e instante de apresentação não têm protocolo de tempo"
+    },
+    {
+      "id": "P15",
+      "title": "Progresso não persiste ao encerrar a aplicação"
+    },
+    {
+      "id": "P16",
+      "title": "Não há sistema de áudio do jogo"
+    },
+    {
+      "id": "P17",
+      "title": "Acessibilidade de navegação e compreensão precisa de validação"
+    },
+    {
+      "id": "P18",
+      "title": "Layout mantém proporção fixa e pode reduzir legibilidade"
+    },
+    {
+      "id": "P19",
+      "title": "Obstáculos e rotas exigem manutenção manual coerente"
+    },
+    {
+      "id": "P20",
+      "title": "Destaque de construção pode sobreviver à limpeza da seleção lógica"
+    },
+    {
+      "id": "P21",
+      "title": "Reinício não limpa informações do observatório explicitamente"
+    },
+    {
+      "id": "P22",
+      "title": "Desempenho e consumo gráfico ainda não têm orçamento medido"
+    },
+    {
+      "id": "P23",
+      "title": "Build de distribuição, CI e identidade de aplicação não foram preparados"
+    },
+    {
+      "id": "P24",
+      "title": "Validação de dados é específica ao contrato atual, não uma ferramenta geral de autoria"
+    }
+  ],
+  "requiredFieldsMissing": []
+}
