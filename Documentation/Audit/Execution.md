@@ -6,7 +6,7 @@ Data: 03/11/2026. Unity executada: **6000.3.25f1 (e1dba0a9aba4)**. Não se alter
 
 | Verificação | Resultado | Evidência nesta pasta |
 |---|---|---|
-| Integridade do snapshot migrado na pasta original | Nenhum arquivo do manifesto anterior divergiu; SampleScene e seu meta são acréscimos posteriores | inventory.json |
+| Integridade do snapshot na inspeção inicial | Nenhum arquivo do manifesto anterior divergia; SampleScene e seu meta eram acréscimos posteriores. README/documentação foram atualizados depois, nesta tarefa | inventory.json |
 | GUIDs duplicados / meta faltante de arquivo | Nenhum nos Assets locais | inventory.json |
 | Resolução de scripts por Assets e pacotes | Três GUIDs ausentes, exclusivamente na SampleScene adicional | script-guid-resolution.json |
 | Região exata dos retratos PNG | 343/343 recortes iguais ao atlas, sem divergência | portrait-crops.json |
@@ -19,6 +19,14 @@ Data: 03/11/2026. Unity executada: **6000.3.25f1 (e1dba0a9aba4)**. Não se alter
 | Amostras de layout | Renderizadas/inspecionadas em 1280×960 e 800×1280 | audit-trial-4x3.png, audit-trial-portrait.png |
 | Equivalência da integração final com a fonte | PASS: 2.274 arquivos comparados, sendo 2.246 em Assets; nenhuma diferença ou arquivo ativo extra | integration-equivalence.json |
 | Campos do relatório | 24 itens P01–P24; todos os campos requeridos presentes | findings-index.json |
+
+### Conferência Git após o primeiro commit local
+
+O commit de integração `3f3d6396c2ac79ee970fc251ab4bfd1e9cf368ff` tem como pai direto o commit original de develop `18a0b6077d126ebd9a1e963e914320b01387b9ce`. O teste de ancestralidade passou; o checkout estava limpo. `git lfs fsck --objects --pointers` retornou **Git LFS fsck OK**. O inventário JSON do LFS relacionou **764 arquivos**, incluindo todos os **763 PNGs** e a fonte; os PNGs incluem 132 originais e 616 convertidos. O commit contém 2.360 arquivos rastreados e nenhum cache, ZIP de backup ou asset de observação temporária.
+
+O blob de `.gitattributes` continua `5eb96286670e75fea831ee29bb21a48473f7fc6e`, igual ao remoto. Não há arquivo selecionado de 50 MB ou mais nem correspondência aos padrões de credenciais pesquisados. Os fontes C# e a documentação nova passaram na verificação de whitespace reconhecendo CRLF; o YAML gerado pela Unity conserva os espaços dos campos vazios, sem reformatar assets nesta tarefa. `git-preflight.json` registra o ponto imediatamente anterior à inclusão do próprio arquivo de preflight.
+
+Push, upload LFS e criação do PR **não foram executados**: a autorização/proveniência da arte está pendente de esclarecimento. Autenticação de escrita e quota do servidor não foram testadas nem apresentadas como impedimentos comprovados. A minuta do PR está pronta localmente. Um commit documental posterior registra este resultado; seu hash final é informado no recibo local e na entrega ao responsável.
 
 As comparações de arquivo usam bytes/SHA-256. A cena local adicional é preservada na documentação da integração, fora de Assets; não é incluída na alegação de ausência de Missing Scripts das cenas do jogo.
 

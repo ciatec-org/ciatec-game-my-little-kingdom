@@ -19,7 +19,7 @@ Dos nove relatos iniciais: **2 confirmados, 3 parcialmente confirmados, 1 não c
 - Mundo: `Assets/Scenes/Village.unity`, `Assets/Tiles`, paleta Kingdom, construções e navegação.
 - Integridade atual: `Audit/inventory.json`, `Audit/script-guid-resolution.json` e `Audit/portrait-crops.json`, relativos a esta pasta Documentation.
 - Evidências anteriores de Play Mode: `Validation/play-validation.txt`, `Validation/interaction-validation.txt` e `Validation/static-validation.txt`. Foram produzidas na migração e são identificadas como tal; a seção G distingue as novas execuções.
-- Uma `Assets/Scenes/SampleScene.unity` local foi salva depois da entrega migrada. Todos os arquivos do snapshot final da migração continuam idênticos; a cena e seu `.meta` são acréscimos. Sua existência não invalida retroativamente os testes anteriores, mas limita sua abrangência.
+- Uma `Assets/Scenes/SampleScene.unity` local foi salva depois da entrega migrada. Na inspeção inicial, nenhum arquivo do snapshot final divergia; a cena e seu `.meta` eram acréscimos. Nesta tarefa, README e documentação foram atualizados, preservando os arquivos Unity da implementação. A cena adicional não invalida retroativamente os testes anteriores, mas limita sua abrangência.
 
 ## B. Verificação das nove observações
 
