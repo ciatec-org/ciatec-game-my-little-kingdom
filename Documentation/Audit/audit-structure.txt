@@ -1,0 +1,17 @@
+Audit date: 2026-11-03; Unity 6000.3.25f1
+SEQUENCE Observatorio models=0,1,2,3,4,5,6,7,8,9 matches=RMRRMMRMRM
+SEQUENCE Museu models=10,11,12,13,14,15,16,17,18,19 matches=MRRMRMRMRM
+SEQUENCE Ferraria models=20,21,22,23,24,25,26,27,28,29 matches=RRMMRMMRRM
+SEQUENCE Ponte models=30,31,32,33,34,35,36,37,38,39 matches=MRMRRMRRMM
+SEQUENCE Moinho models=40,41,42,43,44,45,46,47,48,49 matches=RMMRMRRRMM
+PALETTE tilemaps=1
+PORTRAIT images=3 rows=49
+PORTRAIT seed=26 rows=9,20,23
+PORTRAIT seed=101 rows=3,16,35
+PORTRAIT seed=119 rows=9,11,39
+PORTRAIT seed=150 rows=5,12,35
+LOCAL_SCENE MissingScripts=1 object=GameManager
+LOCAL_SCENE MissingScripts=1 object=DemoBootstrap
+LOCAL_SCENE MissingScripts=1 object=Art conversion
+LOCAL_SCENE missing total=3
+COMPLETE — audit structural observations collected

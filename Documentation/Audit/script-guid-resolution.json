@@ -1,0 +1,10 @@
+{
+  "packageGuidsInspected": 14355,
+  "unresolved": {
+    "Assets/Scenes/SampleScene.unity": [
+      "8fc204d1341ac4b419b55cf91f453745",
+      "579f1321448aca34d8c8446a202fb147",
+      "8f0142fc1c20fa64f9b60568e78c7680"
+    ]
+  }
+}

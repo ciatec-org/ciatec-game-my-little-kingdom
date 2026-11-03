@@ -1,0 +1,3783 @@
+{
+  "atlas": {
+    "width": 196,
+    "height": 1274
+  },
+  "crops": 343,
+  "mismatches": [],
+  "frames": [
+    {
+      "row": 0,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 0,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 0,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 0,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 0,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 0,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 0,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 1,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 1,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 1,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 1,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 1,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 1,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 1,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 2,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 2,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 2,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 2,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 2,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 2,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 2,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 3,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 3,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 3,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 3,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 3,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 3,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 3,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 4,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 4,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 4,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 4,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 4,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 4,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 4,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 5,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 5,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 5,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 5,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 5,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 5,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 5,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 6,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 6,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 6,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 6,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 6,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 6,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 6,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 7,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 7,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 7,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 7,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 7,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 7,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 7,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 8,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 8,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 8,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 8,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 8,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 8,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 8,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 9,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 9,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 9,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 9,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 9,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 9,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 9,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 10,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 10,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 8,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 10,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 10,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 10,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 8,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 10,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 10,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 7,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 11,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 11,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 11,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 11,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 11,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 11,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 11,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 12,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 12,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 12,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 12,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 12,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 12,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 12,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 13,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 13,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 13,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 13,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 13,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 13,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 13,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 14,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 14,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 14,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 14,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 14,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 14,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 14,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 15,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 15,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 15,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 15,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 15,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 15,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 15,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 16,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 16,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 16,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 16,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 16,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 16,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 16,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 17,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 17,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 17,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 17,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 17,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 17,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 17,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 18,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 18,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 18,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 18,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 18,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 18,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 18,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 19,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 19,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 19,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 19,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 19,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 19,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 19,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 20,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 18,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 20,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 19,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 20,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 20,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 21,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 20,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 20,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 20,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 19,
+        "xMax": 20,
+        "yMax": 25
+      }
+    },
+    {
+      "row": 21,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 21,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 21,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 21,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 21,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 21,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 21,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 22,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 22,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 22,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 22,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 22,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 22,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 22,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 23,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 23,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 23,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 23,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 23,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 23,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 23,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 24,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 24,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 24,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 24,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 24,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 24,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 24,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 25,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 25,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 25,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 25,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 25,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 25,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 25,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 26,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 26,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 26,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 26,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 26,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 26,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 26,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 27,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 27,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 27,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 27,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 27,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 27,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 27,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 28,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 28,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 28,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 28,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 28,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 28,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 28,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 29,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 29,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 29,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 29,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 29,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 29,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 29,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 30,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 30,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 30,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 30,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 30,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 30,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 30,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 31,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 31,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 31,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 31,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 31,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 31,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 31,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 32,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 32,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 32,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 32,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 32,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 32,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 32,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 33,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 33,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 33,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 33,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 33,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 33,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 33,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 34,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 34,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 6,
+        "xMax": 20,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 34,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 34,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 5,
+        "yMin": 5,
+        "xMax": 20,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 34,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 6,
+        "xMax": 21,
+        "yMax": 18
+      }
+    },
+    {
+      "row": 34,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 34,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 5,
+        "xMax": 22,
+        "yMax": 17
+      }
+    },
+    {
+      "row": 35,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 35,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 35,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 35,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 35,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 35,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 35,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 36,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 36,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 36,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 36,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 36,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 36,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 36,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 37,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 37,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 37,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 37,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 37,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 37,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 37,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 38,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 38,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 38,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 38,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 38,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 38,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 38,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 39,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 39,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 39,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 39,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 39,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 39,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 39,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 40,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 40,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 40,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 40,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 40,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 40,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 40,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 41,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 41,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 41,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 41,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 41,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 41,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 41,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 42,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 42,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 42,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 42,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 42,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 42,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 42,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 43,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 43,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 43,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 43,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 43,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 43,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 43,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 44,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 44,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 44,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 44,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 44,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 44,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 44,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 45,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 45,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 45,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 45,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 45,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 45,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 45,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 46,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 46,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 46,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 46,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 46,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 46,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 46,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 47,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 47,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 47,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 47,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 47,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 47,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 47,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 48,
+      "frame": 0,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 48,
+      "frame": 1,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 5,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 48,
+      "frame": 2,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 6,
+        "yMin": 4,
+        "xMax": 19,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 48,
+      "frame": 3,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    },
+    {
+      "row": 48,
+      "frame": 4,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 5,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 48,
+      "frame": 5,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 8,
+        "yMin": 4,
+        "xMax": 21,
+        "yMax": 14
+      }
+    },
+    {
+      "row": 48,
+      "frame": 6,
+      "exactAtlasCrop": true,
+      "alphaBounds": {
+        "xMin": 7,
+        "yMin": 4,
+        "xMax": 20,
+        "yMax": 15
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+RUNNING
+PASS Menu and application initialized
+PASS Single game application
+PASS Rotation tutorial opens
+PASS Tutorial rotation animates mesh
+PASS Reflection tutorial opens
+PASS Tutorial back button works
+PASS First building and first trial preserved
+PASS Incorrect response repeats stimulus without reward
+PASS Trial pauses into village
+PASS Mill interaction locked before bridge
+PASS Resume preserves stimulus
+PASS Displayed meshes match stimulus 0
+PASS Model RenderTexture exists
+PASS Model is rendered with visible pixels
+PASS Model viewport preserves transparent background
+PASS Model RenderTexture exists
+PASS Model is rendered with visible pixels
+PASS Model viewport preserves transparent background
+PASS Displayed meshes match stimulus 1
+PASS Displayed meshes match stimulus 2
+PASS Displayed meshes match stimulus 3
+PASS Displayed meshes match stimulus 4
+PASS Displayed meshes match stimulus 5
+PASS Displayed meshes match stimulus 6
+PASS Displayed meshes match stimulus 7
+PASS Displayed meshes match stimulus 8
+PASS Displayed meshes match stimulus 9
+PASS Completed observatory opens
+PASS Observatory information responds to pointer
+PASS Next building is unlocked: Ponte
+PASS Displayed meshes match stimulus 30
+PASS Observatory accessible during paused trial
+PASS Return from observatory preserves paused building
+PASS Displayed meshes match stimulus 30
+PASS Displayed meshes match stimulus 31
+PASS Displayed meshes match stimulus 32
+PASS Displayed meshes match stimulus 33
+PASS Displayed meshes match stimulus 34
+PASS Displayed meshes match stimulus 35
+PASS Displayed meshes match stimulus 36
+PASS Displayed meshes match stimulus 37
+PASS Displayed meshes match stimulus 38
+PASS Displayed meshes match stimulus 39
+PASS Next building is unlocked: Moinho
+PASS Displayed meshes match stimulus 40
+PASS Displayed meshes match stimulus 41
+PASS Displayed meshes match stimulus 42
+PASS Displayed meshes match stimulus 43
+PASS Displayed meshes match stimulus 44
+PASS Displayed meshes match stimulus 45
+PASS Displayed meshes match stimulus 46
+PASS Displayed meshes match stimulus 47
+PASS Displayed meshes match stimulus 48
+PASS Displayed meshes match stimulus 49
+PASS Next building is unlocked: Museu
+PASS Displayed meshes match stimulus 10
+PASS Displayed meshes match stimulus 11
+PASS Displayed meshes match stimulus 12
+PASS Displayed meshes match stimulus 13
+PASS Displayed meshes match stimulus 14
+PASS Displayed meshes match stimulus 15
+PASS Displayed meshes match stimulus 16
+PASS Displayed meshes match stimulus 17
+PASS Displayed meshes match stimulus 18
+PASS Displayed meshes match stimulus 19
+PASS Next building is unlocked: Ferraria
+PASS Displayed meshes match stimulus 20
+PASS Displayed meshes match stimulus 21
+PASS Displayed meshes match stimulus 22
+PASS Displayed meshes match stimulus 23
+PASS Displayed meshes match stimulus 24
+PASS Displayed meshes match stimulus 25
+PASS Displayed meshes match stimulus 26
+PASS Displayed meshes match stimulus 27
+PASS Displayed meshes match stimulus 28
+PASS Displayed meshes match stimulus 29
+PASS All five buildings complete and restart available
+PASS Village contains villagers and animals
+PASS Camera drag bounds clamp navigation
+PASS Restart clears session and returns to menu
+PASS Second run starts cleanly
+COMPLETE — real Play Mode flow passed

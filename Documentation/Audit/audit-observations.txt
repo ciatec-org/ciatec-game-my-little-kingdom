@@ -1,0 +1,4 @@
+arrival-start elapsed=0,1064759 position=(0.00, -113.58) scale=(0.79, 0.79, 0.79)
+arrival-middle elapsed=0,4206198 position=(0.00, -131.54) scale=(0.85, 0.85, 0.85)
+arrival-finished elapsed=1,152565 position=(0.00, -170.00) scale=(1.00, 1.00, 1.00)
+Rendered 1600x900, 1280x960 and 800x1280 through an offscreen camera; this does not test physical device input or all Game View layouts.

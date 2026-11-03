@@ -1,0 +1,14 @@
+RUNNING
+PASS World-space UI cameras are serialized correctly
+PASS Synthetic mouse drag moves native world camera
+PASS Construction camera lock blocks drag
+PASS Serialized path cell is initially navigable
+PASS Removing a native path tile immediately changes navigation
+PASS Restoring path tile restores navigation
+PASS Moving building transform moves its configured entrance
+PASS Villagers walk in the real player loop
+PASS Mobile animals walk in their habitats
+PASS Animal animation frames advance
+PASS Mouse click selects a construction through its world-space UI
+PASS Mouse click on HUD starts selected construction
+COMPLETE — input and village interactions passed

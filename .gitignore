@@ -105,3 +105,9 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Local migration recovery, integration checkouts and raw test output
+/.migration-backups/
+/.integration/
+/Migration/
+/Integration/

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a48d10f9ba60f844897408c51eb82a7, type: 3}
+  m_Name: Ferraria
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingDefinition
+  id: Ferraria
+  displayName: Ferraria
+  requiredPieces: 5
+  prerequisite: {fileID: 0}
+  opensObservatory: 0
+  trials:
+  - model: {fileID: 11400000, guid: 3b102df369b0a1245a0fad12540701cc, type: 2}
+    rotation: 135
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 0fce52f192434a14987fccb4804422f7, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 3fff3387824cacd43b6ee38e5586d04b, type: 2}
+    rotation: 135
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: a4d10d8c75947424e804da9fe61e04d4, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 4e5630c1b03ddbf47bb74b384ad78000, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 0ff52059b356cbe49ab30e34d363950d, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 0c2981467f7977b4aa05dc8326e346de, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: c8fcaa724f789b547a72a0783231aa11, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 5bb62693855a17c4cabaaf8bd5889e18, type: 2}
+    rotation: 90
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 3658dc7a9c10a8b4c98de3cda93a84c9, type: 2}
+    rotation: 90
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 1

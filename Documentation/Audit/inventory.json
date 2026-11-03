@@ -1,0 +1,183 @@
+{
+  "counts": {
+    "assetFiles": 2248,
+    "scriptFiles": 30,
+    "prefabs": 157,
+    "tiles": 57
+  },
+  "duplicates": [],
+  "missingMeta": [],
+  "driftFromMigrationSnapshot": [],
+  "addedAssets": [
+    "Assets/Scenes/SampleScene.unity",
+    "Assets/Scenes/SampleScene.unity.meta"
+  ],
+  "scriptGuidsAbsentFromAssets": {
+    "Assets/Prefabs/UI/Button.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "5f7201a12d95ffc409449d95f23cf332"
+    ],
+    "Assets/Prefabs/UI/CharacterPortrait.prefab": [
+      "3312d7739989d2b4e91e6319e9a96d76",
+      "fe87c0e1cc204ed48ad3b37840f39efc"
+    ],
+    "Assets/Prefabs/UI/Feedback.prefab": [
+      "5f7201a12d95ffc409449d95f23cf332"
+    ],
+    "Assets/Prefabs/UI/GameUI.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "0cd44c1031e13a943bb63640046fad76",
+      "dc42784cf147c0c48a680349fa168899",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff"
+    ],
+    "Assets/Prefabs/UI/Menu.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "3312d7739989d2b4e91e6319e9a96d76"
+    ],
+    "Assets/Prefabs/UI/ModelPresentation.prefab": [
+      "1344c3c82d62a2a41a3576d8abb8e3ea"
+    ],
+    "Assets/Prefabs/UI/Observatory.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff"
+    ],
+    "Assets/Prefabs/UI/Panel.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "1344c3c82d62a2a41a3576d8abb8e3ea",
+      "5f7201a12d95ffc409449d95f23cf332"
+    ],
+    "Assets/Prefabs/UI/Trial.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "1344c3c82d62a2a41a3576d8abb8e3ea",
+      "3312d7739989d2b4e91e6319e9a96d76"
+    ],
+    "Assets/Prefabs/UI/TutorialReflection.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "3312d7739989d2b4e91e6319e9a96d76",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "1344c3c82d62a2a41a3576d8abb8e3ea"
+    ],
+    "Assets/Prefabs/UI/TutorialRotation.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "3312d7739989d2b4e91e6319e9a96d76",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "1344c3c82d62a2a41a3576d8abb8e3ea",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff"
+    ],
+    "Assets/Prefabs/Village/Castle.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "dc42784cf147c0c48a680349fa168899"
+    ],
+    "Assets/Prefabs/Village/Ferraria.prefab": [
+      "dc42784cf147c0c48a680349fa168899",
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "5f7201a12d95ffc409449d95f23cf332"
+    ],
+    "Assets/Prefabs/Village/Moinho.prefab": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "dc42784cf147c0c48a680349fa168899",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff"
+    ],
+    "Assets/Prefabs/Village/Museu.prefab": [
+      "5f7201a12d95ffc409449d95f23cf332",
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "dc42784cf147c0c48a680349fa168899"
+    ],
+    "Assets/Prefabs/Village/Observatorio.prefab": [
+      "dc42784cf147c0c48a680349fa168899",
+      "5f7201a12d95ffc409449d95f23cf332",
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff"
+    ],
+    "Assets/Prefabs/Village/Ponte.prefab": [
+      "dc42784cf147c0c48a680349fa168899",
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "5f7201a12d95ffc409449d95f23cf332"
+    ],
+    "Assets/Scenes/Kingdom.unity": [
+      "fc1515ab76e54f068e2f2207940fab32",
+      "01614664b831546d2ae94a42149d80ac",
+      "76c392e42b5098c458856cdf6ecaaaa1",
+      "39fa3d8997a24136984ca6e2c99902bc"
+    ],
+    "Assets/Scenes/SampleScene.unity": [
+      "fe87c0e1cc204ed48ad3b37840f39efc",
+      "f4688fdb7df04437aeb418b961361dc5",
+      "4e29b1a8efbd4b44bb3f3716e73f07ff",
+      "8fc204d1341ac4b419b55cf91f453745",
+      "a79441f348de89743a2939f4d699eac1",
+      "073797afb82c5a1438f328866b10b3f0",
+      "579f1321448aca34d8c8446a202fb147",
+      "01614664b831546d2ae94a42149d80ac",
+      "76c392e42b5098c458856cdf6ecaaaa1",
+      "dc42784cf147c0c48a680349fa168899",
+      "0cd44c1031e13a943bb63640046fad76",
+      "8f0142fc1c20fa64f9b60568e78c7680"
+    ],
+    "Assets/Settings/DefaultVolumeProfile.asset": [
+      "3eb4b772797da9440885e8bd939e9560",
+      "29fa0085f50d5e54f8144f766051a691",
+      "558a8e2b6826cf840aae193990ba9f2e",
+      "cdfbdbb87d3286943a057f7791b43141",
+      "0b2db86121404754db890f4c8dfe81b2",
+      "70afe9e12c7a7ed47911bb608a23a8ff",
+      "c01700fd266d6914ababb731e09af2eb",
+      "6bd486065ce11414fa40e631affc4900",
+      "ccf1aba9553839d41ae37dd52e9ebcce",
+      "d7fd9488000d3734a9e00ee676215985",
+      "5485954d14dfb9a4c8ead8edb0ded5b1",
+      "97c23e3b12dc18c42a140437e53d3951",
+      "e021b4c809a781e468c2988c016ebbea",
+      "c5e1dc532bcb41949b58bc4f2abfbb7e",
+      "221518ef91623a7438a71fef23660601",
+      "81180773991d8724ab7f2d216912b564",
+      "06437c1ff663d574d9447842ba0a72e4",
+      "66f335fb1ffd8684294ad653bf1c7564",
+      "899c54efeace73346a0a16faa3afe726",
+      "fb60a22f311433c4c962b888d1393f88"
+    ],
+    "Assets/Settings/Renderer2D.asset": [
+      "11145981673336645838492a2d98e247"
+    ],
+    "Assets/Settings/Scenes/URP2DSceneTemplate.unity": [
+      "a79441f348de89743a2939f4d699eac1",
+      "073797afb82c5a1438f328866b10b3f0"
+    ],
+    "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset": [
+      "2ec995e51a6e251468d2a3fd8a686257"
+    ],
+    "Assets/Settings/UniversalRP.asset": [
+      "bf2edee5c58d82540a51f03df9d42094"
+    ],
+    "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset": [
+      "71c1514a6bd24e1e882cebbe1904ce04"
+    ],
+    "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset": [
+      "71c1514a6bd24e1e882cebbe1904ce04"
+    ],
+    "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset": [
+      "84a92b25f83d49b9bc132d206b370281"
+    ],
+    "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset": [
+      "ab2114bdc8544297b417dfefe9f1e410"
+    ],
+    "Assets/TextMesh Pro/Resources/TMP Settings.asset": [
+      "2705215ac5b84b70bacc50632be6e391"
+    ]
+  },
+  "note": "Package/builtin script GUIDs may be absent from Assets. Only unresolved GUIDs also absent from installed package metadata are confirmed missing."
+}

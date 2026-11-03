@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a48d10f9ba60f844897408c51eb82a7, type: 3}
+  m_Name: Moinho
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingDefinition
+  id: Moinho
+  displayName: Moinho
+  requiredPieces: 5
+  prerequisite: {fileID: 11400000, guid: 002a0adc7e1e3d14fbe0e4bba714615c, type: 2}
+  opensObservatory: 0
+  trials:
+  - model: {fileID: 11400000, guid: 5cdbc16837bc8514bbed4c3821f27d7d, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 0eab20b81684e024f9c0ae458ee3f251, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 082ffd8690d23b34fa6e3d891bd15cbc, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 8f619ba86f4fa8f40bc754925af1b394, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: bf745d8bf9dfdf944a555aa6f49fac10, type: 2}
+    rotation: 90
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 5334f1b454e8da24b8fbc28ef3c041eb, type: 2}
+    rotation: 90
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: bc14182caf5d9e848aa663f61a837dfe, type: 2}
+    rotation: 135
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: c86fed315976dc2468f3ef209b827ee7, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: a55dcde533f0c3146ac66ee7ccf7a23b, type: 2}
+    rotation: 135
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: ebfb0db84d08912469c7f1f269d41470, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 1

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a48d10f9ba60f844897408c51eb82a7, type: 3}
+  m_Name: Ponte
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingDefinition
+  id: Ponte
+  displayName: Ponte
+  requiredPieces: 5
+  prerequisite: {fileID: 0}
+  opensObservatory: 0
+  trials:
+  - model: {fileID: 11400000, guid: e8d728fb3cf75b241aa764db811cd639, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 5ca1950f7f20af245a82bbb0ab98225e, type: 2}
+    rotation: 180
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 51085309f8b79474ab04499f11cbfe24, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 579342319afe084489776410832ff321, type: 2}
+    rotation: 225
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 982877bd7e97c2040a446882ab828d24, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: 7dc61251365da034285ecc3a96c4f501, type: 2}
+    rotation: 45
+    rotationAxis: {x: 0, y: 0, z: 1}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: fc9b08cf5ebceac43bc4926baa274b83, type: 2}
+    rotation: 90
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: bb500f6a7a93fff43a920d4901ffe9eb, type: 2}
+    rotation: 135
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 0
+  - model: {fileID: 11400000, guid: eafcdea4aab7db64689b7597114ed5ae, type: 2}
+    rotation: 90
+    rotationAxis: {x: 0, y: 1, z: 0}
+    structuralMatch: 1
+  - model: {fileID: 11400000, guid: 0636896788b775944bdeb534956a21b3, type: 2}
+    rotation: 135
+    rotationAxis: {x: 1, y: 0, z: 0}
+    structuralMatch: 1
