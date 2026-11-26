@@ -1,4 +1,5 @@
 using System.Collections;
+using MeuPequenoReino.Telemetry;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,18 +15,19 @@ public sealed class GameApplication : MonoBehaviour
 
     int selected = -1;
     bool initialized;
+    TrialTelemetrySession telemetry;
+
     IEnumerator Start()
     {
         if (initialized)
             yield break;
         initialized = true;
-        Session = new GameSession(definition);
+        StartSession();
         ui.Show(GameScreen.Menu);
         ui.menu.portrait.Present(26, false);
         ui.menu.startButton.onClick.AddListener(StartTutorial);
         ui.observatory.backButton.onClick.AddListener(ReturnToVillage);
         ui.village.actionButton.onClick.AddListener(VillageAction);
-        trials.Initialize(Session, ui, ShowVillage, FinishBuilding);
         tutorial.Initialize(ui, definition.firstBuilding.trials[0].model, () => StartBuilding(definition.IndexOf(definition.firstBuilding)));
         ui.menu.startButton.interactable = false;
         if (!SceneManager.GetSceneByName(definition.villageScene).isLoaded)
@@ -72,6 +74,8 @@ public sealed class GameApplication : MonoBehaviour
         yield return Village.Reveal(index);
         Session.Screen = Session.Complete ? GameScreen.FinalVillage : GameScreen.Village;
         RefreshHUD();
+        if (Session.Complete)
+            EndTelemetry();
     }
 
     public void ShowVillage()
@@ -170,9 +174,9 @@ public sealed class GameApplication : MonoBehaviour
     public void Restart()
     {
         StopAllCoroutines();
-        Session = new GameSession(definition);
+        EndTelemetry();
+        StartSession();
         selected = -1;
-        trials.Initialize(Session, ui, ShowVillage, FinishBuilding);
         Village.ResetView();
         Village.Initialize(Session);
         Village.gameObject.SetActive(false);
@@ -181,4 +185,17 @@ public sealed class GameApplication : MonoBehaviour
         ui.Show(GameScreen.Menu);
         ui.menu.portrait.Present(26, false);
     }
+
+    void StartSession()
+    {
+        Session = new GameSession(definition);
+        telemetry = new TrialTelemetrySession(Application.version, Application.persistentDataPath);
+        trials.Initialize(Session, ui, ShowVillage, FinishBuilding, telemetry);
+    }
+
+    void EndTelemetry() => telemetry?.End(Time.realtimeSinceStartupAsDouble);
+
+    void OnApplicationQuit() => EndTelemetry();
+
+    void OnDestroy() => EndTelemetry();
 }
