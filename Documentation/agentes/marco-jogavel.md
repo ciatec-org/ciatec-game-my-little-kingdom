@@ -16,7 +16,7 @@ jogo inteiro rodando, montado, pelo caminho que o jogador percorre. Ela tem duas
    - **não acontece, e devia** → corrija agora, ou registre por que não deu;
    - **só uma pessoa verifica** → Parte B;
    - **nenhum caminho do jogo exercita isso** → avise o orientador.
-4. **Perguntas abertas:** liste no topo da entrega toda lacuna `ABERTA` de `docs/decisoes-provisorias.md`. O marco
+4. **Perguntas abertas:** liste no topo da entrega toda lacuna `ABERTA` de `Documentation/decisoes-provisorias.md`. O marco
    não fecha com lacuna de jogo sem resposta do desenvolvedor.
 
 ## Parte B — o que só uma pessoa fecha
@@ -25,7 +25,7 @@ A build é do aluno, no Editor. Jogar a build com o ABD na mão, conferir cada t
 playtest, piloto, CEP, aparelho real. O agente não marca nada disto como feito: entrega a lista do que olhar, onde no
 jogo e o que se espera ver.
 
-## Modelo da seção em `docs/progresso.md`
+## Modelo da seção em `Documentation/progresso.md`
 
 ```markdown
 ## Marco <ID> — <título>
