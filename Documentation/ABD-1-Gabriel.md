@@ -81,9 +81,10 @@ a LA-03 ficou resolvida pela regra do código, e a LA-09 e as LA-10 a 14, aberta
   outras construções, a Vila viva, a apresentação animada, a acessibilidade além do som, o Bônus de Agilidade, a
   validação técnica completa, o plano de dados, o piloto e a análise. As stories que estavam marcadas `(Core?)` foram
   decididas pelo orientador em 26/11/2026: a US-48 e a US-51 foram para a Expansão, e as outras ficam no Core.
-- **Dois marcos:** a US-60 fecha o Core e depende só dele; a US-76 fecha o jogo inteiro. Em cada um o agente escreve o
-  teste-robô, que joga na cena de entrada que o aluno montou, e lista os testes da suíte; o aluno roda a suíte inteira
-  no Test Runner, gera o build só com tudo verde, confere no Play, joga e confere o arquivo da sessão.
+- **Dois marcos:** a US-60 fecha o Core e depende só dele. A US-76 fecha o jogo inteiro. O teste-robô e a suíte
+  completa do Test Runner são entregáveis planejados dos marcos. O Codex pode rodar os validadores existentes
+  e os testes automatizados autorizados. O aluno faz a conferência da suíte atribuída no marco, monta a cena,
+  gera a build e verifica o percurso e o arquivo da sessão no dispositivo-alvo.
 - **Decisões do orientador de 26/11/2026:** as LG-Gab-01 a 22 estão nos critérios, nos cenários e nas tasks das
   stories donas, como regra decidida, e as L-ABD que elas resolvem estão marcadas na seção 5. O número de tentativas
   por dia continua pendência do piloto.
@@ -100,14 +101,16 @@ a LA-03 ficou resolvida pela regra do código, e a LA-09 e as LA-10 a 14, aberta
 - **Ordem de execução:** o Core primeiro, um épico por vez, na ordem EP-01 → EP-03 → EP-02 → EP-06 → EP-04 → EP-05 →
   EP-07 → EP-08 → EP-09 → EP-10; depois a Expansão, na mesma ordem (seção 4). Nenhuma story do Core depende de
   story da Expansão.
-- **Dados só em arquivo local** (decisão do orientador, 25/11/2026): o jogo grava JSON Lines no dispositivo e
-  exporta à mão. **A conexão com a API é de outro momento e não está neste backlog;** quando vier, o backlog dela fica
+- **Dados só em arquivo local:** o PR #431 integrou um arquivo JSON 1.0 por sessão no dispositivo.
+  CSV e JSON Lines permanecem no planejamento de exportação (L-ABD-06, US-09 e US-11).
+  **A conexão com a API é de outro momento e não está neste backlog;** quando vier, o backlog dela fica
   em `ABD-1-Gabriel-api.md`, ao lado deste arquivo. Esta versão não tinha story, task nem spike de API para mover.
 - **Capacidade não declarada:** sem datas, o roadmap mostra a ordem e os totais por milestone; a carga horária do
   Gabriel e a vazão do agente não entram, e o aluno estima a task ao puxá-la (LA-02, decidida pelo orientador).
 - **Integração com a plataforma CIATEC:** não há (seção 3).
-- **Divergências código × SGDD** (seção 8): o SGDD v1.4 e este ABD seguem o código onde ele decide; continuam como
-  task os bugs (o destaque da US-41, o RT da última tentativa na US-07) e o que o código ainda não tem.
+- **Divergências código × SGDD** (seção 8): o SGDD v1.4 e este ABD seguem o código onde ele decide.
+  O problema de perder a primeira resposta foi resolvido no registro bruto. A seleção científica de
+  uma resposta válida (US-07), o destaque da US-41 e os requisitos ainda sem implementação continuam no backlog.
 - **Revisão em contexto limpo** feita em 25/11/2026 na versão 1; os achados estão aplicados.
 - **Versão 7: o backlog parte do código do aluno** (`ciatec-org/ciatec-game-my-little-kingdom`, `develop` @ 7429a32).
   O que o aluno já implementou vale; onde o código decide uma regra, o SGDD v1.4 e este ABD o seguem, e nenhuma
@@ -296,33 +299,45 @@ os campos são `public`; os scripts de `Assets/Scripts/Editor/` (`KingdomValidat
 §11.4; DP-01; §12-01, 03, 04, 05, 06, 07, 08, 24; Anexo A Bloco 1.
 
 **Descrição.** A tentativa de Mental Rotation como instrumento: uma referência e um candidato, resposta
-"serve"/"não serve", RT medido só a partir da disponibilidade completa, primeira resposta registrada, estado
-de validade de cada tentativa, um registro estruturado com os campos de §11.4 e a exportação pseudonimizada.
+"serve"/"não serve", RT medido a partir da disponibilidade completa, primeira resposta válida derivada do
+histórico bruto, estado de validade de cada tentativa, uma visão estruturada com os campos de §11.4 e a
+exportação pseudonimizada.
 É o Bloco 1 do Anexo A, que o próprio SGDD agrupa com a telemetria.
 
 **Valor.** Pesquisador: sem este épico nenhum dado do jogo é interpretável como RT de rotação mental.
 
 **DoD**
 - [ ] Uma tentativa percorre `TRIAL_SETUP → TRIAL_ACTIVE → RESPONSE_RECEIVED → FEEDBACK → TRIAL_END` com exatamente uma referência e um candidato (§5.1, §12-01).
-- [ ] O RT começa só quando os dois estímulos e os controles estão integralmente disponíveis, sem animação de entrada depois do início; só a primeira resposta válida é registrada (§5.1, §12-03, §12-04).
+- [ ] O RT começa só quando os dois estímulos e os controles estão integralmente disponíveis, sem animação de entrada depois do início (§5.1, §12-03). A visão científica deriva a primeira resposta válida conforme protocolo aprovado (§12-04) e preserva todas as respostas brutas.
 - [ ] `trial_status` recebe `COMPLETED`, `PAUSED`, `INTERRUPTED` (inclusive perda de foco do aplicativo) ou `ABANDONED` conforme §11.2.1 (inclusive evento que comprometa a medição, L-ABD-16), com um teste por caso; o RT dos três últimos é marcado inválido (§12-05).
 - [ ] `trial_type` distingue `TRAINING` de `VALID` (§12-07).
-- [ ] Cada tentativa grava os 23 campos de §11.4 (com `rotation_angle` de 0° a 180°) e 4 extras (`attempt_count`, `rotation_axis`, `rotation_angle_raw`, `feedback_shown`), e a sessão grava plataforma, dispositivo, versão e configurações de acessibilidade; o registro substitui o `Debug.Log` como fonte e se exporta em CSV e JSON Lines com `session_id` pseudonimizado.
-- [ ] Depois do erro, a mesma peça volta, como no código do aluno (SGDD v1.4, LG-Gab-03, L-ABD-03), e a tentativa guarda a primeira resposta, o RT dela e `attempt_count`.
+- [ ] A visão de pesquisa inclui os 23 campos de §11.4 (com `rotation_angle` de 0° a 180°) e 4 extras (`attempt_count`, `rotation_axis`, `rotation_angle_raw`, `feedback_shown`). Os metadados de plataforma, dispositivo, versão e acessibilidade seguem o plano de dados aprovado. A exportação futura em CSV e JSON Lines preserva o vínculo com o registro bruto (US-09 e US-11).
+- [ ] Depois do erro, a mesma peça volta (SGDD v1.4, LG-Gab-03, L-ABD-03). O mesmo `trial_id` mantém todas as respostas e tempos, e a visão derivada informa a primeira resposta conforme o protocolo e `attempt_count`.
 - [ ] Durante a tentativa válida não há rotação manual dos estímulos nem cronômetro visível (§12-06, §12-24).
 
 **Labels:** `epic` `domain:research` `domain:backend` `domain:database` `priority:p1`
 
 **Stories:** US-06, US-07, US-08, US-09, US-10, US-11 (detalhe na seção 9).
 
-**Já existe no repositório:** `TrialController` apresenta referência e candidato juntos, com botões serve/não
-serve, e mede o RT com relógio monotônico a partir da chegada do retrato (`TrialController.cs:55-66`); a pausa
-pelo botão VILA acumula só o tempo ativo (`TrialController.cs:123-131`); não há rotação pelo participante (P01).
-**A política do erro é a do código** (SGDD v1.4, LG-Gab-03): a mesma peça volta (`TrialController.cs:94-103`).
-**Bug que continua:** o RT zera no erro (`TrialController.cs:99-100`), e o gravado seria o da última tentativa, não
-o da primeira resposta que o SGDD pede (US-07); o início do RT não está sincronizado
-com o primeiro quadro exibido e não há tratamento de perda de foco (P14); o registro é só `Debug.Log`
-(`TrialController.cs:88`, P13); não existem `trial_type` nem `trial_status` estruturados.
+**Já existe no repositório:** `TrialController` apresenta referência e candidato juntos e começa a medir o RT
+no callback que libera as respostas. O jogador pausa pelo botão VILA e volta à mesma peça. Depois de um erro
+a mesma peça volta e o próximo tempo começa após o feedback (SGDD v1.4, LG-Gab-03). Desde o
+[PR #431](https://github.com/ciatec-org/ciatec-game-my-little-kingdom/pull/431), o jogo grava um JSON local
+`schema_version: 1.0` por sessão em `Application.persistentDataPath/Telemetry`. Registra os trials apresentados,
+IDs, condições, respostas brutas em ordem, erros, acertos, tempos, pausas acumuladas e estados das ocorrências.
+O encerramento detectado de um trial ativo pode registrá-lo como `interrupted`. O Console segue como
+diagnóstico. Consulte [TrialTelemetry.md](TrialTelemetry.md).
+
+**Validação e requisitos pendentes:** caracterizar o primeiro quadro visível e os efeitos de perda de foco
+(P14, US-06 e US-08). Os estados do JSON atual pertencem ao trial. A pausa acumulada não identifica qual
+resposta foi pausada. A validade científica de cada tentativa, `trial_type`, a seleção da primeira resposta
+válida e a exportação de pesquisa são trabalho planejado.
+
+**Pendência de rastreabilidade:** o SGDD v1.4 e o histórico do ABD atribuem decisões de design à orientação
+e citam a avaliação de um protótipo web. A revisão confirmou essas atribuições nos documentos versionados.
+O registro primário da avaliação e a justificativa específica de JSON Lines em L-ABD-06 ainda precisam
+de referência documental independente. A equipe deve confirmar a origem e o alcance antes de tratar
+essas notas como aprovação do protocolo de RT ou do formato de exportação.
 
 ---
 
@@ -628,10 +643,10 @@ v1.5 (a v1.2 já tem as LG-Gab, a v1.3 o que o protótipo validado fixou, e a v1
 |---|---|---|---|---|---|
 | L-ABD-01 | O SGDD v1.1 dizia plataforma "a definir"; a v1.3 registra Unity, com build Windows, WebGL e Android (decidido pelo orientador em 26/11/2026), mas não a versão do Editor nem o dispositivo-alvo das medições. | §2.2, §7.4, §13 | Engine Unity 6000.3.25f1/URP 17.3. Dispositivo-alvo: **PC Windows 10/11, tela de 1366×768 a 1920×1080, mouse ou toque**. | É onde o build já roda e a equipe testa; trocar depois é mudar o perfil de build e repetir as medições. | US-02, US-04, US-50, US-52, US-54 |
 | L-ABD-02 | Regra de progresso da construção: quantas peças e se a recusa correta de um `NON_MATCH` conta. §4.2 diz que a peça correta "pode ser incorporada"; §4.3 e DP-04 pedem progresso "principalmente da participação". O código conta só acertos em `MATCH`, 5 por construção. | §4.2, §4.3, DP-04 | **Conforme a implementação do aluno (`GameSession.cs:84-104`), pela regra do orientador de 26/11/2026; SGDD v1.4, LG-Gab-02.** **5 peças por construção, e só o acerto em `MATCH` conta**; a obra fecha no 10º estímulo da sequência. A recusa correta de `NON_MATCH` avança a sequência sem somar; o erro não conta e não tira. | O código já decide, e o orientador mandou seguir o código; quem tem mais dificuldade conclui a obra porque a mesma peça volta depois do erro (DP-04). | US-33 |
-| L-ABD-03 | O que acontece depois do erro. §10.3 segue para `CONSTRUCTION_PROGRESS` e o próximo NPC, e §4.2 diz que a peça "não funcionará"; §5.1 fala de "respostas posteriores". O código reapresenta (P02). | §4.2, §5.1, §10.3 | **Conforme a implementação do aluno (`TrialController.cs:94-103`), pela regra do orientador de 26/11/2026; SGDD v1.4, LG-Gab-03.** **A mesma peça volta**, numa tentativa só, e a US-07 grava a primeira resposta, o RT dela e `attempt_count`. | O código já decide; guardar a primeira resposta e o RT dela mantém uma tentativa com um dado só (§5.1). | US-10 (US-07 protege o dado em qualquer caso) |
+| L-ABD-03 | O que acontece depois do erro. §10.3 segue para `CONSTRUCTION_PROGRESS` e o próximo NPC, e §4.2 diz que a peça "não funcionará"; §5.1 fala de "respostas posteriores". O código reapresenta (P02). | §4.2, §5.1, §10.3 | **A mesma peça volta**, no mesmo trial, conforme a implementação e a regra atribuída à orientação de 26/11/2026 (SGDD v1.4, LG-Gab-03). O PR #431 conserva todas as respostas e seus tempos. A US-07 trata da derivação da primeira resposta e de `attempt_count`. | Preservar a primeira resposta permite produzir a medida de §5.1 com rastreabilidade a todas as tentativas brutas. | US-10 (US-07 protege o dado em qualquer caso) |
 | L-ABD-04 | Qual é a primeira construção. §10.3 libera a Vila "após a conclusão da primeira construção" sem dizer qual. O código começa pelo Observatório. | §5.2, §10.3 | **Conforme a implementação do aluno (`Assets/Data/Kingdom.asset:21`), pela regra do orientador de 26/11/2026; SGDD v1.4, LG-Gab-12.** **Observatório.** | É a primeira obra do código; no grafo da v1.4 o Observatório não tem pré-requisito. | US-35 |
 | L-ABD-05 | Ordem de apresentação dos estímulos: fixa, aleatória com semente ou contrabalanceada. §4.1 só pede ~50% de cada condição (P08). | §4.1 | **Conforme a implementação do aluno (`BuildingDefinition.cs:21`), pela regra do orientador de 26/11/2026; SGDD v1.4 §4.1.** **Sequência fixa de 10 por obra, com 5 `MATCH` e 5 `NON_MATCH`, sempre na mesma ordem.** | O código já decide; a ordem fixa torna a sessão reproduzível, e o balanço 5/5 vem do cadastro. | US-14 |
-| L-ABD-06 | Formato, destino e identificação dos dados: §11.4 lista os campos, mas não diz onde ficam, como se exportam nem como o `session_id` se pseudonimiza (P13). | §11.4 | **Decidida pelo orientador em 26/11/2026 (LG-Gab-18).** **Um arquivo JSON Lines por sessão no `persistentDataPath`; exportação em CSV e JSON Lines para uma pasta que o pesquisador escolhe; `session_id` em UUID v4; `participant_code` é o código da criança escolhido no menu (letras maiúsculas, algarismos e hífen, até 32), decidido pelo orientador em 26/11/2026; sem servidor.** A parte local foi confirmada pelo orientador em 25/11/2026 (seção 5.1). | O SGDD não prevê servidor, e dado local, pseudonimizado e exportado à mão é o menor risco para a LGPD. | US-09, US-11, US-56 |
+| L-ABD-06 | Formato, destino e identificação dos dados de pesquisa (P13). | §11.4 | **Planejamento atribuído à orientação no ABD** (26/11/2026, LG-Gab-18): arquivo local por sessão no `persistentDataPath`, proposta de JSON Lines, exportação futura em CSV e JSON Lines para pasta escolhida pelo pesquisador, `session_id` em UUID v4 e `participant_code` do menu (letras maiúsculas, algarismos e hífen, até 32), sem servidor. A diretriz local consta na seção 5.1. **Implementado pelo PR #431:** JSON 1.0 por sessão, com GUIDs e sem código de participante. | Preservar o arquivo local bruto enquanto a equipe verifica a origem e aprova o contrato de exportação e o plano de dados. | US-09, US-11, US-56 |
 | L-ABD-07 | Os valores de `difficulty_state` (§11.4) não estão definidos. | §11.4 | **Decidida pelo orientador em 26/11/2026, como no protótipo validado.** **Texto `a<ângulo máximo>-c<LOW/MID/HIGH>-s<1/2/3>`**, por exemplo `a45-cLOW-s1` (o estado inicial). | Registra as três dimensões que o motor mexe (§4.3), sem inventar uma escala única de “nível”. | US-44 |
 | L-ABD-08 | O SGDD não cita CEP, consentimento nem LGPD, embora preveja coleta com crianças (§3.2, §11.4, Bloco 14). | §3.2, §11.4 | **TCLE para o responsável, TALE com imagens para a criança e modo coleta desligado até o número do parecer do CEP.** A tela de assentimento pictográfica no jogo é pendência do orientador (LA-09). | É a regra de `context-ciatec.md` para coleta com crianças, levada até onde o código alcança. | US-55 |
 | L-ABD-09 | Conteúdo de áudio: §7.3 diz que o áudio enriquece ambientação e feedback, sem lista (P16). | §7.3 | **Decidida pelo orientador em 26/11/2026 (LG-Gab-20).** **Duas músicas (Vila; diálogo e tentativa, calma); efeitos de chegada do habitante, abrir o Livro, peça que encaixa, peça que não serve (neutro), construção concluída, anoitecer e moedas, toque de botão; narração das falas e do tutorial por voz sintética provisória.** Nenhum som da tentativa depende do gabarito. | Cobre os momentos de feedback e ambientação que §7.3 e §4.4 citam, com o mínimo de sons para licenciar. | US-48, US-20, US-69 |
@@ -648,7 +663,7 @@ v1.5 (a v1.2 já tem as LG-Gab, a v1.3 o que o protótipo validado fixou, e a v1
 
 | Data | Decisão | Efeito neste ABD |
 |---|---|---|
-| 25/11/2026 | “Os três projetos precisam criar um arquivo local, conexão com API vem num outro momento.” | Confirma a parte local de L-ABD-06: o jogo grava JSON Lines no dispositivo e exporta à mão (US-09, US-11). Nenhuma story nem task pede servidor ou cliente de API, então não há o que mover para um milestone de conexão. Quando a conexão vier, ela entra como milestone próprio, “Conexão com a API”, sem data. |
+| 25/11/2026 | “Os três projetos precisam criar um arquivo local, conexão com API vem num outro momento.” | Fundamenta o destino local de L-ABD-06. Hoje há JSON 1.0 por sessão. JSON Lines e exportação manual pertencem ao planejamento (US-09 e US-11). A conexão com a API fica para milestone próprio, sem data. |
 | 26/11/2026 | O agente de IA do aluno só escreve código e testes; tudo o que se faz no Editor é do aluno. | Cada task tem dono `[agente]` ou `[aluno]`; as tasks mistas viraram duas (T-264 a T-323); critério de tela vira conferência do aluno no Play; os marcos separam o que o agente escreve (testes e a lista da suíte) do que o aluno roda no Test Runner, monta e joga. |
 | 26/11/2026 | Decisões das lacunas do SGDD (LG-Gab-01 a 22). | Entraram como regra nos critérios, nos cenários e nas tasks; L-ABD-02, 03, 04, 06, 09, 13 (o eixo) e 17 estão marcadas como decididas; o número de tentativas por dia segue pendência do piloto. |
 | 26/11/2026 | O que o aluno já implementou vale; onde o código decide uma regra, o SGDD e o ABD passam a seguir o código, e não se refatora para a regra antiga. | Versão 7 e SGDD v1.4: L-ABD-02, 03, 04, 05 e 13 seguem o código; a LA-03 ficou resolvida; tasks feitas viraram “Já existe”; LA-10 a 14 abertas. |
@@ -850,7 +865,7 @@ código, e não se refatora para a regra antiga; continuam como task os bugs e o
 
 | # | Divergência | O SGDD decide? | Tratamento |
 |---|---|---|---|
-| D1 | Depois do erro, o código reapresenta a mesma peça e zera o RT (`TrialController.cs:94-103`). | **Sim, pelo código** (SGDD v1.4 §4.2, LG-Gab-03): a mesma peça volta. | **L-ABD-03** segue o código: a **US-10** registra a política (T-41 já existe); a **US-07** corrige o bug do RT, que zera no erro (`TrialController.cs:99-100`): ficam a primeira resposta, o RT dela e `attempt_count`. |
+| D1 | Depois do erro, a mesma peça volta e começa uma nova medição. O PR #431 preserva a medição anterior sob o mesmo `trial_id`. | **Sim, pelo código** (SGDD v1.4 §4.2, LG-Gab-03): a mesma peça volta. | **L-ABD-03** mantém a política na **US-10**. A **US-07** trata a derivação de métricas de pesquisa a partir das tentativas preservadas. |
 | D2 | Ângulos 45°, 90°, 135°, 180° e 225° em torno de x/y/z, sem 0° e sem campo de sentido (`OriginalTrialContract.json`). | **Sim, pelo código** (SGDD v1.4 §4.1, LG-Gab-01): vale a rotação original em x, y e z; o 0° e o outro sentido de 45° e 90° ficam pendentes (LA-11). | **US-12** grava ângulo bruto, eixo e magnitude (225° → 135°); **US-66** aplica a convenção de sentido de L-ABD-13 nos três eixos; a **US-13** e a T-76 esperam a LA-11. |
 | D3 | `BuildingDefinition` aceita um único pré-requisito (`BuildingDefinition.cs:19`); o §5.2 tem construções com dois. | **Sim** (§5.2, §12-11). | **US-31** com o grafo de §5.2 da v1.4 (L-ABD-14). |
 | D4 | A primeira construção jogada é o Observatório (`Assets/Data/Kingdom.asset:21`, Pendências P07). | **Sim, pelo código** (SGDD v1.4 §5.2, LG-Gab-12). | **L-ABD-04** segue o código: na **US-35** a T-157 e a T-292 já existem, e a story testa a regra. |
@@ -876,11 +891,11 @@ Cada story está no milestone **Core** ou **Expansão** (coluna Milestone); a ma
 | US-04 | Build reproduzível no dispositivo-alvo | EP-01 | IC | 3 | P2 | Core | 4,5 | L-ABD-01 | US-02 |
 | US-05 | Identidade da aplicação nas PlayerSettings | EP-01 | IC | 1 | P3 | Expansão | 1,5 | — | — |
 | US-06 | Tentativa com estados explícitos e RT a partir da disponibilidade completa | EP-02 | Pesquisador | 2 | P1 | Core | 6,5 | — | US-01 |
-| US-07 | Registrar a primeira resposta e quantas vezes a peça foi apresentada | EP-02 | Pesquisador | 1 | P1 | Core | 3 | — | US-06 |
+| US-07 | Derivar a primeira resposta e a contagem de tentativas | EP-02 | Pesquisador | 1 | P1 | Core | 3 | — | US-06 |
 | US-08 | Estados de validade da tentativa: PAUSED, INTERRUPTED e ABANDONED | EP-02 | Pesquisador | 2 | P1 | Core | 5 | §13 Limite para tentativa abandonada | US-06 |
-| US-09 | Registro estruturado por tentativa e por sessão, exportável para inspeção local | EP-02 | Pesquisador | 3 | P1 | Core | 9 | L-ABD-06 | US-07, US-08, US-12, US-14, US-06 |
+| US-09 | Evoluir o registro estruturado de trials e sessões | EP-02 | Pesquisador | 3 | P1 | Core | 9 | L-ABD-06 | US-07, US-08, US-12, US-14, US-06 |
 | US-10 | Aplicar a política depois do erro | EP-02 | Pesquisador | 1 | P2 | Core | 1,5 | L-ABD-03 | US-07 |
-| US-11 | Exportação e pseudonimização dos dados | EP-02 | Pesquisador | 3 | P2 | Core | 9 | L-ABD-06 | US-09 |
+| US-11 | Exportação futura e pseudonimização dos dados | EP-02 | Pesquisador | 3 | P2 | Core | 9 | L-ABD-06 | US-09 |
 | US-12 | Modelo de dados do estímulo e migração dos 50 policubos | EP-03 | Pesquisador | 2 | P1 | Core | 5,5 | L-ABD-13 | US-01 |
 | US-13 | Condição de 0° no conjunto de estímulos | EP-03 | Pesquisador | 2 | P2 | Core | 5 | LA-11 | US-12 |
 | US-14 | Ordem de apresentação e balanceamento por sessão | EP-03 | Pesquisador | 3 | P2 | Core | 2,5 | L-ABD-05 | US-12 |
@@ -960,8 +975,10 @@ story fecha quando os critérios implementáveis (do agente, do aluno e `humano`
 
 ### 9.2 Stories por épico
 
-Cada épico termina com a tabela das suas tasks. Toda task fecha com o teste ou o arquivo nomeado no título
-executado e verde; o teste, o aluno roda no Test Runner; teste escrito e não rodado não fecha task (DoD Unity).
+Cada épico termina com a tabela das suas tasks. A entrega exige evidência do teste ou do arquivo nomeado
+no título. O Codex pode executar verificações automatizadas autorizadas, usando primeiro os validadores
+disponíveis. A conferência no Test Runner atribuída ao aluno e os testes em hardware continuam nos marcos
+correspondentes. Teste escrito e não rodado ainda não fecha a verificação (DoD Unity).
 
 #### EP-01 — Base técnica, plataforma e governança de assets
 
@@ -1126,26 +1143,30 @@ Cenários:
 2. *Resposta antes da hora* — **Dado** a tentativa está em TRIAL_SETUP; **quando** toco em serve; **então** nada é registrado e os botões seguem desabilitados.
 3. *No jogo montado* — **Dado** dou Play em `Kingdom` e inicio uma construção; **quando** respondo a primeira peça; **então** o log da tentativa mostra os cinco estados em ordem e um RT maior que zero.
 
-##### US-07: Registrar a primeira resposta e quantas vezes a peça foi apresentada
+##### US-07: Derivar a primeira resposta e a contagem de tentativas
 
 **Épico:** EP-02 · **Perfil:** Pesquisador · **SP:** 1 · **Prioridade:** P1 · **Milestone:** Core · **Horas (tasks):** 3 h  
 **Fontes:** §5.1 RESPONSE_RECEIVED, §12-04; divergência D1  
 **Depende de:** US-06  
 **Labels:** `user-story` `domain:research` `priority:p1` `sp:1`
 
-Como **pesquisador**, quero que a primeira resposta e o seu RT fiquem gravados quando a peça volta depois do erro, para que o dado seja o da primeira resposta, como o SGDD pede (§5.1, L-ABD-03).
+Como **pesquisador**, quero recuperar a primeira resposta e seu RT no histórico bruto e derivar a medida prevista no SGDD (§5.1, L-ABD-03), preservando todas as respostas à mesma peça.
 
-*Contexto:* Depois do erro a mesma peça volta, que é a política do jogo (SGDD v1.4, LG-Gab-03, conforme a implementação do aluno; US-10). **Bug:** o RT zera no erro (`TrialController.cs:99-100`, P02), e o gravado seria o da última tentativa. Esta story grava a primeira resposta e o RT dela.
+*Contexto:* A mesma peça volta depois do erro (SGDD v1.4, LG-Gab-03, US-10). O PR #431 resolveu a perda da
+primeira resposta no dado bruto. O mesmo `trial_id` guarda todas as respostas e tempos em `attempts`, na
+ordem em que foram aceitos. A primeira resposta já pode ser lida pelo `attempt_index: 1`. A escolha da
+primeira resposta **válida** para pesquisa depende dos critérios aprovados e dos eventos de validade
+previstos na US-08.
 
 Critérios de aceite:
 
-- [ ] `§12-04` — só a **primeira** resposta válida **entra** como `response` e `reaction_time_ms`
-- [ ] `§5.1` — respostas posteriores à mesma peça **não alteram** o dado registrado
-- [ ] `P02` — cada reapresentação da mesma peça **soma** 1 a `attempt_count` da mesma tentativa, sem criar tentativa nova
+- [ ] `§12-04` — uma visão de pesquisa **deriva** `response` e `reaction_time_ms` da primeira resposta válida, conforme protocolo aprovado
+- [ ] `§5.1` — o histórico **preserva** a primeira resposta e todas as seguintes, com seu RT e ordem
+- [ ] `P02` — o `attempt_count` planejado **conta** reapresentações sob o mesmo `trial_id`. A contagem de respostas aceitas já pode ser derivada de `attempts`. Se for preciso contar reapresentações sem resposta, a instrumentação depende da definição do evento.
 
 Cenários:
 
-1. *Erro e nova chance* — **Dado** respondi errado; **quando** a peça volta e respondo certo; **então** o registro guarda a primeira resposta, o RT dela e `attempt_count` 2, numa tentativa só.
+1. *Erro e nova chance* — **Dado** respondi errado; **quando** a peça volta e respondo certo; **então** o mesmo `trial_id` contém dois itens brutos com RT próprio, e a primeira resposta pode ser lida sem descartar a segunda.
 2. *Toque duplo* — **Dado** toquei serve; **quando** toco de novo antes do feedback; **então** o segundo toque é ignorado.
 
 ##### US-08: Estados de validade da tentativa: PAUSED, INTERRUPTED e ABANDONED
@@ -1176,32 +1197,36 @@ Cenários:
 2. *Pausa* — **Dado** a tentativa está ativa; **quando** toco VILA, depois RETOMAR na Vila, e respondo; **então** a tentativa fica PAUSED, com o RT inválido.
 3. *Silêncio longo* — **Dado** a configuração padrão; **quando** fico 75 s sem responder nem tocar na pergunta; **então** a tentativa fica ABANDONED e o RT inválido.
 
-##### US-09: Registro estruturado por tentativa e por sessão, exportável para inspeção local
+##### US-09: Evoluir o registro estruturado de trials e sessões
 
 **Épico:** EP-02 · **Perfil:** Pesquisador · **SP:** 3 · **Prioridade:** P1 · **Milestone:** Core · **Horas (tasks):** 9 h  
 **Fontes:** §11.4, §12-08, §7.4; Anexo A Bloco 1; Pendências P13  
 **Depende de:** US-07, US-08, US-12, US-14, US-06  
-**Decisão:** L-ABD-06 — um arquivo JSON Lines por sessão no `persistentDataPath` (a exportação é a US-11) · decidido pelo orientador em 26/11/2026 (LG-Gab-18)  
+**Planejamento:** L-ABD-06 e LG-Gab-18 orientam a evolução local e a US-11. JSON Lines é um formato futuro.
+
 **Labels:** `user-story` `domain:research` `priority:p1` `sp:3`
 
-Como **pesquisador**, quero abrir um arquivo da sessão com uma linha por tentativa e os 23 campos de §11.4, para que eu verifique depois cada parâmetro apresentado e cada resposta (critério do Bloco 1).
+Como **pesquisador**, quero inspecionar os campos de §11.4 por ocorrência e rastrear cada resposta até o arquivo bruto da sessão (critério do Bloco 1).
 
-*Contexto:* Hoje o registro é só `Debug.Log` (`TrialController.cs:88`). O arquivo local serve à inspeção com dados sintéticos e jogadas da equipe; nenhum dado de criança se coleta antes do CEP (US-55).
+*Contexto:* O PR #431 grava JSON 1.0 local por sessão com `trials[].attempts[]`. A gravação já permite
+inspecionar parâmetros efetivamente apresentados, respostas, acertos, tempos e pausas. O `Debug.Log`
+é diagnóstico. A expansão dos metadados e a representação por linha são planejadas. Use sessões sintéticas
+ou jogadas da equipe para validação técnica e mantenha a coleta com crianças condicionada à US-55.
 
 Critérios de aceite:
 
-- [ ] `§11.4` — cada tentativa **grava** os 23 campos de §11.4, na ordem de §11.4, seguidos de 4 campos que o §11.4 não tem: `attempt_count` (US-07), `rotation_axis` e `rotation_angle_raw` (US-12) e `feedback_shown` (US-22); `rotation_angle` é a magnitude de 0° a 180° do §11.1, com `rotation_direction`
-- [ ] `§5.1` — **uma linha por tentativa** (`trial_id`): reapresentar a peça não cria linha, só soma `attempt_count`; `response` e `reaction_time_ms` são os da primeira resposta (US-07)
-- [ ] `§11.4` — a sessão **grava** plataforma, dispositivo, versão do jogo, configurações de acessibilidade, e a obra e a posição de cada peça na sequência fixa (US-14)
+- [ ] `§11.4` — a visão planejada inclui os 23 campos na ordem do SGDD e quatro extras: `attempt_count` (US-07), `rotation_axis` e `rotation_angle_raw` (US-12) e `feedback_shown` (US-22). `rotation_angle` é a magnitude de 0° a 180° do §11.1, com `rotation_direction`. Preserve o ângulo nominal bruto.
+- [ ] `§5.1` — a visão planejada tem uma linha por `trial_id`, com `attempt_count` e a resposta e o tempo definidos pela US-07. Cada linha é rastreável a todas as respostas brutas da ocorrência.
+- [ ] `§11.4` — a sessão associa versão, obra e posição na sequência fixa (US-14). Plataforma, dispositivo e configurações de acessibilidade seguem o plano de dados aprovado.
 - [ ] `§12-08` — os parâmetros gravados **são** os apresentados, e não os planejados
 - [ ] `§11.4` — campo cujo sistema ainda não foi ligado **sai** como `null`, nunca inventado; US-25, US-26, US-27 e US-44 o preenchem
-- [ ] `P13` — o `Debug.Log` **deixa** de ser a fonte do dado
-- [ ] `LG-Gab-18` — os dados **ficam** num arquivo local por sessão, e o código de participante **é** o código da criança escolhido no menu, sempre preenchido (decidido pelo orientador em 26/11/2026)
+- [ ] `P13` — a evolução lê ou amplia o contrato local por uma transformação versionada que preserva o JSON 1.0 e todas as respostas brutas
+- [ ] `LG-Gab-18` — os dados continuam locais e, na etapa de pesquisa aprovada (US-11), o código de participante vem do menu
 
 Cenários:
 
-1. *Sessão completa* — **Dado** joguei uma construção inteira; **quando** abro o arquivo da sessão; **então** há uma linha por tentativa com os 23 campos, os 4 extras e o cabeçalho da sessão.
-2. *Reapresentação* — **Dado** um teste em que a mesma peça é apresentada duas vezes; **quando** abro o arquivo; **então** a peça tem uma linha só, com `attempt_count` 2.
+1. *Sessão completa* — **Dado** joguei uma construção inteira; **quando** abro a visão de pesquisa planejada; **então** consigo inspecionar os 23 campos, os quatro extras e os metadados da sessão, mantendo o vínculo com o JSON bruto.
+2. *Reapresentação* — **Dado** uma mesma peça respondida duas vezes; **quando** abro a visão por ocorrência; **então** a peça tem a mesma identidade e os dois registros brutos continuam recuperáveis.
 3. *Jogo fechado no meio* — **Dado** fechei o jogo durante uma tentativa; **quando** abro o arquivo; **então** as tentativas já concluídas estão gravadas e o arquivo é válido.
 4. *Campo sem sistema* — **Dado** a streak ainda não foi ligada; **quando** leio `streak_before`; **então** o valor é null.
 
@@ -1213,13 +1238,13 @@ Cenários:
 **Decisão:** L-ABD-03 — a mesma peça volta, numa tentativa só · conforme a implementação do aluno (SGDD v1.4, LG-Gab-03)  
 **Labels:** `user-story` `domain:research` `priority:p2` `sp:1`
 
-Como **pesquisador**, quero que o jogo, depois de um erro, apresente a mesma peça de novo na mesma tentativa, para que a política do código fique registrada e testada.
+Como **pesquisador**, quero que o jogo, depois de um erro, apresente a mesma peça no mesmo trial, para que a política do código fique registrada e testada.
 
 *Contexto:* Já existe (`TrialController.cs:94-103`): no erro aparece “Vamos observar mais uma vez.” e a mesma peça volta. É a regra do jogo (SGDD v1.4, LG-Gab-03, conforme a implementação do aluno).
 
 Critérios de aceite:
 
-- [ ] `L-ABD-03` — depois do erro, a mesma peça **volta** com o mesmo `trial_id`, e `attempt_count` **soma** 1
+- [ ] `L-ABD-03` — depois do erro, a mesma peça **volta** com o mesmo `trial_id`. A próxima resposta aceita é registrada como outro item de `attempts`. A contagem de reapresentações segue a US-07.
 - [ ] `§4.2` — o erro **não retira** peças nem construções
 - [x] `humano` — (pesquisador) a política é a do código, pela regra do orientador de 26/11/2026 (LG-Gab-03)
 - [x] `humano` — o SGDD v1.4 **traz** a política (§4.2)
@@ -1229,19 +1254,25 @@ Cenários:
 1. *Mesma peça* — **Dado** respondi errado; **quando** o feedback termina; **então** a mesma peça volta, com o mesmo habitante.
 2. *Progresso preservado* — **Dado** a construção tem 3 peças; **quando** erro uma peça; **então** a construção continua com 3 peças.
 
-##### US-11: Exportação e pseudonimização dos dados
+##### US-11: Exportação futura e pseudonimização dos dados
 
 **Épico:** EP-02 · **Perfil:** Pesquisador · **SP:** 3 · **Prioridade:** P2 · **Milestone:** Core · **Horas (tasks):** 9 h  
 **Fontes:** §3.3, §11.4; Pendências P13; context-ciatec.md (LGPD)  
 **Depende de:** US-09  
-**Decisão:** L-ABD-06 — CSV e JSON Lines para a pasta que o pesquisador escolhe; `session_id` UUID v4; `participant_code` só código · decidido pelo orientador em 26/11/2026 (LG-Gab-18)  
+**Planejamento:** L-ABD-06 e LG-Gab-18 descrevem exportação em CSV e JSON Lines para pasta escolhida pelo
+pesquisador e código de participante no menu, conforme o plano de dados da etapa de pesquisa.
+
 **Labels:** `user-story` `domain:research` `priority:p2` `sp:3`
 
 Como **pesquisador**, quero exportar os dados das sessões com identificador pseudonimizado, para que eu analise os dados sem identificar a criança.
 
+*Contexto:* O JSON 1.0 atual usa GUIDs locais de sessão e trial. Exportação, associação a código de
+participante e manifesto são funcionalidades futuras. Uma exportação deve preservar os arquivos brutos e
+manter a rastreabilidade da ordem, da resposta e do tempo de cada tentativa.
+
 Critérios de aceite:
 
-- [ ] `L-ABD-06` — a exportação **gera** CSV (uma linha por tentativa) e JSON Lines, com manifesto das sessões
+- [ ] `L-ABD-06` — a exportação futura **gera** CSV e JSON Lines com manifesto. Uma linha de pesquisa por ocorrência pode ser derivada, mantendo o acesso a todas as respostas aceitas, identificadas por `session_id`, `trial_id` e `attempt_index`.
 - [ ] `LGPD` — o `session_id` **é** UUID v4, e o `participant_code` **é** o código escolhido no menu, só com `[A-Z0-9-]` (US-34)
 - [ ] `§3.3` — o manifesto **diz** que os dados não têm significado clínico isolado
 - [ ] `context-ciatec` — toda exportação **deixa** registro de auditoria
@@ -1250,7 +1281,7 @@ Critérios de aceite:
 
 Cenários:
 
-1. *Exportação* — **Dado** há três sessões gravadas; **quando** exporto; **então** recebo os três conjuntos em CSV e JSON Lines e uma linha nova no registro de auditoria.
+1. *Exportação* — **Dado** há três sessões sintéticas gravadas; **quando** exporto; **então** recebo os três conjuntos no formato aprovado e uma linha nova no registro de auditoria. As respostas brutas permanecem acessíveis e os originais permanecem íntegros.
 2. *Sem dado pessoal* — **Dado** um arquivo exportado; **quando** procuro nome ou data de nascimento; **então** não encontro.
 3. *Código do menu* — **Dado** a criança jogou com o código `ANA-03`; **quando** exporto; **então** as sessões saem com `participant_code` `ANA-03`, e o painel do pesquisador não tem campo de código.
 
@@ -1262,29 +1293,29 @@ Cenários:
 | T-07 | US-06 | [agente] Ligar `TrialController` à máquina; o RT já começa quando peças e botões ficam ativos, depois da chegada do retrato (`TrialController.cs:55-66`): falta sincronizá-lo com o fim do primeiro quadro desenhado | `layer:presentation` | 1,5 | T-06 | Core |
 | T-08 | US-06 | [agente] Testes: transições (EditMode) e RT começando após a ativação (PlayMode, com o mínimo montado por código) | `layer:tests` | 2 | T-07 | Core |
 | T-19 | US-06 | [agente] `TrialType` TRAINING/VALID na tentativa | `layer:gameplay` | 1 | T-06 | Core |
-| T-09 | US-07 | [agente] Guardar primeira resposta, RT da primeira e `attempt_count`; reapresentação não sobrescreve nem cria tentativa | `layer:gameplay` | 1 | T-06 | Core |
-| T-10 | US-07 | [agente] Teste: erro → reapresentação → acerto mantém a primeira resposta; toque duplo ignorado | `layer:tests` | 1 | T-09 | Core |
-| T-11 | US-07 | [agente] Comentário no código: a primeira resposta é a registrada, qualquer que seja a política depois do erro (US-10) | `layer:docs` | 0,5 | T-09 | Core |
-| T-265 | US-07 | [aluno] CHANGELOG: a primeira resposta é a registrada, qualquer que seja a política depois do erro (parte de documentação da T-11) | `layer:docs` | 0,5 | T-11 | Core |
+| T-09 | US-07 | [agente] Derivar primeira resposta, RT e `attempt_count` conforme o protocolo aprovado e preservar todos os itens brutos do mesmo `trial_id` | `layer:gameplay` | 1 | T-06 | Core |
+| T-10 | US-07 | [agente] Teste: erro → reapresentação → acerto mantém as duas respostas e seus tempos em ordem. Toque duplo continua ignorado. | `layer:tests` | 1 | T-09 | Core |
+| T-11 | US-07 | [agente] Documentar a distinção entre primeira resposta derivada, validade científica e histórico bruto (US-10) | `layer:docs` | 0,5 | T-09 | Core |
+| T-265 | US-07 | [aluno] Registrar no CHANGELOG a política de preservação de todas as respostas e a derivação da primeira (parte de documentação da T-11) | `layer:docs` | 0,5 | T-11 | Core |
 | T-12 | US-08 | [agente] `TrialStatus` e regra de invalidação do RT em `Game.Core` | `layer:gameplay` | 1 | T-06 | Core |
 | T-13 | US-08 | [agente] `OnApplicationFocus`/`OnApplicationPause` e evento que comprometa a medição (quadro acima de 100 ms ou mudança de resolução em TRIAL_ACTIVE, L-ABD-16) → INTERRUPTED; a pausa pelo botão VILA (`TrialController.Pause`, `TrialController.cs:123-131`) → PAUSED | `layer:presentation` | 2 | T-12 | Core |
 | T-14 | US-08 | [agente] `TrialTimeoutConfig` (ScriptableObject) com `promptAfterSeconds` = 45 e `abandonAfterSeconds` = 75 como padrão no código (LG-Gab-21); o `TrialController` lê do campo `[SerializeField] timeoutConfig` | `layer:content` | 0,5 | T-12 | Core |
 | T-266 | US-08 | [aluno] No Editor: criar `Assets/Config/TrialTimeoutConfig.asset` e arrastá-lo para o campo `timeoutConfig` do `TrialController` na cena `Kingdom` (parte de montagem da T-14) | `layer:content` | 0,5 | T-14 | Core |
 | T-15 | US-08 | [agente] Testes dos três estados (EditMode, com a configuração criada por código), da perda de foco e do quadro longo (PlayMode) | `layer:tests` | 1 | T-13, T-14 | Core |
-| T-22 | US-09 | [agente] `TrialRecord` (23 campos de §11.4, com `rotation_angle` de 0° a 180° e `rotation_direction`, mais 4 extras: `attempt_count`, `rotation_axis`, `rotation_angle_raw` e `feedback_shown`; uma linha por `trial_id`) e `SessionRecord` (plataforma, dispositivo, versão, acessibilidade, obra e posição na sequência) | `layer:content` | 2 | T-09, T-12, T-16, T-19, T-54 | Core |
-| T-23 | US-09 | [agente] Gravador JSON Lines assíncrono em `persistentDataPath`, um arquivo por sessão (LG-Gab-18), gravação por tentativa | `layer:gameplay` | 3 | T-22 | Core |
-| T-24 | US-09 | [agente] Trocar o `Debug.Log` do `TrialController` pelo registro | `layer:presentation` | 1 | T-23 | Core |
-| T-25 | US-09 | [agente] Testes: 23 campos + 4 extras, uma linha por `trial_id` mesmo com reapresentação, campos sem sistema como null, arquivo íntegro após fechar no meio | `layer:tests` | 2 | T-23 | Core |
-| T-26 | US-09 | [aluno] Documentar o formato do arquivo em `Documentation/TelemetryFormat.md`, inclusive `rotation_angle_raw` e `feedback_shown` | `layer:docs` | 1 | T-22 | Core |
-| T-41 | US-10 | [agente] Já existe (`TrialController.cs:94-103`, `GameSession.cs:84-104`): depois do erro a mesma peça volta, sem tentativa nova (política do código, SGDD v1.4, LG-Gab-03) | `layer:gameplay` | 0 | — | Core |
-| T-42 | US-10 | [agente] Teste: erro → a mesma peça volta com o mesmo `trial_id` e `attempt_count` 2, e o progresso fica igual | `layer:tests` | 1 | T-09 | Core |
+| T-22 | US-09 | [agente] Especificar a visão de pesquisa planejada: `TrialRecord` com 23 campos e quatro extras (US-09) por `trial_id`, e `SessionRecord` com os metadados aprovados. Preservar o vínculo com o JSON 1.0 e todas as respostas brutas. | `layer:content` | 2 | T-09, T-12, T-16, T-19, T-54 | Core |
+| T-23 | US-09 | [agente] Avaliar JSON Lines e gravação assíncrona como evolução local futura (LG-Gab-18). Definir a compatibilidade e, quando autorizada, implementar a transformação versionada preservando o JSON 1.0, IDs e todas as tentativas brutas. | `layer:gameplay` | 3 | T-22 | Core |
+| T-24 | US-09 | [agente] Conferir os pontos de coleta dos campos planejados sem duplicar tentativas. A origem atual é o JSON 1.0 (PR #431), com `Debug.Log` para diagnóstico. | `layer:presentation` | 1 | T-23 | Core |
+| T-25 | US-09 | [agente] Testar os campos planejados, a visão por `trial_id`, a preservação de todas as respostas na reapresentação, campos indisponíveis como null e a integridade ao fechar no meio | `layer:tests` | 2 | T-23 | Core |
+| T-26 | US-09 | [aluno] Documentar o formato futuro quando aprovado, inclusive `rotation_angle_raw` e `feedback_shown`. O formato em uso está em `Documentation/TrialTelemetry.md`. | `layer:docs` | 1 | T-22 | Core |
+| T-41 | US-10 | [agente] Já existe: depois do erro a mesma peça volta no mesmo trial (SGDD v1.4, LG-Gab-03). O PR #431 preserva a resposta anterior e grava a seguinte em outra entrada de `attempts`. | `layer:gameplay` | 0 | — | Core |
+| T-42 | US-10 | [agente] Teste: erro → a mesma peça volta com o mesmo `trial_id` sem perder progresso. Uma nova resposta aceita mantém os dois itens em `attempts`. | `layer:tests` | 1 | T-09 | Core |
 | T-43 | US-10 | [aluno] Registrar a política no CHANGELOG (o SGDD v1.4 já a traz, §4.2) | `layer:docs` | 0,5 | T-42 | Core |
-| T-44 | US-11 | [agente] `session_id` em UUID v4 e `participant_code` igual ao código da criança escolhido no menu, normalizado como na escolha (T-155): letras em maiúsculas, só `[A-Z0-9-]`, até 32 (decidido pelo orientador em 26/11/2026) | `layer:gameplay` | 2 | T-23 | Core |
-| T-45 | US-11 | [agente] Exportador: junta as sessões em CSV (uma linha por tentativa) e JSON Lines, com manifesto e a nota de que o dado não tem significado clínico isolado (§3.3); componente `ResearcherPanel` (a aba Pesquisador do painel do mediador) com os campos `exportButton` e `statusText`, que exporta as sessões do código escolhido no menu (LG-Gab-18) | `layer:gameplay` | 2 | T-44 | Core |
+| T-44 | US-11 | [agente] Preservar `session_id` em UUID v4. Na etapa de pesquisa aprovada, associar `participant_code` ao código escolhido no menu (T-155), em maiúsculas e só com `[A-Z0-9-]` até 32 caracteres (LG-Gab-18). | `layer:gameplay` | 2 | T-23 | Core |
+| T-45 | US-11 | [agente] Exportação futura: gerar CSV e JSON Lines com manifesto e nota de interpretação (§3.3), preservando acesso a cada resposta bruta. O `ResearcherPanel` planejado usa `exportButton` e `statusText` na aba Pesquisador para as sessões do código escolhido no menu (LG-Gab-18). | `layer:gameplay` | 2 | T-44 | Core |
 | T-267 | US-11 | [aluno] Na cena `Kingdom`: montar o painel do pesquisador como a aba Pesquisador do painel do mediador (T-280), aberta pelo mesmo atalho e sem senha (decidido pelo orientador em 26/11/2026), com o botão de exportar e o texto de estado, e arrastá-los para `exportButton` e `statusText` do `ResearcherPanel` (parte de montagem da T-45) | `layer:gameplay` | 1 | T-45, T-280 | Core |
 | T-46 | US-11 | [agente] Registro de auditoria de cada exportação (quando, quantas sessões, destino) | `layer:gameplay` | 1 | T-45 | Core |
 | T-47 | US-11 | [agente] Testes: exportação de 3 sessões, nenhum campo com nome ou data de nascimento, auditoria gravada | `layer:tests` | 2 | T-45, T-46 | Core |
-| T-48 | US-11 | [aluno] Contrato da exportação em `Documentation/TelemetryFormat.md` | `layer:docs` | 1 | T-45 | Core |
+| T-48 | US-11 | [aluno] Documentar o contrato da exportação quando aprovado. `Documentation/TelemetryFormat.md` é um arquivo planejado. | `layer:docs` | 1 | T-45 | Core |
 
 **EP-02:** 27 tasks (21 `[agente]`, 6 `[aluno]`), 34 h (29,5 h do agente, 4,5 h do aluno).
 
@@ -3175,8 +3206,8 @@ BDD; o critério de conclusão é o da pendência de origem. Milestone Expansão
 ## 10. Resumo das tasks
 
 As tasks estão na tabela do fim de cada épico (seção 9.2). Camadas de `stack-unity.md` sem `layer:platform` (o jogo
-não usa o pacote CIATEC). O dono de cada task está no começo do texto: `[agente]` (código C# de runtime e testes,
-que o aluno roda no Test Runner do Editor) ou `[aluno]` (no Editor da Unity: cenas, UI, prefabs, `.asset`, ligações no
+não usa o pacote CIATEC). O dono de cada task está no começo do texto: `[agente]` (código C# de runtime e testes
+automatizados no escopo autorizado) ou `[aluno]` (no Editor da Unity: cenas, UI, prefabs, `.asset`, ligações no
 Inspector, arte, som, Player Settings e builds; e a documentação, os relatórios e a pesquisa). As tasks T-01 a T-29
 mantêm o ID da versão anterior (a T-19, o campo `trial_type`, passou da US-45 para a US-06); as de T-30 a T-263 vêm da
 versão 1; as de T-264 a T-326 são a parte de código ou de montagem que saiu de uma task mista (ou dividida na revisão da
@@ -3185,8 +3216,9 @@ rodada pelo aluno no Test Runner, a chave do Bônus no painel do mediador e o bo
 A T-36 (script de testes por linha de comando) saiu na versão 6. Na versão 7, a task que o código do aluno já cumpre
 fica com 0 h e o texto “Já existe (arquivo:linha)”, para rastreio, e a que ele cumpre em parte encolhe e diz o que já
 existe; as T-334 a T-339 entraram (malha em runtime, ajustes dos scripts de Editor do aluno, campos do `CharacterPortrait`
-e escala do `GameUI`); as tasks “Proposta presa à LA-10/LA-11” têm horas, mas só entram depois da decisão. Toda task fecha com o teste ou o arquivo nomeado no título executado e verde (o teste, rodado pelo aluno no Test
-Runner); teste escrito e não rodado não fecha task (DoD Unity).
+e escala do `GameUI`); as tasks “Proposta presa à LA-10/LA-11” têm horas, mas só entram depois da decisão.
+O fechamento segue o DoD de 9.2. Os marcos especificam a execução da suíte do Test Runner e a validação
+humana, enquanto o guia de testes descreve a automação disponível no projeto.
 
 | Épico | Stories | SP | Tasks | `[agente]` | `[aluno]` | h | h do agente | h do aluno |
 |---|---|---|---|---|---|---|---|---|

@@ -1,31 +1,38 @@
 # Fechar a story de marco
 
-Cada milestone termina com uma **story de marco** (por exemplo, `US-M1`): a última a fechar, e a única que exige o
-jogo inteiro rodando, montado, pelo caminho que o jogador percorre. Ela tem duas partes: a do agente e a da pessoa.
+O ABD prevê uma **story de marco** para o Core (US-60) e outra para a Expansão (US-76). Cada uma verifica
+o percurso montado para a entrega correspondente. O Codex executa as verificações automatizadas autorizadas.
+A equipe valida o build no dispositivo-alvo e as etapas que exigem julgamento humano ou científico.
 
 ## Parte A — o que o agente fecha
 
-1. **Suíte inteira:** o aluno roda todos os testes no Test Runner (EditMode e PlayMode). Falhou: corrija antes de
-   seguir.
-2. **Teste-robô:** um teste PlayMode (`Assets/Tests/PlayMode/RoboJogaTudoTests.cs`) abre a **cena de entrada** que o
-   aluno montou (a primeira do Build Settings) e, com a entrada falsa e o relógio falso ou real (`testes.md`),
-   percorre o caminho do jogador do menu ao fim: cada tela, fase e modo, pausa e volta, configurações, fim de sessão,
-   registro gravado. Confere o estado em cada passo e falha no primeiro que não acontece.
+1. **Verificações disponíveis:** use `KingdomValidation`, `PlayModeFlowChecks`, `VillageInteractionChecks`
+   e `TrialTelemetryChecks` conforme a cobertura do marco. Quando a suíte do Test Runner estiver disponível,
+   rode também seus testes EditMode e PlayMode. Veja [o guia de testes](testes.md).
+2. **Percurso automatizado:** `PlayModeFlowChecks` já abre `Kingdom` e percorre tutorial, trials, construções,
+   vila, observatório e reinício. O robô do marco (`Assets/Tests/PlayMode/RoboJogaTudoTests.cs`) é um
+   exemplo de arquivo futuro. Quando a story correspondente o exigir, cubra os estados e os registros
+   previstos, usando o Input System para entrada sintética e preservando a medição de RT.
 3. **Requisitos:** percorra o ABD e marque cada requisito como:
    - **verificado pelo agente** (diga o teste);
-   - **não acontece, e devia** → corrija agora, ou registre por que não deu;
+   - **não acontece, e devia** → corrija se a tarefa autorizar ou registre a evidência;
    - **só uma pessoa verifica** → Parte B;
    - **nenhum caminho do jogo exercita isso** → avise o orientador.
-4. **Perguntas abertas:** liste no topo da entrega toda lacuna `ABERTA` de `Documentation/decisoes-provisorias.md`. O marco
-   não fecha com lacuna de jogo sem resposta do desenvolvedor.
+4. **Perguntas abertas:** informe as lacunas da entrega que exigem decisão da equipe. Consulte
+   `Documentation/decisoes-provisorias.md` se existir. Trate decisões que afetam os critérios do marco
+   antes de considerar a etapa concluída.
 
 ## Parte B — o que só uma pessoa fecha
 
-A build é do aluno, no Editor. Jogar a build com o ABD na mão, conferir cada tela (layout, texto, cor, som),
-playtest, piloto, CEP, aparelho real. O agente não marca nada disto como feito: entrega a lista do que olhar, onde no
-jogo e o que se espera ver.
+O aluno prepara e executa o build no dispositivo-alvo. A equipe confere as telas e a experiência real
+(layout, texto, cor, som e acessibilidade), e registra o resultado separadamente. Playtest, piloto, CEP
+e validação científica seguem o protocolo da equipe. Registre a evidência que falta e o que deve ser
+observado em cada etapa.
 
-## Modelo da seção em `Documentation/progresso.md`
+## Modelo de registro do marco
+
+Use no relatório do marco ou em `Documentation/progresso.md` quando esse arquivo existir e a tarefa
+previr sua atualização.
 
 ```markdown
 ## Marco <ID> — <título>
