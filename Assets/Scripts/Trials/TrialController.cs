@@ -1,23 +1,27 @@
 using System;
 using System.Collections;
 using System.Globalization;
+using MeuPequenoReino.Telemetry;
 using UnityEngine;
 
 public sealed class TrialController : MonoBehaviour
 {
     GameSession session;
     GameUI ui;
+    TrialTelemetrySession telemetry;
     Action paused;
     Action<int> finished;
     bool bound, busy;
     double attemptStarted, activeElapsed;
     public bool Busy => busy;
 
-    public void Initialize(GameSession gameSession, GameUI gameUI, Action onPause, Action<int> onFinished)
+    public void Initialize(GameSession gameSession, GameUI gameUI, Action onPause, Action<int> onFinished,
+        TrialTelemetrySession trialTelemetry)
     {
         StopAllCoroutines();
         session = gameSession;
         ui = gameUI;
+        telemetry = trialTelemetry;
         paused = onPause;
         finished = onFinished;
         busy = false;
@@ -59,7 +63,12 @@ public sealed class TrialController : MonoBehaviour
         ui.trial.reference.gameObject.SetActive(true);
         ui.trial.candidate.gameObject.SetActive(true);
         if (!resuming)
+        {
             activeElapsed = 0;
+            var trial = session.CurrentTrial;
+            telemetry.BeginTrial(session.Definition.buildings[session.CurrentBuilding].id, trial.model.modelId,
+                trial.structuralMatch, trial.rotation, AxisName(trial.rotationAxis), Time.realtimeSinceStartupAsDouble);
+        }
         attemptStarted = Time.realtimeSinceStartupAsDouble;
         busy = false;
         ui.trial.SetInteraction(true);
@@ -87,6 +96,7 @@ public sealed class TrialController : MonoBehaviour
         double rt = activeElapsed + Time.realtimeSinceStartupAsDouble - attemptStarted;
         Debug.Log($"building={definition.id} candidate_index={session.CandidateIndex} model_id={trial.model.modelId} " + $"stimulus=3D rotation={trial.rotation} axis={trial.rotationAxis} candidate_condition={(trial.structuralMatch ? "MATCH" : "MIRRORED")} " + $"structural_match={trial.structuralMatch} response={(serves ? "SERVE" : "NAO_SERVE")} correct={correct} accepted_pieces={session.Pieces(session.CurrentBuilding)} reaction_time={rt.ToString("F3", CultureInfo.InvariantCulture)}");
         StartCoroutine(Resolve(correct, trial.structuralMatch));
+        telemetry.RecordAttempt(serves, correct, rt);
     }
 
     IEnumerator Resolve(bool correct, bool structuralMatch)
@@ -124,17 +134,34 @@ public sealed class TrialController : MonoBehaviour
     {
         if (busy || session.Screen != GameScreen.Trial || session.Paused)
             return;
-        activeElapsed += Time.realtimeSinceStartupAsDouble - attemptStarted;
+        double now = Time.realtimeSinceStartupAsDouble;
+        activeElapsed += now - attemptStarted;
         Debug.Log($"building={session.Definition.buildings[session.CurrentBuilding].id} candidate_index={session.CandidateIndex} trial_status=PAUSED");
         if (session.Pause())
+        {
+            telemetry.PauseTrial(now);
             paused?.Invoke();
+        }
     }
 
     public void Resume()
     {
         if (busy || !session.Resume())
             return;
+        telemetry.ResumeTrial(Time.realtimeSinceStartupAsDouble);
         Debug.Log($"building={session.Definition.buildings[session.CurrentBuilding].id} candidate_index={session.CandidateIndex} trial_status=RESUMED");
         Present(true);
+    }
+
+    static string AxisName(Vector3 axis)
+    {
+        if (axis.Equals(Vector3.right))
+            return "X";
+        if (axis.Equals(Vector3.up))
+            return "Y";
+        if (axis.Equals(Vector3.forward))
+            return "Z";
+        Debug.LogWarning($"[Telemetry] Eixo de rotação fora do esquema 1.0: {axis}.");
+        return string.Empty;
     }
 }
