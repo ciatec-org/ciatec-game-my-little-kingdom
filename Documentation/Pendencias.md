@@ -2,6 +2,19 @@
 
 Data da inspeção: 03/11/2026. Projeto local: Unity 6000.3.25f1, URP 17.3.0, uGUI. Esta tarefa documenta o estado existente; não corrige gameplay nem define um protocolo científico.
 
+### Atualização de estado em 26/11/2026
+
+O [PR #431](https://github.com/ciatec-org/ciatec-game-my-little-kingdom/pull/431) incorporou a telemetria local JSON
+1.0. As seções abaixo preservam a inspeção de 03/11 e suas classificações históricas. Para a coleta em uso,
+consulte [TrialTelemetry.md](TrialTelemetry.md).
+
+| Item | Estado após a integração |
+| --- | --- |
+| P02 — repetição e tentativas | **Perda da primeira resposta resolvida no registro bruto.** A mesma peça continua após erro. Cada resposta aceita tem seu índice e tempo no mesmo trial. A seleção da primeira resposta válida para pesquisa segue pendente. |
+| P13 — coleta estruturada | **Parcialmente resolvido.** Existe um JSON local 1.0 por sessão com IDs, condições, respostas, acertos, tempos, pausas e estados dos trials, incluindo interrupções detectadas. O Console serve ao diagnóstico. A exportação de pesquisa e o protocolo de validade seguem planejados no ABD. |
+| P14 — temporização científica | **Validação científica pendente.** A coleta mede tempo ativo pelo relógio real da Unity e registra a pausa acumulada no trial. Primeiro quadro visível, perda de foco e validade por tentativa exigem definição e validação próprias. |
+| P15 — salvamento do reino | **Requisito ainda não implementado.** O arquivo de telemetria registra a sessão. A persistência e a retomada do progresso do reino são trabalho separado. |
+
 ## A. Resumo executivo
 
 O jogo possui um ciclo técnico de 50 estímulos em cinco construções, tutorial, vila, observatório, conclusão e reinício. A migração fornece cenas, prefabs, dados e geometria persistentes. Isso não equivale a uma experiência final de jogo nem a um instrumento de pesquisa validado.
