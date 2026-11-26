@@ -4,7 +4,7 @@
 
 *Scientific Game Design Document (SGDD)*
 
-**Versão:** v1.4 — especificação pragmática para prototipagem, alinhada à implementação do aluno (26/11/2026)
+**Versão:** v1.5 — especificação pragmática para prototipagem, alinhada à implementação do aluno, com a adaptação no backend (26/11/2026)
 **Framework:** GLIDE — Game Lifecycle for Inclusive Development and Evaluation
 **Paradigma científico:** Mental Rotation / Shepard–Metzler
 
@@ -13,7 +13,7 @@
 ## 1. IDENTIFICAÇÃO DO PROJETO
 
 **Nome do jogo:** *Meu Pequeno Reino*
-**Versão do documento:** v1.4 — especificação pragmática para prototipagem
+**Versão do documento:** v1.5 — especificação pragmática para prototipagem
 **Projeto vinculado:** CIATec — Plataforma Aberta de Jogos Adaptativos para Educação Inclusiva
 **Organização:** CIATec
 **Posição no Triple Diamond:** *a confirmar junto à coordenação do GLIDE*. O jogo encontra-se atualmente em fase de co-design e definição conceitual, anterior à consolidação do protótipo e de seus parâmetros experimentais.
@@ -31,6 +31,7 @@
 | v1.2.1 | 26/11/2026 | Perguntas abertas do ABD decididas pelo orientador, sem mudar o que ele validou no protótipo web: SAIR no menu do build Windows; código da criança como código da telemetria, com o reino só no aparelho; tutorial visto por código; painel do pesquisador numa aba do painel do mediador; eixo vertical dos estímulos antigos como pendência da equipe científica. |
 | v1.3 | 26/11/2026 | Alinhado ao protótipo validado: plataforma Unity (Windows, WebGL, Android); subida da adaptação em rodízio e `difficulty_state`; blocos de 4 para MATCH/NON_MATCH; botão “adulto” no menu; pausa fora do menu e das configurações; tentativa `PAUSED` respondida; `INTERRUPTED` pelo mediador; limite da sessão e assentimento nas pendências. |
 | v1.4 | 26/11/2026 | Alinhado ao código do repositório do aluno, por decisão do orientador: onde o código já decide, o SGDD o segue, marcado “conforme a implementação do aluno”. A primeira obra é o Observatório; só o `MATCH` aceito soma peça e a obra fecha no 10º estímulo; no erro a mesma peça volta; os estímulos mantêm a rotação original em x, y e z; cada obra tem uma sequência fixa de 10; a pausa do desafio leva à Vila; o REINICIAR continua; o habitante sai do modelo da peça; o mapa tem os limites da câmera da Vila. Quatro pendências novas na §13. |
+| v1.5 | 26/11/2026 | A adaptação da demanda é executada pelo backend, via API (padrão CIATEC, decisão do orientador): a regra da §4.3 fica como especificação do backend, e o jogo envia a telemetria de cada tentativa, recebe os parâmetros da próxima, aplica-os e grava o `difficulty_state` recebido; até a API, um provedor local devolve `a45-cLOW-s1`. Notas na §4.3, §11.2, §11.4, §13 e no Bloco 9; a regra não muda. Na mesma decisão, a exportação e a exclusão dos dados saíram do jogo: a telemetria fica em arquivo local, pronta para o backend (§11.4). Também “pra simplificar”, o dispositivo-alvo passa a ser só o PC (Windows, mouse e teclado): §2.2, §7.4, §10.3, §13 e Anexo A Bloco 0; saem os builds WebGL e Android, o toque e os três toques no canto. |
 
 ### Nota sobre o PPI utilizado
 
@@ -56,13 +57,13 @@ As decisões fazem parte do cotidiano do reino e contribuem para seu crescimento
 
 **Gênero:** serious game científico/avaliativo com elementos de construção de mundo, exploração, inspeção e puzzle visuoespacial.
 
-**Plataforma:** Unity, com build para Windows, WebGL e Android (decidido pelo orientador em 26/11/2026).
+**Plataforma:** Unity, com build para PC (Windows, mouse e teclado) (decidido pelo orientador em 26/11/2026; na v1.5, “pra simplificar”, os builds WebGL e Android saíram).
 
 **Modo de jogo:** single player.
 
 **Contexto de uso:** ainda não definido entre contexto escolar, supervisionado ou outros contextos possíveis. O jogo serve aos dois: cada criança tem o seu reino, escolhido pelo código dela no menu, e usa o mesmo código na escola e em casa (LG-Gab-04). Como o reino fica só no aparelho, escola e casa são reinos separados até a conexão com o servidor (decidido pelo orientador em 26/11/2026).
 
-**Tecnologia de interação:** interação digital simples, baseada principalmente em seleção de respostas. Toque ou clique nos botões; no Windows, também o teclado.
+**Tecnologia de interação:** interação digital simples, baseada principalmente em seleção de respostas. Clique nos botões, com o mouse, ou o teclado.
 
 ---
 
@@ -319,7 +320,9 @@ A adaptação ocorrerá de forma invisível para a criança. Não serão exibido
 
 Os limiares quantitativos e a janela de desempenho utilizada pelo algoritmo ainda dependem de piloto e deverão permanecer configuráveis.
 
-**Ponto de partida e ordem (LG-Gab-06, provisório até o piloto):** a criança começa no estado fácil (ângulo de até 45°, complexidade baixa, menor similaridade do distrator), registrado como `a45-cLOW-s1`. Os três eixos têm os degraus ângulo 45 → 90 → 135 → 180°, complexidade `LOW` → `MID` → `HIGH` e similaridade 1 → 2 → 3. Janela de 8 tentativas válidas (`COMPLETED`); o histórico guarda o RT das últimas 40 tentativas válidas. **Sobe um degrau** com acurácia ≥ 85% na janela e RT mediano da janela ≤ a mediana do histórico; o eixo que sobe vem **em rodízio** — ângulo, complexidade, similaridade e de novo o ângulo —, a partir do eixo que subiu por último (o primeiro aumento é o do ângulo), pulando o eixo que já está no topo. **Desce um degrau** com acurácia ≤ 50% e RT mediano ≥ 1,25× a mediana do histórico, desfazendo o último aumento (o estado inicial não desce). Senão, mantém. Depois de subir ou descer, a janela recomeça vazia. O estado de adaptação (degraus, pilha dos aumentos, janela e histórico) é do reino da criança. Regra do protótipo validado, decidida pelo orientador em 26/11/2026. Como cada obra apresenta a sua sequência fixa de 10 (§4.1, conforme a implementação do aluno), até a pendência “Adaptação e sequência fixa” (§13) ser decidida o motor calcula e registra o estado de adaptação (`difficulty_state`), sem escolher a peça seguinte.
+**Ponto de partida e ordem (LG-Gab-06, provisório até o piloto):** a criança começa no estado fácil (ângulo de até 45°, complexidade baixa, menor similaridade do distrator), registrado como `a45-cLOW-s1`. Os três eixos têm os degraus ângulo 45 → 90 → 135 → 180°, complexidade `LOW` → `MID` → `HIGH` e similaridade 1 → 2 → 3. Janela de 8 tentativas válidas (`COMPLETED`); o histórico guarda o RT das últimas 40 tentativas válidas. **Sobe um degrau** com acurácia ≥ 85% na janela e RT mediano da janela ≤ a mediana do histórico; o eixo que sobe vem **em rodízio** — ângulo, complexidade, similaridade e de novo o ângulo —, a partir do eixo que subiu por último (o primeiro aumento é o do ângulo), pulando o eixo que já está no topo. **Desce um degrau** com acurácia ≤ 50% e RT mediano ≥ 1,25× a mediana do histórico, desfazendo o último aumento (o estado inicial não desce). Senão, mantém. Depois de subir ou descer, a janela recomeça vazia. O estado de adaptação (degraus, pilha dos aumentos, janela e histórico) é do reino da criança. Regra do protótipo validado, decidida pelo orientador em 26/11/2026. Como cada obra apresenta a sua sequência fixa de 10 (§4.1, conforme a implementação do aluno), até a pendência “Adaptação e sequência fixa” (§13) ser decidida o jogo registra o estado de adaptação recebido (`difficulty_state`), sem escolher a peça seguinte por ele.
+
+**Execução da regra (v1.5, padrão CIATEC, decidido pelo orientador em 26/11/2026):** a regra desta seção é executada pelo **backend, via API**, e não pelo jogo. O jogo envia ao backend o registro de cada tentativa (acurácia, tempo de resposta, status e os metadados do estímulo, §11.4) e recebe os parâmetros da próxima tentativa (ângulo, complexidade, similaridade do distrator e o `difficulty_state`); aplica-os e grava o `difficulty_state` recebido. Enquanto a API não existe, um provedor local devolve sempre o estado inicial `a45-cLOW-s1`. A regra acima continua sendo a especificação: é o que o backend executa.
 
 #### Adaptação de acessibilidade
 
@@ -406,7 +409,7 @@ TRIAL_END
 
 A criança deverá poder pausar ou encerrar a sessão voluntariamente sem perda de progresso.
 
-**Ritmo do ciclo (LG-Gab-07):** cada tela segue sozinha e um toque adianta: habitante 4 s, Livro 2,5 s, retorno 2,2 s, progresso 1,4 s; com a narração ligada, a tela dura no mínimo a fala.
+**Ritmo do ciclo (LG-Gab-07):** cada tela segue sozinha e um clique adianta: habitante 4 s, Livro 2,5 s, retorno 2,2 s, progresso 1,4 s; com a narração ligada, a tela dura no mínimo a fala.
 
 **Pausa e saída (LG-Gab-05):** o mesmo botão, com o mesmo ícone, no mesmo canto, em todas as telas, inclusive no desafio, **menos no menu e nas configurações**, onde não há o que pausar. A pausa tem RETOMAR, CONFIGURAÇÕES e SALVAR E SAIR, que grava o reino e volta ao menu. **No desafio, a pausa é o botão VILA**, que leva à Vila com a obra parada; lá, RETOMAR volta à mesma peça (conforme a implementação do aluno).
 
@@ -596,13 +599,13 @@ O áudio deverá enriquecer ambientação e feedback, mas poderá ser reduzido o
 
 **Plataforma:** Unity (decidido pelo orientador em 26/11/2026).
 
-**Builds:** Windows, WebGL e Android.
+**Builds:** Windows (v1.5; WebGL e Android saíram, “pra simplificar”).
 
-**Dispositivos prioritários:** computador e tablet/celular Android, com o mesmo jogo nos três builds.
+**Dispositivo-alvo:** PC com Windows 10/11, tela de 1366×768 a 1920×1080, mouse e teclado (decidido pelo orientador em 26/11/2026, v1.5).
 
 **Modo:** single player.
 
-**Interação:** seleção discreta por interface, adaptada ao dispositivo final.
+**Interação:** seleção discreta por interface, com mouse e teclado.
 
 A especificação lógica deverá permanecer independente da engine sempre que possível. Definição das tentativas, parâmetros dos estímulos, streak, pontuação, dependências de construções, telemetria, configurações e progressão deverão ser representados como dados e regras configuráveis.
 
@@ -771,7 +774,7 @@ MENU (código da criança)
  ├── JOGAR / NOVO REINO (o novo reino pede confirmação)
  ├── REVER TUTORIAL     (só com reino salvo)
  ├── CONFIGURAÇÕES     (com o volume)
- └── SAIR               (só no build Windows; some no WebGL e no Android)
+ └── SAIR               (fecha o jogo)
         ↓
 CARREGAMENTO
         ↓
@@ -784,7 +787,7 @@ CORE GAMEPLAY
 
 Após a conclusão da primeira construção, será desbloqueado o acesso regular à **Vila**.
 
-O menu começa pela escolha do **código da criança**: cada código tem o seu reino (LG-Gab-04). Com o código escolhido, o menu mostra CONTINUAR (só com reino salvo), JOGAR ou NOVO REINO (este pede confirmação, porque apaga o reino atual; o tutorial já visto continua visto), REVER TUTORIAL (só com reino salvo) e CONFIGURAÇÕES; sem código, só CONFIGURAÇÕES. O adulto abre o **painel do mediador** por Ctrl+Shift+M, por três toques no canto superior direito ou pelo botão discreto **“adulto”** do menu; nele vê a sessão, encerra-a por desconforto, protocolo ou outro motivo, com o motivo gravado, liga o Bônus de Agilidade e ajusta o limite de tentativas da sessão (LG-Gab-15). O **painel do pesquisador** é uma aba desse mesmo painel, aberta pelo mesmo atalho e sem senha (decidido pelo orientador em 26/11/2026). O menu tem SAIR, só no build Windows, que fecha o jogo; no WebGL e no Android o jogo se fecha pelo navegador ou pelo sistema, e o SALVAR E SAIR da pausa grava o reino e volta ao menu (decidido pelo orientador em 26/11/2026). As **configurações** são do aparelho e valem para todo reino: música 0,6, efeitos 0,8, voz 1, menos animação, menos ambiente, alto contraste, ampliação das peças até 1,5× e leitura das telas por voz (LG-Gab-17).
+O menu começa pela escolha do **código da criança**: cada código tem o seu reino (LG-Gab-04). Com o código escolhido, o menu mostra CONTINUAR (só com reino salvo), JOGAR ou NOVO REINO (este pede confirmação, porque apaga o reino atual; o tutorial já visto continua visto), REVER TUTORIAL (só com reino salvo) e CONFIGURAÇÕES; sem código, só CONFIGURAÇÕES. O adulto abre o **painel do mediador** por Ctrl+Shift+M ou pelo botão discreto **“adulto”** do menu (os três toques no canto saíram na v1.5, com o PC como único dispositivo); nele vê a sessão, encerra-a por desconforto, protocolo ou outro motivo, com o motivo gravado, liga o Bônus de Agilidade e ajusta o limite de tentativas da sessão (LG-Gab-15). O painel do pesquisador, que era uma aba desse mesmo painel, saiu na v1.5 com a exportação (§11.4). O menu tem SAIR, que fecha o jogo; no WebGL e no Android o jogo se fecha pelo navegador ou pelo sistema, e o SALVAR E SAIR da pausa grava o reino e volta ao menu (decidido pelo orientador em 26/11/2026). As **configurações** são do aparelho e valem para todo reino: música 0,6, efeitos 0,8, voz 1, menos animação, menos ambiente, alto contraste, ampliação das peças até 1,5× e leitura das telas por voz (LG-Gab-17).
 
 Os estados principais previstos são:
 
@@ -887,6 +890,8 @@ Todos os valores de gameplay deverão permanecer configuráveis durante prototip
 
 Não haverá contagem regressiva visível. O tempo de resposta será registrado internamente.
 
+Aumento, manutenção e redução da demanda são decididos pelo backend, via API (v1.5, §4.3); o jogo aplica os parâmetros recebidos.
+
 ### 11.2.1. Validade da tentativa
 
 Cada tentativa terá um dos seguintes estados:
@@ -936,11 +941,13 @@ timestamp_start
 timestamp_end
 ```
 
-O `difficulty_state` grava o estado da adaptação (§4.3) no formato `a<ângulo máximo>-c<LOW|MID|HIGH>-s<1|2|3>`, como `a45-cLOW-s1`, o estado inicial (decidido pelo orientador em 26/11/2026, como no protótipo validado).
+O `difficulty_state` grava o estado da adaptação recebido do backend (§4.3; o provedor local, até a API) no formato `a<ângulo máximo>-c<LOW|MID|HIGH>-s<1|2|3>`, como `a45-cLOW-s1`, o estado inicial (decidido pelo orientador em 26/11/2026, como no protótipo validado).
 
 Configurações relevantes de acessibilidade, plataforma, dispositivo e versão do jogo deverão estar associadas à sessão quando puderem influenciar a interpretação dos dados.
 
 Os dados ficam **só em arquivo local**, um por sessão, e saem pela exportação do painel do pesquisador; a criança é identificada pelo código escolhido no menu, que é o próprio código de participante da telemetria (LG-Gab-18, decidido pelo orientador em 26/11/2026). Excluir os dados de um código apaga as sessões gravadas e não apaga o reino dele. O envio a servidor é de outro momento.
+
+**Nota da v1.5 (decidido pelo orientador em 26/11/2026):** a exportação pelo painel do pesquisador e a exclusão dos dados de um código saíram do jogo: os dados vão pela telemetria para o backend, e ética, consentimento e dados são tratados fora do jogo (CEP e backend). O jogo grava a telemetria em arquivo local, pronta para o envio ao backend.
 
 ---
 
@@ -992,12 +999,12 @@ Os dados ficam **só em arquivo local**, um por sessão, e saem pela exportaçã
 | --- | --- | --- | --- |
 | **Posição formal no Triple Diamond** | Campo obrigatório do GLIDE ainda incerto | Confirmar classificação com coordenação do framework | Pesquisador responsável / coordenação |
 | **PPI específico do jogo de Mental Rotation** | PPI atual informa população, mas foi conduzido em outro jogo | Realizar ciclo específico com o protótipo | Equipe de pesquisa |
-| **Plataforma final** | Afeta interface, desempenho, precisão temporal e estratégia de distribuição | Decidida: Unity, com build Windows, WebGL e Android (decidido pelo orientador em 26/11/2026) | — |
+| **Plataforma final** | Afeta interface, desempenho, precisão temporal e estratégia de distribuição | Decidida: Unity, com build para PC (Windows, mouse e teclado) (decidido pelo orientador em 26/11/2026; WebGL e Android saíram na v1.5) | — |
 | **Contexto de uso** | Afeta autonomia, supervisão e protocolo | Definir se uso prioritário será escolar, supervisionado, domiciliar ou híbrido. Já decidido: um reino por código de criança, que serve à escola e à casa (LG-Gab-04) | Coordenação científica |
 | **Forma final dos estímulos** | Pode comprometer validade caso permita atalhos perceptivos | Produzir e testar conjunto infantil de estímulos; os estímulos do conjunto original mantêm a rotação em x, y e z (LG-Gab-01, conforme a implementação do aluno) | Pesquisador responsável / equipe científica |
 | **Cálculo definitivo do `complexity_score`** | Afeta organização dos estímulos e adaptação | Definir métricas e pesos após primeiros protótipos | Equipe científica |
 | **Escala de similaridade dos distratores** | Afeta diretamente a dificuldade | Definir método operacional de classificação | Equipe científica |
-| **Algoritmo de adaptação** | Limiares e janela de desempenho ainda não definidos | Calibrar com dados de piloto; provisório na §4.3 (LG-Gab-06) | Equipe científica / dados |
+| **Algoritmo de adaptação** | Limiares e janela de desempenho ainda não definidos | Calibrar com dados de piloto; provisório na §4.3 (LG-Gab-06), executado pelo backend via API (v1.5) | Equipe científica / dados |
 | **Critério do Bônus de Agilidade** | Recompensa temporal pode alterar estratégia de resposta | Definir limiares após observar distribuição de RT e acurácia; até lá, desligado (LG-Gab-10) | Equipe científica |
 | **Limite para tentativa abandonada** | Necessário para diferenciar RT cognitivo de ausência/interrupção | Estimar a partir de piloto; provisório: pergunta aos 45 s, abandono aos 75 s (LG-Gab-21) | Equipe científica |
 | **Duração das sessões** | Pode afetar fadiga, engajamento e quantidade de dados | Avaliar em piloto com crianças | Equipe científica |
@@ -1011,8 +1018,8 @@ Os dados ficam **só em arquivo local**, um por sessão, e saem pela exportaçã
 | **Minigames das construções** | Escopo secundário ainda indefinido | Definir somente após estabilização do core | Game design |
 | **Assets específicos** | Direção visual definida, mas pacotes ainda não escolhidos | Levantar opções gratuitas e documentar licenças | Desenvolvimento / design |
 | **Acessibilidade para deficiência visual severa** | Paradigma possui dependência visuoespacial intrínseca | Delimitar escopo e estudar alternativas, se aplicável | Coordenação científica |
-| **Precisão temporal da plataforma** | Necessária para interpretação científica do RT | Caracterizar nos três builds (Windows, WebGL, Android) | Equipe de desenvolvimento |
-| **Adaptação e sequência fixa** | A adaptação (§4.3) escolhe a peça por ângulo, complexidade e similaridade, mas cada obra tem uma sequência fixa de 10 (§4.1, conforme a implementação do aluno) | Decidir se a adaptação escolhe a peça (e então as obras tiram peças de um conjunto comum, com peças e malhas geradas por código) ou só registra o estado; até lá, só registra | Orientador (pendência) |
+| **Precisão temporal da plataforma** | Necessária para interpretação científica do RT | Caracterizar no PC (Windows) | Equipe de desenvolvimento |
+| **Adaptação e sequência fixa** | A adaptação (§4.3) escolhe a peça por ângulo, complexidade e similaridade, mas cada obra tem uma sequência fixa de 10 (§4.1, conforme a implementação do aluno) | Decidir se a adaptação escolhe a peça (e então as obras tiram peças de um conjunto comum, com peças e malhas geradas por código) ou só registra o estado; até lá, o jogo só registra o estado recebido do backend (v1.5) | Orientador (pendência) |
 | **0° e o outro sentido de 45° e 90°** | O conjunto original não tem 0° nem 45° e 90° no sentido contrário (§4.1) | Decidir se entram, e como, sem quebrar a sequência fixa de cada obra | Orientador / equipe científica (pendência) |
 | **Habitante e gabarito** | O habitante sai do modelo da peça, e cada modelo do conjunto original aparece numa condição só: o mesmo habitante volta sempre com a mesma resposta, o que pode virar pista (§10.2, §12) | Decidir se o sorteio muda ou se o risco fica registrado para o piloto | Orientador (pendência) |
 | **Função do Laboratório** | Com Observatório e Museu sem pré-requisito, o Laboratório não libera nada (§5.2) | Dar ao Laboratório um papel no grafo ou deixá-lo sem dependentes | Orientador (pendência) |
@@ -1029,7 +1036,7 @@ O orientador decidiu as 22 lacunas levantadas na revisão do SGDD v1.1 (numerada
 | LG-Gab-04 | Um reino por código de criança, escolhido no menu; o mesmo código serve à escola e à casa | §2.2, §10.3 |
 | LG-Gab-05 | Pausa pelo mesmo botão e ícone em todas as telas, menos no menu e nas configurações; RETOMAR, CONFIGURAÇÕES, SALVAR E SAIR; no desafio, a pausa é o botão VILA, que leva à Vila (v1.4, conforme a implementação do aluno) | §5.1 |
 | LG-Gab-06 | Começa no fácil (`a45-cLOW-s1`); sobe em rodízio ângulo → complexidade → similaridade; desce desfazendo o último aumento | §4.3 |
-| LG-Gab-07 | Cada tela segue sozinha (4 / 2,5 / 2,2 / 1,4 s); um toque adianta | §5.1 |
+| LG-Gab-07 | Cada tela segue sozinha (4 / 2,5 / 2,2 / 1,4 s); um clique adianta | §5.1 |
 | LG-Gab-08 | Os quatro resultados com consequência própria; quatro explicações em ordem fixa; falas de até 8 palavras | §4.2 |
 | LG-Gab-09 | Placa só no acerto (streak, pontos, bônus); nada no erro; moedas na Vila | §4.2 |
 | LG-Gab-10 | Bônus de Agilidade desligado até o piloto, com chave no painel do mediador | §4.2.3 |
@@ -1037,7 +1044,7 @@ O orientador decidiu as 22 lacunas levantadas na revisão do SGDD v1.1 (numerada
 | LG-Gab-12 | A primeira construção é o Observatório; antes dela nenhuma outra (v1.4, conforme a implementação do aluno) | §5.2 |
 | LG-Gab-13 | Tutorial de 5 passos, giro à mão nos passos 1–4, peças fixas, “pular” à mostra desde o começo, rever no menu | §4.4 |
 | LG-Gab-14 | SERVE e NÃO SERVE com ícone e rótulo, ≥ 2,3 cm; peças com ~37% da altura | §10.2 |
-| LG-Gab-15 | Painel do mediador (Ctrl+Shift+M, três toques no canto ou botão “adulto” do menu), encerramento com motivo gravado | §10.3 |
+| LG-Gab-15 | Painel do mediador (Ctrl+Shift+M ou botão “adulto” do menu; os três toques no canto saíram na v1.5), encerramento com motivo gravado | §10.3 |
 | LG-Gab-16 | Vila com deslocamento, nos limites do mapa da cena (v1.4); Observatório, Museu e Parque com conteúdo provisório; o conteúdo é do pesquisador | §5.2 |
 | LG-Gab-17 | Configurações do aparelho, com os padrões da §10.3 | §10.3 |
 | LG-Gab-18 | Arquivo local por sessão, exportação pelo painel do pesquisador, criança identificada pelo código | §11.4 |
@@ -1116,7 +1123,7 @@ Este anexo organiza o desenvolvimento em blocos dependentes. A estrutura não co
 
 ## Bloco 0 — Avaliação tecnológica
 
-**Objetivo:** comparar a viabilidade de Unity e Flutter/Flame antes da implementação definitiva. **Concluído:** Unity, com build Windows, WebGL e Android (decidido pelo orientador em 26/11/2026); os itens abaixo ficam como o que a escolha precisa atender.
+**Objetivo:** comparar a viabilidade de Unity e Flutter/Flame antes da implementação definitiva. **Concluído:** Unity, com build para PC (Windows, mouse e teclado) (decidido pelo orientador em 26/11/2026; WebGL e Android saíram na v1.5); os itens abaixo ficam como o que a escolha precisa atender.
 
 **Avaliar:**
 
@@ -1303,6 +1310,8 @@ distractor_similarity
 ```
 
 Os limiares deverão ser configuráveis externamente à lógica central.
+
+**Onde roda (v1.5):** no backend, via API (padrão CIATEC). As entradas chegam ao backend pela telemetria de cada tentativa; o jogo recebe os parâmetros manipuláveis e os aplica na tentativa seguinte (§4.3).
 
 **Critério de conclusão:** o sistema consegue aumentar, manter ou reduzir a demanda das próximas tentativas sem comunicar explicitamente uma classificação de dificuldade ao jogador.
 
