@@ -6,6 +6,7 @@ Codex instructions for the CIATec/FAPESP project at EACH-USP. Reply in Brazilian
 
 - Unity **6000.3.25f1**, URP **17.3.0**, new Input System **1.20.0** only. `Kingdom.unity` boots; `Village.unity` loads additively. Preserve the current `GameApplication`, `GameSession`, gameplay, UI, village and telemetry architecture.
 - Consult only relevant sections: `Documentation/SGDD-1-Gabriel.md` (scientific/design requirements), `Documentation/ABD-1-Gabriel.md` (stories), `Documentation/EditingGuide.md` (Unity), `Documentation/TrialTelemetry.md` (JSON contract), `Documentation/Pendencias.md` (known risks).
+- Use [the test guide](Documentation/agentes/testes.md) for checks and [the milestone guide](Documentation/agentes/marco-jogavel.md) for milestone acceptance.
 - Always distinguish *planned*, *implemented*, *tested*, and *scientifically validated*. Open Issues and ABD descriptions are not proof that a feature is missing.
 
 ## Before implementing a GitHub Issue
@@ -24,7 +25,7 @@ Codex instructions for the CIATec/FAPESP project at EACH-USP. Reply in Brazilian
 
 ## Unity, implementation and Git
 
-- Before edits, check branch, working tree and relevant remote state. Normally branch from current `develop`; preserve collaborators' work. No destructive reset/clean, force push, or commits/pushes/merges/PRs/Project changes without authorization.
+- Before edits, check the branch, working tree, relevant remote state, applicable branch protections and Git rulesets. Follow those rules and report any verification gaps. Normally branch from current `develop` and preserve collaborators' work. No destructive reset/clean, force push, or commits/pushes/merges/PRs/Project changes without authorization.
 - Keep diffs minimal; reuse existing systems and conventions. No unrequested refactors, duplicate services, engine/package updates or gameplay changes.
 - Preserve `.meta`/GUIDs and serialized scene, prefab, ScriptableObject, Tilemap and material references. Editor/content changes require scope authorization. Report Inspector values affected by serialized default changes.
 - Production scripts: `Assets/Scripts/`; existing validators: `Assets/Scripts/Editor/`. New test asmdefs are planned, not assumed. Keep MonoBehaviour/ScriptableObject class names matched to filenames. Avoid unnecessary component searches and allocations per frame. Use the **new Input System**.
