@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.IO;
+using MeuPequenoReino.Core;
 using MeuPequenoReino.Telemetry;
 using NUnit.Framework;
 using UnityEngine;
@@ -29,10 +30,11 @@ public sealed class FirstTrialSmokeTests
         var ui = CreateUI();
         var tutorial = root.AddComponent<TutorialController>();
         var trials = root.AddComponent<TrialController>();
-        var session = new GameSession(CreateKingdom()) { Screen = GameScreen.Tutorial };
+        var session = CreateKingdom().CreateSession();
+        session.Screen = GameScreen.Tutorial;
         dataPath = Path.Combine(Path.GetTempPath(), $"MPR-FirstTrial-{Guid.NewGuid():N}");
         telemetry = new TrialTelemetrySession(Application.version, dataPath);
-        trials.Initialize(session, ui, null, null, telemetry);
+        trials.Initialize(session, kingdom, ui, null, null, telemetry);
         tutorial.Initialize(ui, model, () =>
         {
             Assert.That(session.StartBuilding(0), Is.True);
@@ -55,7 +57,7 @@ public sealed class FirstTrialSmokeTests
             yield return null;
 
         Assert.That(trials.Busy, Is.False, "The first trial never became interactive.");
-        Assert.That(session.CurrentTrial, Is.SameAs(building.trials[0]));
+        Assert.That(kingdom.GetTrial(session), Is.SameAs(building.trials[0]));
         Assert.That(ui.trial.reference.gameObject.activeInHierarchy, Is.True);
         Assert.That(ui.trial.candidate.gameObject.activeInHierarchy, Is.True);
         Assert.That(ui.trial.reference.meshFilter.sharedMesh, Is.SameAs(mesh));

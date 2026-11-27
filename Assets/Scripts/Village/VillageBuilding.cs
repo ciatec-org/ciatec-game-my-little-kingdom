@@ -1,4 +1,5 @@
 using System;
+using MeuPequenoReino.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,15 +13,17 @@ public sealed class VillageBuilding : MonoBehaviour
     public Image labelBackground;
     public Text label;
     GameSession session;
+    KingdomDefinition kingdom;
     Action<VillageBuilding> selected;
     bool bound;
     public bool IsCastle => definition == null;
-    public int Index => IsCastle ? -1 : session.Definition.IndexOf(definition);
+    public int Index => IsCastle ? -1 : kingdom.IndexOf(definition);
     public bool Built => IsCastle || session.IsBuilt(Index);
 
-    public void Initialize(GameSession gameSession, Action<VillageBuilding> onSelected)
+    public void Initialize(GameSession gameSession, KingdomDefinition kingdomDefinition, Action<VillageBuilding> onSelected)
     {
         session = gameSession;
+        kingdom = kingdomDefinition;
         selected = onSelected;
         if (!bound && button != null)
         {

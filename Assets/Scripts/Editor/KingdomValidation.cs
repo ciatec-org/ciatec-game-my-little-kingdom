@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using MeuPequenoReino.Core;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -57,7 +58,7 @@ public static class KingdomValidation
         }
 
         Require(definition.buildings[4].prerequisite == definition.buildings[3], "Bridge prerequisite preserved");
-        var session = new GameSession(definition);
+        var session = definition.CreateSession();
         Require(!session.IsUnlocked(4), "Mill locked initially");
         for (int b = 0; b < 5; b++)
         {
@@ -66,10 +67,11 @@ public static class KingdomValidation
             for (int i = 0; i < 10; i++)
             {
                 Require(session.CandidateIndex == i, "Trial order preserved: " + b + "/" + i);
-                Require(!session.IsCorrect(!session.CurrentTrial.structuralMatch), "Wrong answer remains incorrect: " + b + "/" + i);
+                bool expected = definition.buildings[b].trials[i].structuralMatch;
+                Require(session.IsCorrect(expected) && !session.IsCorrect(!expected), "Answer evaluation preserved: " + b + "/" + i);
                 int pieces = session.Pieces(b);
                 Require(session.Pause() && !session.StartBuilding((b + 1) % 5) && session.Resume() && session.CandidateIndex == i && session.Pieces(b) == pieces, "Pause/resume preserves progress: " + b + "/" + i);
-                if (session.CurrentTrial.structuralMatch)
+                if (expected)
                     accepted++;
                 var result = session.ApplyCorrectAnswer();
                 Require(session.Pieces(b) == accepted, "Pieces preserved: " + b + "/" + i);
@@ -78,7 +80,7 @@ public static class KingdomValidation
         }
 
         Require(session.Complete && session.CompletedBuildings == 5, "Kingdom completion preserved");
-        var fresh = new GameSession(definition);
+        var fresh = definition.CreateSession();
         Require(fresh.CompletedBuildings == 0 && fresh.CurrentBuilding == -1 && !fresh.Paused, "Fresh session has no stale progress");
         foreach (string guid in AssetDatabase.FindAssets("t:Prefab", new[] { "Assets/Prefabs" }))
         {
@@ -117,8 +119,8 @@ public static class KingdomValidation
 
                     )
                         Require(Vector3.Distance(world.navigation.Point(OriginalCell(p)), OriginalPoint(p)) < .001f, "Isometric coordinates preserved: " + p);
-                    var navigationSession = new GameSession(definition);
-                    world.Initialize(navigationSession);
+                    var navigationSession = definition.CreateSession();
+                    world.Initialize(navigationSession, definition);
                     var from = OriginalCell(new Vector2Int(3, -3));
                     var mill = world.Find(definition.buildings[4]);
                     var target = world.navigation.Cell(mill.entrance.position);

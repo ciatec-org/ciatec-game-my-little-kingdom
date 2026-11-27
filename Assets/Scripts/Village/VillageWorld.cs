@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using MeuPequenoReino.Core;
 using UnityEngine;
 
 public sealed class VillageWorld : MonoBehaviour
@@ -11,14 +12,16 @@ public sealed class VillageWorld : MonoBehaviour
     public VillageAnimal[] animals;
     public GameSession Session { get; private set; }
     public bool Busy { get; private set; }
+    KingdomDefinition definition;
 
     public Action<VillageBuilding> Selected;
-    public void Initialize(GameSession session)
+    public void Initialize(GameSession session, KingdomDefinition kingdom)
     {
         Session = session;
+        definition = kingdom;
         foreach (var building in buildings)
         {
-            building.Initialize(session, Select);
+            building.Initialize(session, kingdom, Select);
         }
 
         foreach (var walker in villagers)
@@ -56,7 +59,7 @@ public sealed class VillageWorld : MonoBehaviour
     {
         Busy = true;
         Refresh();
-        var building = Find(Session.Definition.buildings[index]);
+        var building = Find(definition.buildings[index]);
         cameraDrag.Focus((Vector2)building.transform.position + new Vector2(0, 55f / 96));
         float elapsed = 0;
         var art = building.completedArt.transform;

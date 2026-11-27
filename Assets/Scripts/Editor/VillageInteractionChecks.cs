@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using MeuPequenoReino.Core;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -211,7 +212,7 @@ public static class VillageInteractionChecks
             else if (stage == 13 && elapsed > .35)
             {
                 var bridge = world.buildings.First(b => b.isBridge);
-                Check(app.Session.Screen == GameScreen.Trial && app.Session.CurrentBuilding == app.Session.Definition.IndexOf(bridge.definition), "Mouse click on HUD starts selected construction");
+                Check(app.Session.Screen == GameScreen.Trial && app.Session.CurrentBuilding == app.definition.IndexOf(bridge.definition), "Mouse click on HUD starts selected construction");
                 File.AppendAllText("Migration/interaction-validation.txt", "COMPLETE — input and village interactions passed\n");
                 Finish();
             }
