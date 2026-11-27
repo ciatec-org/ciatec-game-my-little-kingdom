@@ -1,96 +1,43 @@
 # AGENTS.md — Meu Pequeno Reino
 
-Instruções para o Codex, agente usado no fluxo de trabalho atual deste projeto.
+Codex instructions for the CIATec/FAPESP project at EACH-USP. Reply in Brazilian Portuguese. Be concise without sacrificing correctness, scientific constraints, or verification.
 
-## O projeto
+## Project context
 
-- **Jogo:** Meu Pequeno Reino, projeto do CIATec/FAPESP na EACH-USP. A criança constrói um reino resolvendo
-  desafios de rotação mental (Mental Rotation) de policubos. Cada obra pronta aparece na Vila.
-- **Unity:** 6000.3.25f1, URP 2D 17.3.0, Input System 1.20.0 como único backend de entrada.
-- **Arquitetura atual:** `Kingdom.unity` é a cena de entrada e carrega `Village.unity` aditivamente.
-  `GameApplication` compõe a sessão e os controladores. `GameSession` guarda o estado do jogo. Definições,
-  prefabs, tilemaps e malhas persistentes são editáveis no Editor.
-- **Design (o quê e o porquê):** `Documentation/SGDD-1-Gabriel.md`. É grande: leia só a seção que a story citar.
-- **Backlog (o que fazer):** `Documentation/ABD-1-Gabriel.md`. Cada story tem um ID `US-xx` no título (o nível do título muda:
-  **busque pelo ID**), critérios de aceite, cenários Dado/Quando/Então e tasks `[agente]` e `[aluno]`.
-- **Implementação e edição:** `Documentation/EditingGuide.md`.
-- **Contrato local de dados:** `Documentation/TrialTelemetry.md`.
-- Separe requisitos e hipóteses do SGDD e do ABD, comportamento implementado e evidências de validação.
-  Consulte os registros de progresso e decisões quando existirem e forem relevantes à tarefa.
+- Unity **6000.3.25f1**, URP **17.3.0**, new Input System **1.20.0** only. `Kingdom.unity` boots; `Village.unity` loads additively. Preserve the current `GameApplication`, `GameSession`, gameplay, UI, village and telemetry architecture.
+- Consult only relevant sections: `Documentation/SGDD-1-Gabriel.md` (scientific/design requirements), `Documentation/ABD-1-Gabriel.md` (stories), `Documentation/EditingGuide.md` (Unity), `Documentation/TrialTelemetry.md` (JSON contract), `Documentation/Pendencias.md` (known risks).
+- Always distinguish *planned*, *implemented*, *tested*, and *scientifically validated*. Open Issues and ABD descriptions are not proof that a feature is missing.
 
-## Regras
+## Before implementing a GitHub Issue
 
-1. **Preserve os requisitos e decida rotinas técnicas dentro do escopo autorizado.** Mudanças de paradigma
-   científico, geometria dos estímulos, condições experimentais, gabaritos, temporização, política de tentativas,
-   progressão ou contrato de telemetria exigem autorização específica e, quando aplicável, aprovação da
-   orientação científica. Reúna as lacunas relevantes da story numa consulta com opções e recomendação.
-   Enquanto aguarda a decisão, continue o trabalho independente e registre as pendências na entrega.
-2. **Preserve a montagem no Editor atribuída ao aluno.** Cenas, Build Settings, UI, HUD, Canvas, prefabs,
-   ScriptableObjects, tilemaps, materiais, luz, câmera, animações, arte, som, mixer e ligações no Inspector
-   só entram numa alteração quando o escopo autoriza. Preserve assets permanentes, arquivos `.meta`, GUIDs e
-   referências serializadas. Alterações na versão da engine, nos pacotes ou no pipeline exigem justificativa
-   e autorização.
-   - Em novos componentes, use campos `[SerializeField]` com nome claro. Preserve a ligação de listeners já
-     adotada pelo componente, incluindo a composição por `Initialize` quando ela existir.
-   - Para testes isolados, monte por código apenas o necessário. Validadores de integração podem abrir a
-     cena de entrada numa cópia do projeto.
-3. **Mantenha as pastas e assemblies do projeto.** O código vive em `Assets/Scripts/` e os validadores atuais
-   em `Assets/Scripts/Editor/`. Os novos asmdefs e testes em `Assets/Tests/` são trabalho planejado da US-01.
-4. **Cada `ScriptableObject` e cada `MonoBehaviour` no próprio arquivo, com o nome da classe** (`ConfigFase` em
-   `ConfigFase.cs`); senão o `.asset` ou o componente perde o script.
-5. **Use o Input System ativo.** O gameplay não usa `Agentes.Entrada`, que encapsula APIs legadas. A adoção de
-   um auxiliar de entrada exige tarefa específica, análise de compatibilidade e testes.
-6. **Preserve a temporização dos trials.** `TrialController` mede o tempo ativo com
-   `Time.realtimeSinceStartupAsDouble`. `Agentes.Relogio` é opcional. Uma substituição exige equivalência
-   semântica, política de pausas definida e requisitos de validação. A unidade em milissegundos não demonstra
-   precisão experimental.
-7. **Execute verificações proporcionais ao risco.** Priorize `KingdomValidation`, `PlayModeFlowChecks`,
-   `VillageInteractionChecks` e `TrialTelemetryChecks` conforme a alteração. Use uma cópia isolada se a execução
-   puder gravar arquivos do projeto ou dados locais. Informe o que foi verificado por inspeção estática,
-   Play Mode, build distribuível ou validação científica e reporte apenas os testes executados.
-8. **Registre efeitos de serialização.** Se a tarefa alterar o valor inicial de um campo serializado, diga
-   quais valores persistidos em cena ou prefab precisam de revisão no Inspector.
-9. **Auditorias de leitura preservam código, assets e configuração.** Registre evidências fora do checkout.
-   Se uma verificação ficar bloqueada, documente a causa e prossiga com o que for independente.
+1. Read its acceptance criteria, dependencies and relevant SGDD/ABD sections. Search the actual code, assets, serialized Unity references and tests as needed.
+2. Classify each requirement: **implemented+validated / implemented-unvalidated / partial / absent / blocked / obsolete-conflicting**, citing evidence.
+3. **Already done:** validate, don't rebuild. **Partial:** implement only the gap. **Absent:** implement within existing architecture. **Blocked/conflicting:** preserve existing behavior, report the decision required and continue independent authorized work.
+4. Close with a brief comparison of requirements, existing behavior, changes, checks and remaining gaps. Do not update GitHub Issues or Projects without permission.
 
-## Telemetria e Git
+## Scientific and telemetry safeguards
 
-- A telemetria local JSON `schema_version: 1.0` foi integrada pelo PR #431. Preserve os IDs de sessão e trial,
-  as condições apresentadas, todas as tentativas brutas, respostas, acertos, tempos, pausas e estados de
-  conclusão. Alterações do esquema exigem tarefa específica. Transmissão remota e coleta de dados pessoais
-  exigem requisitos aprovados e autorização. Use dados sintéticos nos testes.
-- Use `develop` como base de desenvolvimento. Confira o estado do checkout, a referência remota e as regras
-  de proteção aplicáveis antes de trabalhar na branch da tarefa. Preserve o trabalho de terceiros. Se a
-  proteção efetiva não puder ser confirmada, registre a limitação.
-- Commits, pushes e merges exigem autorização. Force push é proibido.
+- Preserve Mental Rotation: reference/candidate comparison, proper rotation versus mirroring, geometry, angle/axis, answer keys, trial order, retry behavior, feedback and accessibility. Do not add answer cues. Changes to experimental conditions, RT semantics, progression or adaptation require explicit authorization and scientific review when applicable.
+- Do not infer diagnoses from performance or mix gameplay progress with research measures. Do not change SGDD/ABD to justify divergent code.
+- Local **JSON telemetry v1.0** (PR #431) is the current contract: preserve IDs, stimulus metadata, **all raw attempts**, responses, correctness, active response times, pauses and trial status. JSON Lines is only a possible future export. No silent schema migration, personal data collection or network transmission; use synthetic test data.
+- `TrialController` uses `Time.realtimeSinceStartupAsDouble`. `Agentes.Relogio` is not an automatic substitute; `Agentes.Entrada` uses legacy input and is not used by gameplay. RT in milliseconds is not experimentally validated; first-frame, focus-loss and per-attempt validity remain open.
 
-## Padrões de código
+## Unity, implementation and Git
 
-- **O padrão que o repositório já tem vence este:** pastas, asmdef, nomes e guias do projeto (ex.: um
-  `EditingGuide.md`). Onde a pasta ou o asmdef dele difere da regra 3, vale o dele.
-- C#: classes, métodos e propriedades em `PascalCase`; campos e variáveis em `camelCase`; um namespace do jogo.
-- Campo do Inspector é `[SerializeField] private`, não `public`.
-- Valor de design (tempo, velocidade, limite, quantidade) fica num ScriptableObject de configuração, não espalhado
-  no código.
-- Sistemas conversam por evento (`event`, `UnityEvent`) ou referência ligada no Inspector; nada de `Find*` nem de
-  singleton para tudo.
-- Nada de `Find*`, `GetComponent` ou alocação (`new`, LINQ, concatenação de string) dentro do `Update`.
-- Classe pequena, com uma responsabilidade. Antes de criar um sistema, procure (`rg`) se já existe um que faz isso.
-- Comentário só onde explica o porquê. Evite código morto e logs temporários sem função.
+- Before edits, check branch, working tree and relevant remote state. Normally branch from current `develop`; preserve collaborators' work. No destructive reset/clean, force push, or commits/pushes/merges/PRs/Project changes without authorization.
+- Keep diffs minimal; reuse existing systems and conventions. No unrequested refactors, duplicate services, engine/package updates or gameplay changes.
+- Preserve `.meta`/GUIDs and serialized scene, prefab, ScriptableObject, Tilemap and material references. Editor/content changes require scope authorization. Report Inspector values affected by serialized default changes.
+- Production scripts: `Assets/Scripts/`; existing validators: `Assets/Scripts/Editor/`. New test asmdefs are planned, not assumed. Keep MonoBehaviour/ScriptableObject class names matched to filenames. Avoid unnecessary component searches and allocations per frame. Use the **new Input System**.
+- Routine technical decisions within scope are autonomous. Escalate scientific/design ambiguity or consequential behavior changes; continue independent work where safe.
 
-## Como fazer uma story
+## Token discipline (quality first)
 
-1. **Ler só o necessário:** localize a story no ABD pelo ID (`rg -n "US-xx" Documentation/ABD-1-Gabriel.md`),
-   consulte a seção citada do SGDD, o código atual e as decisões relevantes disponíveis.
-2. **Fazer:** trabalhe uma story por vez nas tasks `[agente]` autorizadas. Use os validadores existentes antes
-   de propor infraestrutura nova. Preserve as tasks de montagem e uso em hardware atribuídas ao aluno.
-3. **Conferir:** teste o comportamento afetado e seus consumidores. Encaminhe para validação humana os
-   critérios que exigem o dispositivo-alvo, playtest ou revisão científica.
-4. **Fechar:** informe critérios verificados, evidências, lacunas e, se aplicável, o que o aluno monta e liga
-   no Editor (cena, objeto, componente e referência). Atualize registros de progresso ou decisões quando
-   fizerem parte do escopo. Preserve as decisões do SGDD e a rastreabilidade do ABD em revisões autorizadas.
+- **Locate, then read:** use `rg`, symbol search, `git status -s`, `git diff --stat` and targeted ranges before broad reads. Expand when needed to prove behavior; don't reread unchanged material.
+- Filter verbose test/log output to relevant errors and summaries; retain full logs as artifacts when needed. Ignore Unity-generated `Library/`, `Temp/`, `Logs/`, `Obj/` and build folders during routine searches unless relevant.
+- Avoid redundant planning, repeated command output, speculative documentation and unnecessary subagents. Make coherent edits and verify them. For complex/scientific/security/data-loss work, deeper inspection overrides token savings.
+- Run affected checks (when relevant: `KingdomValidation`, `PlayModeFlowChecks`, `VillageInteractionChecks`, `TrialTelemetryChecks`); broaden for integration risk. Use isolated Unity copies if a check may modify files/data. Never claim an unrun test passed.
+- If installed, use `$token-saver-codex` for large-context/log tasks or explicit efficiency audits, **not** on every trivial edit. External skills never override scientific rules or authorization.
 
-## Quando precisar
+## Completion
 
-- `Documentation/agentes/testes.md` — como executar e escrever testes no projeto
-- `Documentation/agentes/marco-jogavel.md` — como fechar a story de marco
+Report succinctly: **what already existed; what changed; files; checks actually run; unmet criteria/risks**. Identify human Editor/hardware/research validation separately. Do not create progress files or expand scope unless requested or needed for the authorized task.
