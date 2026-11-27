@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Globalization;
+using MeuPequenoReino.Core;
 using MeuPequenoReino.Telemetry;
 using UnityEngine;
 
 public sealed class TrialController : MonoBehaviour
 {
     GameSession session;
+    KingdomDefinition kingdom;
     GameUI ui;
     TrialTelemetrySession telemetry;
     Action paused;
@@ -15,11 +17,12 @@ public sealed class TrialController : MonoBehaviour
     double attemptStarted, activeElapsed;
     public bool Busy => busy;
 
-    public void Initialize(GameSession gameSession, GameUI gameUI, Action onPause, Action<int> onFinished,
+    public void Initialize(GameSession gameSession, KingdomDefinition kingdomDefinition, GameUI gameUI, Action onPause, Action<int> onFinished,
         TrialTelemetrySession trialTelemetry)
     {
         StopAllCoroutines();
         session = gameSession;
+        kingdom = kingdomDefinition;
         ui = gameUI;
         telemetry = trialTelemetry;
         paused = onPause;
@@ -40,8 +43,8 @@ public sealed class TrialController : MonoBehaviour
         busy = true;
         session.Screen = GameScreen.Trial;
         ui.Show(GameScreen.Trial);
-        var definition = session.Definition.buildings[session.CurrentBuilding];
-        var trial = session.CurrentTrial;
+        var definition = kingdom.buildings[session.CurrentBuilding];
+        var trial = kingdom.GetTrial(session);
         var view = ui.trial;
         view.buildingName.text = definition.displayName;
         view.ShowProgress(session.Pieces(session.CurrentBuilding), definition.requiredPieces);
@@ -65,8 +68,8 @@ public sealed class TrialController : MonoBehaviour
         if (!resuming)
         {
             activeElapsed = 0;
-            var trial = session.CurrentTrial;
-            telemetry.BeginTrial(session.Definition.buildings[session.CurrentBuilding].id, trial.model.modelId,
+            var trial = kingdom.GetTrial(session);
+            telemetry.BeginTrial(kingdom.buildings[session.CurrentBuilding].id, trial.model.modelId,
                 trial.structuralMatch, trial.rotation, AxisName(trial.rotationAxis), Time.realtimeSinceStartupAsDouble);
         }
         attemptStarted = Time.realtimeSinceStartupAsDouble;
@@ -90,8 +93,8 @@ public sealed class TrialController : MonoBehaviour
             return;
         busy = true;
         ui.trial.SetInteraction(false);
-        var definition = session.Definition.buildings[session.CurrentBuilding];
-        var trial = session.CurrentTrial;
+        var definition = kingdom.buildings[session.CurrentBuilding];
+        var trial = kingdom.GetTrial(session);
         bool correct = session.IsCorrect(serves);
         double rt = activeElapsed + Time.realtimeSinceStartupAsDouble - attemptStarted;
         Debug.Log($"building={definition.id} candidate_index={session.CandidateIndex} model_id={trial.model.modelId} " + $"stimulus=3D rotation={trial.rotation} axis={trial.rotationAxis} candidate_condition={(trial.structuralMatch ? "MATCH" : "MIRRORED")} " + $"structural_match={trial.structuralMatch} response={(serves ? "SERVE" : "NAO_SERVE")} correct={correct} accepted_pieces={session.Pieces(session.CurrentBuilding)} reaction_time={rt.ToString("F3", CultureInfo.InvariantCulture)}");
@@ -136,7 +139,7 @@ public sealed class TrialController : MonoBehaviour
             return;
         double now = Time.realtimeSinceStartupAsDouble;
         activeElapsed += now - attemptStarted;
-        Debug.Log($"building={session.Definition.buildings[session.CurrentBuilding].id} candidate_index={session.CandidateIndex} trial_status=PAUSED");
+        Debug.Log($"building={kingdom.buildings[session.CurrentBuilding].id} candidate_index={session.CandidateIndex} trial_status=PAUSED");
         if (session.Pause())
         {
             telemetry.PauseTrial(now);
@@ -149,7 +152,7 @@ public sealed class TrialController : MonoBehaviour
         if (busy || !session.Resume())
             return;
         telemetry.ResumeTrial(Time.realtimeSinceStartupAsDouble);
-        Debug.Log($"building={session.Definition.buildings[session.CurrentBuilding].id} candidate_index={session.CandidateIndex} trial_status=RESUMED");
+        Debug.Log($"building={kingdom.buildings[session.CurrentBuilding].id} candidate_index={session.CandidateIndex} trial_status=RESUMED");
         Present(true);
     }
 

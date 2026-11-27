@@ -2,6 +2,7 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using MeuPequenoReino.Core;
 using MeuPequenoReino.Telemetry;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -183,7 +184,7 @@ public static class TrialTelemetryChecks
                 break;
             case 1 when ready:
                 var trial = Read(sessionFile).trials.Single();
-                CheckStimulus(session, trial, 1);
+                CheckStimulus(app, trial, 1);
                 Check(trial.status == "in_progress" && trial.attempts.Count == 0 &&
                     ui.trial.reference.gameObject.activeInHierarchy && ui.trial.servesButton.interactable,
                     "Apresentação abre um registro sem tentativas.");
@@ -191,11 +192,12 @@ public static class TrialTelemetryChecks
                 Advance(now);
                 break;
             case 2 when now - entered >= .35:
-                Respond(app, !session.CurrentTrial.structuralMatch);
-                Respond(app, session.CurrentTrial.structuralMatch);
+                bool expected = app.definition.GetTrial(session).structuralMatch;
+                Respond(app, !expected);
+                Respond(app, expected);
                 var wrong = Read(sessionFile).trials.Single().attempts.Single();
                 Check(wrong.attempt_index == 1 && !wrong.is_correct &&
-                    wrong.player_answer == (session.CurrentTrial.structuralMatch ? "NAO_SERVE" : "SERVE") &&
+                    wrong.player_answer == (expected ? "NAO_SERVE" : "SERVE") &&
                     NearActiveTime(wrong.response_time_ms, now - entered) && session.CandidateIndex == 0 &&
                     ui.trial.feedback.text == "Vamos observar mais uma vez.",
                     "Registra só o erro aceito, com tempo ativo e feedback preservado.");
@@ -226,7 +228,7 @@ public static class TrialTelemetryChecks
                 Advance(now);
                 break;
             case 7 when now - entered >= .30:
-                bool answer = session.CurrentTrial.structuralMatch;
+                bool answer = app.definition.GetTrial(session).structuralMatch;
                 Respond(app, answer);
                 var completed = Read(sessionFile).trials.Single();
                 Check(completed.trial_id == trialId && completed.status == "completed" && completed.attempts.Count == 2 &&
@@ -239,7 +241,7 @@ public static class TrialTelemetryChecks
                 break;
             case 8 when ready:
                 var next = Read(sessionFile).trials.Last();
-                CheckStimulus(session, next, 2);
+                CheckStimulus(app, next, 2);
                 Check(next.trial_id != trialId && next.status == "in_progress", "Próxima apresentação recebe outro ID.");
                 ui.trial.visitButton.onClick.Invoke();
                 Advance(now);
@@ -284,12 +286,13 @@ public static class TrialTelemetryChecks
         (serves ? view.servesButton : view.rejectsButton).onClick.Invoke();
     }
 
-    static void CheckStimulus(GameSession session, TelemetryTrialRecord record, int index)
+    static void CheckStimulus(GameApplication app, TelemetryTrialRecord record, int index)
     {
-        var stimulus = session.CurrentTrial;
+        var session = app.Session;
+        var stimulus = app.definition.GetTrial(session);
         string axis = stimulus.rotationAxis == Vector3.right ? "X" : stimulus.rotationAxis == Vector3.up ? "Y" : "Z";
         Check(Guid.TryParseExact(record.trial_id, "N", out _) && record.trial_index == index &&
-            record.building_id == session.Definition.buildings[session.CurrentBuilding].id &&
+            record.building_id == app.definition.buildings[session.CurrentBuilding].id &&
             record.model_id == stimulus.model.modelId && record.rotation_angle_degrees == stimulus.rotation &&
             record.rotation_axis == axis && record.condition == (stimulus.structuralMatch ? "rotated" : "mirrored_rotated") &&
             record.expected_answer == (session.IsCorrect(true) ? "SERVE" : "NAO_SERVE"),

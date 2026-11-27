@@ -1,4 +1,5 @@
 using System.Collections;
+using MeuPequenoReino.Core;
 using MeuPequenoReino.Telemetry;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -35,7 +36,7 @@ public sealed class GameApplication : MonoBehaviour
         Village = FindFirstObjectByType<VillageWorld>(FindObjectsInactive.Include);
         if (Village == null)
             throw new System.InvalidOperationException("Cena da vila não contém VillageWorld.");
-        Village.Initialize(Session);
+        Village.Initialize(Session, definition);
         Village.Selected = SelectBuilding;
         Village.gameObject.SetActive(false);
         ui.menu.startButton.interactable = true;
@@ -178,7 +179,7 @@ public sealed class GameApplication : MonoBehaviour
         StartSession();
         selected = -1;
         Village.ResetView();
-        Village.Initialize(Session);
+        Village.Initialize(Session, definition);
         Village.gameObject.SetActive(false);
         foreach (var b in Village.buildings)
             b.SetSelected(false);
@@ -188,9 +189,9 @@ public sealed class GameApplication : MonoBehaviour
 
     void StartSession()
     {
-        Session = new GameSession(definition);
+        Session = definition.CreateSession();
         telemetry = new TrialTelemetrySession(Application.version, Application.persistentDataPath);
-        trials.Initialize(Session, ui, ShowVillage, FinishBuilding, telemetry);
+        trials.Initialize(Session, definition, ui, ShowVillage, FinishBuilding, telemetry);
     }
 
     void EndTelemetry() => telemetry?.End(Time.realtimeSinceStartupAsDouble);

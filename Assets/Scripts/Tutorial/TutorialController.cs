@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using MeuPequenoReino.Core;
 using UnityEngine;
 
 public sealed class TutorialController : MonoBehaviour

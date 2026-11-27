@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using MeuPequenoReino.Core;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -92,6 +93,7 @@ public static class PlayModeFlowChecks
             if (app == null || app.Session == null || app.Village == null)
                 return;
             var session = app.Session;
+            var definition = app.definition;
             var ui = app.ui;
             double since = EditorApplication.timeSinceStartup - SessionState.GetFloat("MPRSmokeStageStart", 0);
             if (stage == 1)
@@ -125,8 +127,8 @@ public static class PlayModeFlowChecks
             {
                 if (app.trials.Busy || session.Screen != GameScreen.Trial)
                     return;
-                Check(session.CurrentBuilding == session.Definition.IndexOf(session.Definition.firstBuilding) && session.CandidateIndex == 0, "First building and first trial preserved");
-                if (session.CurrentTrial.structuralMatch)
+                Check(session.CurrentBuilding == definition.IndexOf(definition.firstBuilding) && session.CandidateIndex == 0, "First building and first trial preserved");
+                if (definition.GetTrial(session).structuralMatch)
                     ui.trial.rejectsButton.onClick.Invoke();
                 else
                     ui.trial.servesButton.onClick.Invoke();
@@ -139,7 +141,7 @@ public static class PlayModeFlowChecks
                 Check(session.CandidateIndex == 0 && session.Pieces(session.CurrentBuilding) == 0, "Incorrect response repeats stimulus without reward");
                 ui.trial.visitButton.onClick.Invoke();
                 Check(session.Paused && ui.village.gameObject.activeInHierarchy, "Trial pauses into village");
-                Check(!app.Village.Find(session.Definition.buildings.First(b => b.prerequisite != null)).button.interactable, "Mill interaction locked before bridge");
+                Check(!app.Village.Find(definition.buildings.First(b => b.prerequisite != null)).button.interactable, "Mill interaction locked before bridge");
                 ui.village.actionButton.onClick.Invoke();
                 Stage(6);
             }
@@ -156,7 +158,7 @@ public static class PlayModeFlowChecks
                 {
                     if (app.trials.Busy)
                         return;
-                    var trial = session.CurrentTrial;
+                    var trial = definition.GetTrial(session);
                     Check(ui.trial.reference.meshFilter.sharedMesh == trial.model.referenceMesh && ui.trial.candidate.meshFilter.sharedMesh == (trial.structuralMatch ? trial.model.referenceMesh : trial.model.mirroredMesh), "Displayed meshes match stimulus " + trial.model.modelId);
                     if (!SessionState.GetBool("MPRSmokeRendered", false))
                     {
@@ -229,7 +231,7 @@ public static class PlayModeFlowChecks
                         2
                     };
                     int next = order.First(i => !app.Session.IsBuilt(i));
-                    var building = app.Village.Find(session.Definition.buildings[next]);
+                    var building = app.Village.Find(definition.buildings[next]);
                     Check(building.button.interactable, "Next building is unlocked: " + building.definition.id);
                     building.button.onClick.Invoke();
                     ui.village.actionButton.onClick.Invoke();

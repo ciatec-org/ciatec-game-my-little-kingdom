@@ -2,6 +2,7 @@
     "name": "Game.Editor",
     "references": [
         "Game",
+        "Game.Core",
         "Unity.InputSystem",
         "Unity.RenderPipelines.Universal.Runtime",
         "UnityEngine.UI"
